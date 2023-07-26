@@ -63,7 +63,7 @@ export const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <a href="#0" className="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <form className="d-flex" role="search">
