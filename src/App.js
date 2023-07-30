@@ -48,7 +48,7 @@ function App() {
         id="scrollingdiv"
         style={{ marginLeft: "140px" }}
       >
-        <img src={free} className="homescreenboximage"></img>
+        <img src={free} alt="free" className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">Free-to-use</h2>
       </div>
       <div
@@ -56,7 +56,7 @@ function App() {
         id="scrollingdiv"
         style={{ marginLeft: "540px" }}
       >
-        <img src={trust} className="homescreenboximage"></img>
+        <img src={trust} alt="free" className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">Trustworthy</h2>
       </div>
       <div
@@ -64,7 +64,7 @@ function App() {
         id="scrollingdiv"
         style={{ marginLeft: "940px" }}
       >
-        <img src={user} className="homescreenboximage"></img>
+        <img src={user} alt="free" className="homescreenboximage"></img>
         <h2 className="homescreenboxtext" style={{ marginLeft: "-5px" }}>
           User-friendly
         </h2>
@@ -74,7 +74,7 @@ function App() {
         id="scrollingdiv"
         style={{ marginLeft: "1340px" }}
       >
-        <img src={accurate} className="homescreenboximage"></img>
+        <img src={accurate} alt="free" className="homescreenboximage"></img>
         <h2 className="homescreenboxtext" style={{ marginLeft: "15px" }}>
           Accurate
         </h2>
