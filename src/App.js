@@ -1,4 +1,4 @@
-import { NavBar } from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
 import "./App.css";
@@ -43,26 +43,43 @@ function App() {
         }}
       ></div>
 
-      <div className="homescreenbox" style={{ marginLeft: "140px" }}>
-        <img src={free} alt="free" className="homescreenboximage"></img>
+      <div
+        className="homescreenbox"
+        id="scrollingdiv"
+        style={{ marginLeft: "140px" }}
+      >
+        <img src={free} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">Free-to-use</h2>
       </div>
-      <div className="homescreenbox" style={{ marginLeft: "540px" }}>
-        <img src={trust} alt="trustworthy" className="homescreenboximage"></img>
+      <div
+        className="homescreenbox"
+        id="scrollingdiv"
+        style={{ marginLeft: "540px" }}
+      >
+        <img src={trust} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">Trustworthy</h2>
       </div>
-      <div className="homescreenbox" style={{ marginLeft: "940px" }}>
-        <img src={user} alt="user-friendly" className="homescreenboximage"></img>
+      <div
+        className="homescreenbox"
+        id="scrollingdiv"
+        style={{ marginLeft: "940px" }}
+      >
+        <img src={user} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext" style={{ marginLeft: "-5px" }}>
           User-friendly
         </h2>
       </div>
-      <div className="homescreenbox" style={{ marginLeft: "1340px" }}>
-        <img src={accurate} alt="accurate" className="homescreenboximage"></img>
+      <div
+        className="homescreenbox"
+        id="scrollingdiv"
+        style={{ marginLeft: "1340px" }}
+      >
+        <img src={accurate} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext" style={{ marginLeft: "15px" }}>
           Accurate
         </h2>
       </div>
+      <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
   );
 }
