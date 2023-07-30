@@ -1,0 +1,24 @@
+
+
+.homescreenbox {
+  position:absolute;
+  background: #0a63cf;
+  height: 200px;
+  width: 350px;
+  margin-top: -250px;
+  box-shadow: rgba(38, 39, 38, 0.363) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.homescreenboximage {
+  height: 90px;
+  width: 90px;
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+.homescreenboxtext {
+  padding-left: 87px;
+  padding-top: 10px;
+  color: #e3f2fd;
+}
