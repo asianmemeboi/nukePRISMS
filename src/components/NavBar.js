@@ -66,7 +66,7 @@ export const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <a className="nav-link disabled" href="#0">Disabled</a>
               </li>
             </ul>
           </div>
