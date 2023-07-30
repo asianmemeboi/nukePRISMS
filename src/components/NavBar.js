@@ -8,7 +8,7 @@ export const NavBar = () => {
         style={{ background: "#296bd6" }}
       >
         <div className="container-fluid" style={{ paddingLeft: "130px" }}>
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#0">
             <img src={logo} alt="logo" width="60" height="48" />
           </a>
           <button
@@ -25,19 +25,19 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="#0">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#0">
                   Link
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="#0"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -46,12 +46,12 @@ export const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#0">
                       Action
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#0">
                       Another action
                     </a>
                   </li>
@@ -59,7 +59,7 @@ export const NavBar = () => {
                     <hr className="dropdown-divider"></hr>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#0">
                       Something else here
                     </a>
                   </li>
