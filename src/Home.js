@@ -73,19 +73,19 @@ function $(x) {
   return document.getElementById(x);
 }
 
-$(window).scroll(function () {
-  var scrollTop = $(window).scrollTop();
-  var maxHeight = -1;
-  if (scrollTop < 200) {
-      maxHeight = 150;
-  } else if (scrollTop > 400) {
-      maxHeight = 75;
-  } else {
-      maxHeight = 150 - 75 * ((scrollTop - 200)) / 200;
-  }
-  $('#scrollingdiv').css({
-      'margin-top': -maxHeight + "px"
-  });
-})
+// $(window).scroll(function () {
+//   var scrollTop = $(window).scrollTop();
+//   var maxHeight = -1;
+//   if (scrollTop < 200) {
+//       maxHeight = 150;
+//   } else if (scrollTop > 400) {
+//       maxHeight = 75;
+//   } else {
+//       maxHeight = 150 - 75 * ((scrollTop - 200)) / 200;
+//   }
+//   $('#scrollingdiv').css({
+//       'margin-top': -maxHeight + "px"
+//   });
+// })
 
 export default App;
