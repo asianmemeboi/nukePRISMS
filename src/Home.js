@@ -69,9 +69,9 @@ function App() {
   );
 }
 
-function $(x) {
-  return document.getElementById(x);
-}
+// function $(x) {
+//   return document.getElementById(x);
+// }
 
 // $(window).scroll(function () {
 //   var scrollTop = $(window).scrollTop();
