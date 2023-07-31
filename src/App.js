@@ -1,10 +1,12 @@
 import NavBar from "./components/NavBar";
 import background from "./assets/background.jpg";
-import free from "./assets/free.png";
+// import free from "./assets/free.png";
 import "./App.css";
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
+
+const free = "./assets/free.png"
 
 function Homebox(name, image) {
   return (
@@ -13,7 +15,7 @@ function Homebox(name, image) {
     id="scrollingdiv"
     style={{ marginLeft: "140px" }}
   >
-      <img src={{image}} alt={name} className="homescreenboximage"></img>
+      <img src={image} alt={name} className="homescreenboximage"></img>
       <h2 className="homescreenboxtext">{name}</h2>
     </div>
   )
@@ -57,7 +59,7 @@ function App() {
       ></div>
 
       
-      { Homebox("Free-to-use", "free") }
+      { Homebox("Free-to-use", free) }
       
       <div
         className="homescreenbox"
