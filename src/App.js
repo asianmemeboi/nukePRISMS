@@ -28,7 +28,7 @@ function App() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundAttachment: fixed,
+          backgroundAttachment: "fixed",
           height: "60vh",
         }}
       ></div>
