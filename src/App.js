@@ -28,6 +28,7 @@ function App() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundAttachment: fixed,
           height: "60vh",
         }}
       ></div>
@@ -59,7 +60,7 @@ function App() {
       
       { Homebox("Free-to-use", free, "140px") }
       { Homebox("Trustworthy", trust, "540px") }
-      { Homebox("user-friendly", user, "940px") }
+      { Homebox("User-friendly", user, "940px") }
       { Homebox("Accurate", accurate, "1340px") }
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
