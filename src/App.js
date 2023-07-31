@@ -22,6 +22,7 @@ function Homebox(name, image, imageMargin) {
 function App() {
   return (
     <>
+      
       <NavBar />
       <div
         style={{
@@ -68,8 +69,13 @@ function App() {
   );
 }
 
+function $(x) {
+  return document.getElementById(x);
+}
+
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
+  var maxHeight = -1;
   if (scrollTop < 200) {
       maxHeight = 150;
   } else if (scrollTop > 400) {
