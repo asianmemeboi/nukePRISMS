@@ -58,35 +58,10 @@ function App() {
 
       
       { Homebox("Free-to-use", free) }
+      { Homebox("Trustworthy", trust) }
+      { Homebox("User-friendly", user) }
+      { Homebox("Accurate", accurate) }
       
-      <div
-        className="homescreenbox"
-        id="scrollingdiv"
-        style={{ marginLeft: "540px" }}
-      >
-        <img src={trust} alt="free" className="homescreenboximage"></img>
-        <h2 className="homescreenboxtext">Trustworthy</h2>
-      </div>
-      <div
-        className="homescreenbox"
-        id="scrollingdiv"
-        style={{ marginLeft: "940px" }}
-      >
-        <img src={user} alt="free" className="homescreenboximage"></img>
-        <h2 className="homescreenboxtext" style={{ marginLeft: "-5px" }}>
-          User-friendly
-        </h2>
-      </div>
-      <div
-        className="homescreenbox"
-        id="scrollingdiv"
-        style={{ marginLeft: "1340px" }}
-      >
-        <img src={accurate} alt="free" className="homescreenboximage"></img>
-        <h2 className="homescreenboxtext" style={{ marginLeft: "15px" }}>
-          Accurate
-        </h2>
-      </div>
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
   );
