@@ -6,6 +6,19 @@ import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 
+function Homebox(name, image) {
+  return (
+    <div
+    className="homescreenbox"
+    id="scrollingdiv"
+    style={{ marginLeft: "140px" }}
+  >
+      <img src={{image}} alt={name} className="homescreenboximage"></img>
+      <h2 className="homescreenboxtext">{name}</h2>
+    </div>
+  )
+}
+
 function App() {
   return (
     <>
@@ -43,14 +56,9 @@ function App() {
         }}
       ></div>
 
-      <div
-        className="homescreenbox"
-        id="scrollingdiv"
-        style={{ marginLeft: "140px" }}
-      >
-        <img src={free} alt="free" className="homescreenboximage"></img>
-        <h2 className="homescreenboxtext">Free-to-use</h2>
-      </div>
+      
+      { Homebox("Free-to-use", free) }
+      
       <div
         className="homescreenbox"
         id="scrollingdiv"
