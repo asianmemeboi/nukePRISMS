@@ -57,7 +57,7 @@ function App() {
       ></div>
 
       
-      { Homebox("Free-to-use", free) }
+      { Homebox("Free-to-use", "free") }
       
       <div
         className="homescreenbox"
