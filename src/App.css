@@ -11,12 +11,16 @@
 .homescreenboximage {
   height: 90px;
   width: 90px;
-  margin-left: 130px;
+  /* margin-left: 130px; */
   margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homescreenboxtext {
-  padding-left: 87px;
-  padding-top: 10px;
+  /* padding-left: 87px;
+  padding-top: 10px; */
+  text-align: center;
   color: #e3f2fd;
 }
