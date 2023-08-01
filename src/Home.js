@@ -5,13 +5,86 @@ import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 
+class HomeBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      name: props.name,
+      image: props.image,
+      imageMargin: props.imageMargin,
+      boxHeight: 300
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event) {
+    let scrollTop = window.scrollY;
+    this.state.boxHeight = Math.max(30, 200 - scrollTop);
+  }
+
+  render() {
+    return (
+      <h1>My Favorite Color is {this.state.boxHeight1}</h1>
+    );
+  }
+}
+
+var Component = React.createClass({
+  getInitialState: function() {
+      return {
+          style: {
+              logoHeight: 200
+          }
+      }
+  },
+
+  componentDidMount: function() {
+      window.addEventListener('scroll', this.handleScroll);
+  },
+
+  componentWillUnmount: function() {
+      window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  handleScroll: function(event) {
+      let scrollTop = window.scrollY,
+              minHeight = 30,
+              logoHeight = Math.max(minHeight, 200 - scrollTop);
+      this.setState({
+          style: {
+              logoHeight: logoHeight
+          }
+      });
+  },
+
+  render: function() {
+      return (
+          <div>
+              <div className="container" style={{height: this.state.style.logoHeight}}>
+                  <img src='https://www.import.io/wp-content/uploads/2017/10/React-logo-1.png' className='logo'/>
+              </div>
+              <div className="empty-space">
+
+              </div>
+          </div>
+      );
+  }
+});
+
 function Homebox(name, image, imageMargin) {
   return (
     <div
     className="homescreenbox"
     id="scrollingdiv"
     style={{ marginLeft: imageMargin }}
-  >
+  >s
       <img src={image} alt={name} className="homescreenboximage"></img>
       <h2 className="homescreenboxtext">{name}</h2>
     </div>
@@ -61,6 +134,8 @@ function App() {
       { Homebox("Trustworthy", trust, "540px") }
       { Homebox("User-friendly", user, "940px") }
       { Homebox("Accurate", accurate, "1340px") }
+      
+      <HomeBox />
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
