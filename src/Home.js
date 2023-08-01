@@ -142,12 +142,15 @@ function App() {
       ></div>
 
       
-      { Homebox("Free-to-use", free, "140px") }
+      {/* { Homebox("Free-to-use", free, "140px") }
       { Homebox("Trustworthy", trust, "540px") }
       { Homebox("User-friendly", user, "940px") }
-      { Homebox("Accurate", accurate, "1340px") }
+      { Homebox("Accurate", accurate, "1340px") } */}
       
-      <HomeBox name="Free-to-use" image={free} imageMargin="140px"/>
+      <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
+      <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
+      <HomeBox name="User-friendly" image={user} imageMargin="940px" />
+      <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
