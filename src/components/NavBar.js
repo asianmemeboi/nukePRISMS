@@ -18,7 +18,7 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" style={{ paddingLeft: "-50px" }}>
             <Nav.Link><Link to={`/home/`} className="link-style">Home</Link></Nav.Link>
-            <Nav.Link href="#link">Login</Nav.Link>
+            <Nav.Link><Link to={`/login/`} className="link-style">Login</Link></Nav.Link>
             <NavDropdown title="Map" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Submit a sample</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

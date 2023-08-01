@@ -13,7 +13,8 @@ class HomeBox extends React.Component {
       name: props.name,
       image: props.image,
       imageMargin: props.imageMargin,
-      boxHeight: 300
+      boxHeight: 200,
+      marginTop: -250
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.render = this.render.bind(this);
@@ -29,7 +30,7 @@ class HomeBox extends React.Component {
 
   handleScroll(event) {
     let scrollTop = window.scrollY;
-    this.setState({ boxHeight: Math.max(30, 200 - scrollTop) });
+    this.setState({ boxHeight: Math.max(scrollTop + 200, 400) });
     // this.state.boxHeight = Math.max(30, 200 - scrollTop);
   }
 
@@ -38,12 +39,13 @@ class HomeBox extends React.Component {
       <div
       className="homescreenbox"
       id="scrollingdiv"
-      style={{ marginLeft: this.state.imageMargin }}
-    >s
+      style={{ marginLeft: this.state.imageMargin,
+              height: this.state.boxHeight.toString() + "px",
+              marginTop: this.state.marginTop.toString() + "px"}}
+    >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
       </div>
-     //<h1>My Favorite Color is {this.state.boxHeight}</h1>
     );
   }
 }
