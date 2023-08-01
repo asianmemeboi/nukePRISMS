@@ -1,4 +1,3 @@
-import NavBar from "./components/NavBar";
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
 import "./Home.css";
@@ -23,7 +22,6 @@ function App() {
   return (
     <>
       
-      <NavBar />
       <div
         style={{
           backgroundImage: `url(${background})`,

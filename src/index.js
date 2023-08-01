@@ -1,20 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css";
+import { Navbar } from './components/Navbar';
+import ErrorPage from "./error-page"
 
 // Home.use(express.static(__dirname)); //here is important thing - no static directory, because all static :)
-
 // Home.get("/*", function(req, res) {
 //   res.sendFile(path.join(__dirname, "index.html"));
 // });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter(
+  {
+    path: "/",
+    element: <Navbar />,
+    errorElement: <ErrorPage />,
+    children: [
+    {
+      path: "home",
+      element: <Home/>,
+    }
+    ]
+});
+
+const root = ReactDOM.createRoot(document.getElementById('root'));  
 root.render(
   <React.StrictMode>
-    <Home />
+    <RouterProvider router={router} /> 
   </React.StrictMode>
 );
 

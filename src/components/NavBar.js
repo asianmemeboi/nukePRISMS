@@ -6,6 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavigationBar() {
   return (
+  <>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">
@@ -14,7 +15,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" style={{ paddingLeft: "-50px" }}>
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Link to={`/home/`}>Home</Link>
             <Nav.Link href="#link">Login</Nav.Link>
             <NavDropdown title="Map" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Submit a sample</NavDropdown.Item>
@@ -27,6 +28,8 @@ function NavigationBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div><Outlet/></div>
+    </>
   );
 }
 
