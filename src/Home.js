@@ -15,6 +15,7 @@ class HomeBox extends React.Component {
       imageMargin: props.imageMargin,
       boxHeight: 300
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
