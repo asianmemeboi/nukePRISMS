@@ -19,8 +19,9 @@ import ErrorPage from "./error-page"
 //   res.sendFile(path.join(__dirname, "index.html"));
 // });
 
-const router = createBrowserRouter(
+const router = createBrowserRouter([
   {
+    
     path: "/",
     element: <Navbar />,
     errorElement: <ErrorPage />,
@@ -30,7 +31,7 @@ const router = createBrowserRouter(
       element: <Home/>,
     }
     ]
-});
+}]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));  
 root.render(
