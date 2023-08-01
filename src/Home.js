@@ -34,7 +34,7 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <h1>My Favorite Color is {this.state.boxHeight1}</h1>
+      <h1>My Favorite Color is {this.state.boxHeight}</h1>
     );
   }
 }
