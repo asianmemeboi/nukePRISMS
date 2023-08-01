@@ -7,7 +7,7 @@ import {
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css";
-import { NavigationBar } from './components/NavBar';
+import NavigationBar from './components/NavBar';
 import ErrorPage from "./error-page"
 
 // Home.use(express.static(__dirname)); //here is important thing - no static directory, because all static :)
