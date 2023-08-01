@@ -27,7 +27,8 @@ class HomeBox extends React.Component {
 
   handleScroll(event) {
     let scrollTop = window.scrollY;
-    this.state.boxHeight = Math.max(30, 200 - scrollTop);
+    this.setState({ boxHeight: Math.max(30, 200 - scrollTop) });
+    // this.state.boxHeight = Math.max(30, 200 - scrollTop);
   }
 
   render() {
