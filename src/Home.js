@@ -96,7 +96,7 @@ class HomeBox extends React.Component {
 //     className="homescreenbox"
 //     id="scrollingdiv"
 //     style={{ marginLeft: imageMargin }}
-//   >s
+//   >
 //       <img src={image} alt={name} className="homescreenboximage"></img>
 //       <h2 className="homescreenboxtext">{name}</h2>
 //     </div>
