@@ -30,7 +30,7 @@ class HomeBox extends React.Component {
 
   handleScroll(event) {
     let scrollTop = window.scrollY;
-    this.setState({ boxHeight: Math.max(scrollTop + 200, 400) });
+    this.setState({ boxHeight: Math.min(scrollTop + 200, 400) });
     // this.state.boxHeight = Math.max(30, 200 - scrollTop);
   }
 
@@ -139,7 +139,7 @@ function App() {
       <div
         style={{
           backgroundImage: "linear-gradient(darkblue, aqua)",
-          height: "298px",
+          
         }}
       ></div>
 
