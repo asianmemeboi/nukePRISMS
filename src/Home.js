@@ -1,6 +1,7 @@
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
 import "./App.css";
+import React from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
@@ -36,47 +37,47 @@ class HomeBox extends React.Component {
   }
 }
 
-var Component = React.createClass({
-  getInitialState: function() {
-      return {
-          style: {
-              logoHeight: 200
-          }
-      }
-  },
+// var Component = React.createClass({
+//   getInitialState: function() {
+//       return {
+//           style: {
+//               logoHeight: 200
+//           }
+//       }
+//   },
 
-  componentDidMount: function() {
-      window.addEventListener('scroll', this.handleScroll);
-  },
+//   componentDidMount: function() {
+//       window.addEventListener('scroll', this.handleScroll);
+//   },
 
-  componentWillUnmount: function() {
-      window.removeEventListener('scroll', this.handleScroll);
-  },
+//   componentWillUnmount: function() {
+//       window.removeEventListener('scroll', this.handleScroll);
+//   },
 
-  handleScroll: function(event) {
-      let scrollTop = window.scrollY,
-              minHeight = 30,
-              logoHeight = Math.max(minHeight, 200 - scrollTop);
-      this.setState({
-          style: {
-              logoHeight: logoHeight
-          }
-      });
-  },
+//   handleScroll: function(event) {
+//       let scrollTop = window.scrollY,
+//               minHeight = 30,
+//               logoHeight = Math.max(minHeight, 200 - scrollTop);
+//       this.setState({
+//           style: {
+//               logoHeight: logoHeight
+//           }
+//       });
+//   },
 
-  render: function() {
-      return (
-          <div>
-              <div className="container" style={{height: this.state.style.logoHeight}}>
-                  <img src='https://www.import.io/wp-content/uploads/2017/10/React-logo-1.png' className='logo'/>
-              </div>
-              <div className="empty-space">
+//   render: function() {
+//       return (
+//           <div>
+//               <div className="container" style={{height: this.state.style.logoHeight}}>
+//                   <img src='https://www.import.io/wp-content/uploads/2017/10/React-logo-1.png' className='logo'/>
+//               </div>
+//               <div className="empty-space">
 
-              </div>
-          </div>
-      );
-  }
-});
+//               </div>
+//           </div>
+//       );
+//   }
+// });
 
 function Homebox(name, image, imageMargin) {
   return (
