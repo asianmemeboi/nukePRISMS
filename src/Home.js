@@ -16,6 +16,7 @@ class HomeBox extends React.Component {
       boxHeight: 300
     };
     this.handleScroll = this.handleScroll.bind(this);
+    this.render = this.render.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +35,15 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <h1>My Favorite Color is {this.state.boxHeight}</h1>
+      <div
+      className="homescreenbox"
+      id="scrollingdiv"
+      style={{ marginLeft: this.state.imageMargin }}
+    >s
+        <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 className="homescreenboxtext">{this.state.name}</h2>
+      </div>
+     //<h1>My Favorite Color is {this.state.boxHeight}</h1>
     );
   }
 }
@@ -138,7 +147,7 @@ function App() {
       { Homebox("User-friendly", user, "940px") }
       { Homebox("Accurate", accurate, "1340px") }
       
-      <HomeBox />
+      <HomeBox name="Free-to-use" image={free} imageMargin="140px"/>
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
