@@ -90,18 +90,18 @@ class HomeBox extends React.Component {
 //   }
 // });
 
-function Homebox(name, image, imageMargin) {
-  return (
-    <div
-    className="homescreenbox"
-    id="scrollingdiv"
-    style={{ marginLeft: imageMargin }}
-  >s
-      <img src={image} alt={name} className="homescreenboximage"></img>
-      <h2 className="homescreenboxtext">{name}</h2>
-    </div>
-  )
-}
+// function Homebox(name, image, imageMargin) {
+//   return (
+//     <div
+//     className="homescreenbox"
+//     id="scrollingdiv"
+//     style={{ marginLeft: imageMargin }}
+//   >s
+//       <img src={image} alt={name} className="homescreenboximage"></img>
+//       <h2 className="homescreenboxtext">{name}</h2>
+//     </div>
+//   )
+// }
 
 function App() {
   return (
