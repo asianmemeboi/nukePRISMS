@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
+  createBrowserRouter
 } from "react-router-dom";
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
@@ -28,7 +24,7 @@ const router = createBrowserRouter([
     children: [
     {
       path: "home",
-      element: <Home/>,
+      element: <Home />,
     }
     ]
 }]);
