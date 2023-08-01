@@ -139,7 +139,7 @@ function App() {
       <div
         style={{
           backgroundImage: "linear-gradient(darkblue, aqua)",
-          
+          height: "298px",
         }}
       ></div>
 
