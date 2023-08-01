@@ -54,8 +54,7 @@ class HomeBox extends React.Component {
 
 function App() {
   return (
-    <>
-      
+    <ScrollContainer>
       <div
         style={{
           backgroundImage: `url(${background})`,
@@ -98,7 +97,7 @@ function App() {
       </ParallaxElement>
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
-    </>
+    </ScrollContainer>
   );
 }
 
