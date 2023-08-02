@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import NavigationBar from './components/NavBar';
 import ErrorPage from "./error-page";
 import Login from "./Login";
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 
 // eslint-disable-next-line no-unused-vars
 // const scroll = new LocomotiveScroll({
