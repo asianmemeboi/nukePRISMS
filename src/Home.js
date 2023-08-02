@@ -28,7 +28,8 @@ class HomeBox extends React.Component {
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
               height: "200px",
-              marginTop: this.state.marginTop.toString() + "px"}}
+              marginTop: this.state.marginTop.toString() + "px",
+              zIndex: "100"}}
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
