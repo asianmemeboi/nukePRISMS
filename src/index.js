@@ -14,10 +14,10 @@ import Login from "./Login";
 import LocomotiveScroll from 'locomotive-scroll';
 
 // eslint-disable-next-line no-unused-vars
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
 
 const router = createBrowserRouter([
   {
