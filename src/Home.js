@@ -54,7 +54,7 @@ class HomeBox extends React.Component {
 }
 
 function updateBoxes(newHeight) {
-  elements = document.getElementsByClassName("homescreenbox");
+  let elements = document.getElementsByClassName("homescreenbox");
   for (let i = 0; i < elements.length; i++) {
     elements[i].style.height = newHeight.toString() + "px";
   }
