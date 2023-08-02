@@ -1,19 +1,13 @@
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
 import "./App.css";
-import React from 'react';
+import React, { useEffect } from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 // import ScrollContainer from "./components/ScrollContainer";
 // import ParallaxElement from "./components/ParallaxElement"; 
 import LocomotiveScroll from 'locomotive-scroll';
-
-// eslint-disable-next-line no-unused-vars
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
 
 class HomeBox extends React.Component {
   constructor(props) {
@@ -40,7 +34,6 @@ class HomeBox extends React.Component {
   handleScroll(event) {
     let scrollTop = window.scrollY;
     this.setState({ boxHeight: Math.min(scrollTop + 200, 400) });
-    // this.state.boxHeight = Math.max(30, 200 - scrollTop);
   }
 
   render() {
@@ -52,16 +45,26 @@ class HomeBox extends React.Component {
               height: this.state.boxHeight.toString() + "px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
-        <img data-scroll data-scroll-speed="2" src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
-        <h2 data-scroll data-scroll-speed="1" className="homescreenboxtext">{this.state.name}</h2>
+        <img data-scroll src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 data-scroll className="homescreenboxtext">{this.state.name}</h2>
       </div>
     );
   }
 }
 
 function App() {
+  const scrollRef = React.createRef();
+
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-vars
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true
+    });
+  });
+
   return (
-    <>
+    <div ref={scrollRef}>
       <div
         style={{
           backgroundImage: `url(${background})`,
@@ -96,15 +99,14 @@ function App() {
         }}
       ></div>
       
-      <div data-scroll-container>
-        <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
-        <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
-        <HomeBox name="User-friendly" image={user} imageMargin="940px" />
-        <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-      </div>
+      
+      <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
+      <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
+      <HomeBox name="User-friendly" image={user} imageMargin="940px" />
+      <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
-    </>
+    </div>
   );
 }
 
