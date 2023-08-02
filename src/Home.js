@@ -57,6 +57,7 @@ function App() {
 
     scroll.on('scroll', (instance) => {
       updateBoxes(Math.min(Math.max(200, instance.scroll.y - 50), 500));
+      console.log(instance.scroll.y);
   })
   });
 
