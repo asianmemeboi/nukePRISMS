@@ -61,40 +61,41 @@ function App() {
 
   return (
     <div ref={scrollRef}>
-      <div data-scroll data-scroll-speed="0.5"
-        style={{
-          backgroundImage: `url(${background})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-          height: "60vh",
-        }}
-      ></div>
+      <div data-scroll-section>
+        <div data-scroll data-scroll-speed="0.5"
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+            height: "60vh",
+          }}
+        ></div>
 
-      <div data-scroll data-scroll-speed="0.5"
-        style={{
-          backgroundColor: "darkblue",
-          marginTop: "-400px",
-          marginLeft: "100px",
-          width: "500px",
-          height: "400px",
-          borderRadius: "60px 60px 0px 0px",
-          paddingTop: "70px",
-          paddingLeft: "50px",
-        }}
-      >
-        <h1 style={{ fontSize: "100px", fontWeight: "bold", color: "#e3f2fd" }}>
-          GNEC <br /> H2O
-        </h1>
+        <div data-scroll data-scroll-speed="0.5"
+          style={{
+            backgroundColor: "darkblue",
+            marginTop: "-400px",
+            marginLeft: "100px",
+            width: "500px",
+            height: "400px",
+            borderRadius: "60px 60px 0px 0px",
+            paddingTop: "70px",
+            paddingLeft: "50px",
+          }}
+        >
+          <h1 style={{ fontSize: "100px", fontWeight: "bold", color: "#e3f2fd" }}>
+            GNEC <br /> H2O
+          </h1>
+        </div>
+
+        <div data-scroll data-scroll-speed="0.5"
+          style={{
+            backgroundImage: "linear-gradient(darkblue, aqua)",
+            height: "298px",
+          }}
+        ></div>
       </div>
-
-      <div
-        style={{
-          backgroundImage: "linear-gradient(darkblue, aqua)",
-          height: "298px",
-        }}
-      ></div>
-      
       
       <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
       <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
