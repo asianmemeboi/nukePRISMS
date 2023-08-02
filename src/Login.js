@@ -13,14 +13,11 @@ function Login() {
 
       <div
         style={{
-          backgroundColor: "darkblue",
-          marginTop: "-400px",
-          marginLeft: "100px",
-          width: "500px",
-          height: "400px",
-          borderRadius: "60px 60px 0px 0px",
-          paddingTop: "70px",
-          paddingLeft: "50px",
+          backgroundColor: "white",
+          marginTop: "-70vh",
+          marginLeft: "40vh",
+          width: "20vh",
+          height: "50vh",
         }}
       ></div>
         </>
