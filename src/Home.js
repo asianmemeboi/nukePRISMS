@@ -54,6 +54,7 @@ class HomeBox extends React.Component {
 
 function App() {
   return (
+    <>
     <ScrollContainer>
       <div
         style={{
@@ -98,6 +99,7 @@ function App() {
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </ScrollContainer>
+    </>
   );
 }
 
