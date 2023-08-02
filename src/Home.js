@@ -30,8 +30,8 @@ class HomeBox extends React.Component {
               height: "200px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
-        <img data-scroll src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
-        <h2 data-scroll className="homescreenboxtext">{this.state.name}</h2>
+        <img data-scroll data-scroll-speed="2" src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 data-scroll data-scroll-speed="2" className="homescreenboxtext">{this.state.name}</h2>
       </div>
     );
   }
@@ -55,14 +55,14 @@ function App() {
     });
 
     scroll.on('scroll', (instance) => {
-      updateBoxes(Math.max(instance.scroll.y + 200, 500));
+      updateBoxes(Math.min(instance.scroll.y + 200, 500));
   })
   });
 
   return (
     <div ref={scrollRef}>
       <div data-scroll-section>
-        <div data-scroll data-scroll-speed="0.5"
+        <div data-scroll data-scroll-speed="1"
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
@@ -72,7 +72,7 @@ function App() {
           }}
         ></div>
 
-        <div data-scroll data-scroll-speed="0.5"
+        <div data-scroll data-scroll-speed="1"
           style={{
             backgroundColor: "darkblue",
             marginTop: "-400px",
@@ -89,7 +89,7 @@ function App() {
           </h1>
         </div>
 
-        <div data-scroll data-scroll-speed="0.5"
+        <div data-scroll data-scroll-speed="1"
           style={{
             backgroundImage: "linear-gradient(darkblue, aqua)",
             height: "298px",
