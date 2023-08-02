@@ -1,7 +1,7 @@
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
 import "./App.css";
-import React from 'react';
+import React, { useEffect } from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
