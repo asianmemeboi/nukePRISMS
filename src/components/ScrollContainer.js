@@ -18,8 +18,6 @@ const Thing = props => {
   let yScroll = 0;
   let animationFrame;
 
-
-
   const startAnimation = () => {
     if (!animationFrame) {
       animationFrame = requestAnimationFrame(animate);
@@ -46,33 +44,38 @@ const Thing = props => {
     updateElements(blocks.current, yCurrent);
   };
 
+  const init = () => {
+    yScroll = window.scrollY;
+    yCurrent = yScroll;
+    setStyles(spacer.current, container.current);
+    startAnimation();
+  };
+
+  const resize = () => {
+    yScroll = window.scrollY;
+    yCurrent = yScroll;
+    setStyles(spacer.current, container.current);
+    blocks.current = reCalculateBlocks(blocks.current, container.current);
+    startAnimation();
+  };
+
+  const updateScroll = () => {
+    yScroll = window.scrollY || window.pageYOffset;
+    startAnimation();
+  };
   
 
   useEffect(() => {
-    const init = () => {
-      yScroll = window.scrollY;
-      yCurrent = yScroll;
-      setStyles(spacer.current, container.current);
-      startAnimation();
-    };
-  
-    const resize = () => {
-      yScroll = window.scrollY;
-      yCurrent = yScroll;
-      setStyles(spacer.current, container.current);
-      blocks.current = reCalculateBlocks(blocks.current, container.current);
-      startAnimation();
-    };
-
-    const updateScroll = () => {
-      yScroll = window.scrollY || window.pageYOffset;
-      startAnimation();
-    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("resize", resize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("scroll", updateScroll);
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       window.removeEventListener("resize", resize);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       window.removeEventListener("scroll", updateScroll);
     };
   }, []);
