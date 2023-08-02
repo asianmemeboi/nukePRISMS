@@ -9,9 +9,8 @@ import accurate from "./assets/accuracy.png";
 // import ParallaxElement from "./components/ParallaxElement"; 
 import LocomotiveScroll from 'locomotive-scroll';
 
-var realBoxHeight = 200;
-
 class HomeBox extends React.Component {
+  static realBoxHeight = 200;
   constructor(props) {
     super(props);
     this.state = { 
@@ -44,7 +43,7 @@ class HomeBox extends React.Component {
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
-              height: realBoxHeight.toString() + "px",
+              height: HomeBox.realBoxHeight.toString() + "px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
         <img data-scroll src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
@@ -65,8 +64,12 @@ function App() {
     });
 
     scroll.on('scroll', (instance) => {
-      realBoxHeight = 200 + instance.scroll.y;
-      console.log(realBoxHeight);
+      // HomeBox.realBoxHeight = 200 + instance.scroll.y;
+      // console.log(HomeBox.realBoxHeight);
+      elements = document.getElementsByClassName("homescreenbox");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.height = (200 + instance.scroll.y).toString() + "px";
+      }
   })
   });
 
