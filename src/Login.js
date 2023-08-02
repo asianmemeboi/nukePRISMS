@@ -1,10 +1,19 @@
 function Login() {
     return (
-        <div style={{backgroundImage: "linear-gradient(darkblue, aqua)", height: "970px"}}>
-            <div style={{height: "90px", width: "90px", paddingLeft: "100px", paddingTop: "100px"}}>
-                <h1> hi </h1>
-            </div>
+        <>
+        <div style={{backgroundImage: "linear-gradient(darkblue, aqua)", backgroundSize:"cover"}}>
+            
         </div>
+        <div style={{backgroundColor: "darkblue",
+          marginTop: "-400px",
+          marginLeft: "100px",
+          width: "500px",
+          height: "400px",
+          borderRadius: "60px 60px 0px 0px",
+          paddingTop: "70px",
+          paddingLeft: "50px",}}>
+        </div>
+        </>
     )
 }
 
