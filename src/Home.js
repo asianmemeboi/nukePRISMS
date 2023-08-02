@@ -7,6 +7,13 @@ import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 // import ScrollContainer from "./components/ScrollContainer";
 // import ParallaxElement from "./components/ParallaxElement"; 
+import LocomotiveScroll from 'locomotive-scroll';
+
+// eslint-disable-next-line no-unused-vars
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});
 
 class HomeBox extends React.Component {
   constructor(props) {
