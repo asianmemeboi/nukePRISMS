@@ -5,7 +5,7 @@ import React from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
-import ScrollContainer from "./Parallax/ScrollContainer";
+import ScrollContainer from "./components/ScrollContainer";
 //import ParallaxElement from "./Parallax/ParallaxElement"; 
 
 class HomeBox extends React.Component {
