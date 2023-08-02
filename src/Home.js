@@ -23,15 +23,15 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <div data-scroll-section
+      <div data-scroll data-scroll-speed="2"
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
               height: "200px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
-        <img data-scroll data-scroll-speed="2" src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
-        <h2 data-scroll data-scroll-speed="2" className="homescreenboxtext">{this.state.name}</h2>
+        <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 className="homescreenboxtext">{this.state.name}</h2>
       </div>
     );
   }
@@ -67,7 +67,6 @@ function App() {
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
             height: "60vh",
           }}
         ></div>
@@ -95,14 +94,14 @@ function App() {
             height: "298px",
           }}
         ></div>
-      </div>
       
-      <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
-      <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
-      <HomeBox name="User-friendly" image={user} imageMargin="940px" />
-      <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
+        <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
+        <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
+        <HomeBox name="User-friendly" image={user} imageMargin="940px" />
+        <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
-      <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
+        <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
+      </div>
     </div>
   );
 }
