@@ -16,14 +16,14 @@ class HomeBox extends React.Component {
       name: props.name,
       image: props.image,
       imageMargin: props.imageMargin,
-      marginTop: 1000
+      marginTop: 100
     };
     this.render = this.render.bind(this);
   }
 
   render() {
     return (
-      <div data-scroll data-scroll-speed="2"
+      <div data-scroll data-scroll-speed="4"
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
@@ -56,7 +56,7 @@ function App() {
     });
 
     scroll.on('scroll', (instance) => {
-      updateBoxes(Math.min(instance.scroll.y + 200, 500));
+      updateBoxes(Math.min(Math.max(200, instance.scroll.y - 50), 500));
   })
   });
 
