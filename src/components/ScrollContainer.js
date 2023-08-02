@@ -9,7 +9,7 @@ import {
 
 export const ScrollContext = React.createContext();
 
-export default props => {
+const props = () => {
   const spacer = useRef(null);
   const container = useRef(null);
   const blocks = useRef([]);
@@ -18,10 +18,7 @@ export default props => {
   let yScroll = 0;
   let animationFrame;
 
-  const updateScroll = () => {
-    yScroll = window.scrollY || window.pageYOffset;
-    startAnimation();
-  };
+
 
   const startAnimation = () => {
     if (!animationFrame) {
@@ -49,22 +46,28 @@ export default props => {
     updateElements(blocks.current, yCurrent);
   };
 
-  const init = () => {
-    yScroll = window.scrollY;
-    yCurrent = yScroll;
-    setStyles(spacer.current, container.current);
-    startAnimation();
-  };
-
-  const resize = () => {
-    yScroll = window.scrollY;
-    yCurrent = yScroll;
-    setStyles(spacer.current, container.current);
-    blocks.current = reCalculateBlocks(blocks.current, container.current);
-    startAnimation();
-  };
+  
 
   useEffect(() => {
+    const init = () => {
+      yScroll = window.scrollY;
+      yCurrent = yScroll;
+      setStyles(spacer.current, container.current);
+      startAnimation();
+    };
+  
+    const resize = () => {
+      yScroll = window.scrollY;
+      yCurrent = yScroll;
+      setStyles(spacer.current, container.current);
+      blocks.current = reCalculateBlocks(blocks.current, container.current);
+      startAnimation();
+    };
+
+    const updateScroll = () => {
+      yScroll = window.scrollY || window.pageYOffset;
+      startAnimation();
+    };
     init();
     window.addEventListener("resize", resize);
     window.addEventListener("scroll", updateScroll);
@@ -87,3 +90,5 @@ export default props => {
     </ScrollContext.Provider>
   );
 };
+
+export default props;
