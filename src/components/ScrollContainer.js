@@ -9,7 +9,7 @@ import {
 
 export const ScrollContext = React.createContext();
 
-const props = () => {
+const Thing = props => {
   const spacer = useRef(null);
   const container = useRef(null);
   const blocks = useRef([]);
@@ -91,4 +91,4 @@ const props = () => {
   );
 };
 
-export default props;
+export default Thing;
