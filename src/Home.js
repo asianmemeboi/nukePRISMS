@@ -10,31 +10,15 @@ import accurate from "./assets/accuracy.png";
 import LocomotiveScroll from 'locomotive-scroll';
 
 class HomeBox extends React.Component {
-  static realBoxHeight = 200;
   constructor(props) {
     super(props);
     this.state = { 
       name: props.name,
       image: props.image,
       imageMargin: props.imageMargin,
-      boxHeight: 200,
       marginTop: -250
     };
-    this.handleScroll = this.handleScroll.bind(this);
     this.render = this.render.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll(event) {
-    let scrollTop = 200;
-    this.setState({ boxHeight: Math.min(scrollTop + 200, 400) });
   }
 
   render() {
@@ -43,7 +27,7 @@ class HomeBox extends React.Component {
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
-              height: HomeBox.realBoxHeight.toString() + "px",
+              height: "200px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
         <img data-scroll src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
@@ -71,15 +55,13 @@ function App() {
     });
 
     scroll.on('scroll', (instance) => {
-      // HomeBox.realBoxHeight = 200 + instance.scroll.y;
-      // console.log(HomeBox.realBoxHeight);
-      updateBoxes(instance.scroll.y + 200);
+      updateBoxes(Math.max(instance.scroll.y + 200, 500));
   })
   });
 
   return (
     <div ref={scrollRef}>
-      <div
+      <div data-scroll data-scroll-speed="0.5"
         style={{
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
@@ -89,7 +71,7 @@ function App() {
         }}
       ></div>
 
-      <div
+      <div data-scroll data-scroll-speed="0.5"
         style={{
           backgroundColor: "darkblue",
           marginTop: "-400px",
