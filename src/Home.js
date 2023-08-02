@@ -66,6 +66,7 @@ function App() {
 
     scroll.on('scroll', (instance) => {
       realBoxHeight = 200 + instance.scroll.y;
+      console.log(realBoxHeight);
   })
   });
 
