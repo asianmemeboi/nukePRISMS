@@ -74,7 +74,7 @@ function App() {
         <div data-scroll data-scroll-speed="1"
           style={{
             backgroundColor: "darkblue",
-            marginTop: "-400px",
+            marginTop: "-600px",
             marginLeft: "100px",
             width: "500px",
             height: "400px",
@@ -100,7 +100,7 @@ function App() {
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
-        <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
+        <div data-scroll data-scroll-speed="1" style={{ backgroundColor: "aqua", height: "1000px" }}></div>
       </div>
     </div>
   );
