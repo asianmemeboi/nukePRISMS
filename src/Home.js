@@ -53,6 +53,13 @@ class HomeBox extends React.Component {
   }
 }
 
+function updateBoxes(newHeight) {
+  elements = document.getElementsByClassName("homescreenbox");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.height = newHeight.toString() + "px";
+  }
+}
+
 function App() {
   const scrollRef = React.createRef();
 
@@ -66,10 +73,7 @@ function App() {
     scroll.on('scroll', (instance) => {
       // HomeBox.realBoxHeight = 200 + instance.scroll.y;
       // console.log(HomeBox.realBoxHeight);
-      elements = document.getElementsByClassName("homescreenbox");
-      for (let i = 0; i < elements.length; i++) {
-        elements[i].style.height = (200 + instance.scroll.y).toString() + "px";
-      }
+      updateBoxes(instance.scroll.y + 200);
   })
   });
 
