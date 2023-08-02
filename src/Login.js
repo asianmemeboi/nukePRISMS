@@ -4,7 +4,14 @@ function Login() {
         <div style={{backgroundImage: "linear-gradient(darkblue, aqua)", backgroundSize:"cover"}}>
             
         </div>
-        <div style={{height: "90px", width: "90px", marginLeft: "500px", marginTop: "-200px", backgroundColor: "#ffffff"}}>
+        <div style={{backgroundColor: "darkblue",
+          marginTop: "-400px",
+          marginLeft: "100px",
+          width: "500px",
+          height: "400px",
+          borderRadius: "60px 60px 0px 0px",
+          paddingTop: "70px",
+          paddingLeft: "50px",}}>
         </div>
         </>
     )
