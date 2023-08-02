@@ -16,7 +16,7 @@ class HomeBox extends React.Component {
       name: props.name,
       image: props.image,
       imageMargin: props.imageMargin,
-      marginTop: -250
+      marginTop: 1000
     };
     this.render = this.render.bind(this);
   }
