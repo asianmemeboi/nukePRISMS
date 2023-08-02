@@ -105,12 +105,12 @@ function App() {
         }}
       ></div>
       
-
-      <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
-      <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
-      <HomeBox name="User-friendly" image={user} imageMargin="940px" />
-      <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-
+      <div ref={scrollRef}>
+        <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
+        <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
+        <HomeBox name="User-friendly" image={user} imageMargin="940px" />
+        <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
+      </div>
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
