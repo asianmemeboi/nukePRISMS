@@ -7,7 +7,7 @@ import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 // import ScrollContainer from "./components/ScrollContainer";
 // import ParallaxElement from "./components/ParallaxElement"; 
-// import LocomotiveScroll from 'locomotive-scroll';
+import LocomotiveScroll from 'locomotive-scroll';
 // // eslint-disable-next-line no-unused-vars
 // const scroll = new LocomotiveScroll({
 //   el: document.querySelector('[data-scroll-container]'),
@@ -59,6 +59,16 @@ class HomeBox extends React.Component {
 }
 
 function App() {
+  const scrollRef = React.createRef();
+
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-vars
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true
+    });
+  });
+
   return (
     <>
       <div
@@ -95,12 +105,12 @@ function App() {
         }}
       ></div>
       
-      <div data-scroll-container>
-        <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
-        <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
-        <HomeBox name="User-friendly" image={user} imageMargin="940px" />
-        <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-      </div>
+
+      <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
+      <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
+      <HomeBox name="User-friendly" image={user} imageMargin="940px" />
+      <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
+
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </>
