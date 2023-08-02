@@ -43,7 +43,7 @@ const Thing = props => {
     setTransform(container.current, "translateY(" + -yCurrent + "px)");
     updateElements(blocks.current, yCurrent);
   };
-
+  
   const init = () => {
     yScroll = window.scrollY;
     yCurrent = yScroll;
@@ -66,18 +66,14 @@ const Thing = props => {
   
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     init();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("resize", resize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     window.addEventListener("scroll", updateScroll);
     return () => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       window.removeEventListener("resize", resize);
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       window.removeEventListener("scroll", updateScroll);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const addBlock = data => {
