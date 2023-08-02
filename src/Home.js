@@ -45,8 +45,8 @@ class HomeBox extends React.Component {
               height: this.state.boxHeight.toString() + "px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
-        <img data-scroll data-scroll-speed="2" src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
-        <h2 data-scroll data-scroll-speed="1" className="homescreenboxtext">{this.state.name}</h2>
+        <img data-scroll src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 data-scroll className="homescreenboxtext">{this.state.name}</h2>
       </div>
     );
   }
@@ -104,7 +104,6 @@ function App() {
       <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
       <HomeBox name="User-friendly" image={user} imageMargin="940px" />
       <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-      
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </div>
