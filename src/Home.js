@@ -52,17 +52,17 @@ class HomeBox extends React.Component {
   }
 }
 
-const scrollRef = React.createRef();
-
-useEffect(() => {
-  // eslint-disable-next-line no-unused-vars
-  const scroll = new LocomotiveScroll({
-    el: scrollRef.current,
-    smooth: true
-  });
-});
-
 function App() {
+  const scrollRef = React.createRef();
+
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-vars
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true
+    });
+  });
+  
   return (
     <div ref={scrollRef}>
       <div
