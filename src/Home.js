@@ -5,8 +5,8 @@ import React from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
-import ScrollContainer from "./components/ScrollContainer";
-import ParallaxElement from "./components/ParallaxElement"; 
+// import ScrollContainer from "./components/ScrollContainer";
+// import ParallaxElement from "./components/ParallaxElement"; 
 
 class HomeBox extends React.Component {
   constructor(props) {
@@ -38,15 +38,15 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <div
+      <div data-scroll-section
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
               height: this.state.boxHeight.toString() + "px",
               marginTop: this.state.marginTop.toString() + "px"}}
     >
-        <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
-        <h2 className="homescreenboxtext">{this.state.name}</h2>
+        <img data-scroll data-scroll-speed="2" src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
+        <h2 data-scroll data-scroll-speed="1" className="homescreenboxtext">{this.state.name}</h2>
       </div>
     );
   }
@@ -55,7 +55,6 @@ class HomeBox extends React.Component {
 function App() {
   return (
     <>
-    <ScrollContainer>
       <div
         style={{
           backgroundImage: `url(${background})`,
@@ -90,15 +89,14 @@ function App() {
         }}
       ></div>
       
-      <ParallaxElement dataPercent="20">
+      <div data-scroll-container>
         <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
         <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-      </ParallaxElement>
+      </div>
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
-    </ScrollContainer>
     </>
   );
 }

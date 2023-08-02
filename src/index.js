@@ -11,11 +11,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import NavigationBar from './components/NavBar';
 import ErrorPage from "./error-page";
 import Login from "./Login";
+import LocomotiveScroll from 'locomotive-scroll';
 
-// Home.use(express.static(__dirname)); //here is important thing - no static directory, because all static :)
-// Home.get("/*", function(req, res) {
-//   res.sendFile(path.join(__dirname, "index.html"));
-// });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});
 
 const router = createBrowserRouter([
   {
