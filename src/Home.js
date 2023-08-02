@@ -6,7 +6,7 @@ import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 import ScrollContainer from "./components/ScrollContainer";
-//import ParallaxElement from "./Parallax/ParallaxElement"; 
+import ParallaxElement from "./components/ParallaxElement"; 
 
 class HomeBox extends React.Component {
   constructor(props) {
@@ -90,12 +90,12 @@ function App() {
         }}
       ></div>
       
-      {/* <ParallaxElement dataPercent="20"> */}
+      <ParallaxElement dataPercent="20">
         <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
         <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
-      {/* </ParallaxElement> */}
+      </ParallaxElement>
 
       <div style={{ backgroundColor: "aqua", height: "1000px" }}></div>
     </ScrollContainer>

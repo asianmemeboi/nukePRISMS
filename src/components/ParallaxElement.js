@@ -1,10 +1,11 @@
-// import { useEffect, useContext } from "react";
-// import { ScrollContext } from "./ScrollContainer";
+import { useEffect, useContext } from "react";
+import { ScrollContext } from "./ScrollContainer";
 
-// var props = function() {
-//     const context = useContext(ScrollContext);
-//     useEffect(() => context.addBlock(props), []);
-//     return props.children;
-//   };
+var Thing = props => {
+    const context = useContext(ScrollContext);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => context.addBlock(props), []);
+    return props.children;
+  };
 
-// export default props;
+export default Thing;
