@@ -21,7 +21,7 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <div data-scroll data-scroll-speed="5"
+      <div data-scroll data-scroll-speed="6"
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
@@ -64,7 +64,7 @@ function App() {
   return (
     <div ref={scrollRef}>
       <div data-scroll-section>
-        <div data-scroll data-scroll-speed="-1"
+        <div data-scroll data-scroll-speed="0"
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
@@ -73,7 +73,7 @@ function App() {
           }}
         ></div>
 
-        <div data-scroll data-scroll-speed="1"
+        <div data-scroll data-scroll-speed="2"
           style={{
             backgroundColor: "darkblue",
             marginTop: "-400px",
@@ -90,7 +90,7 @@ function App() {
           </h1>
         </div>
 
-        <div data-scroll data-scroll-speed="1"
+        <div data-scroll data-scroll-speed="2"
           style={{
             marginTop: "-68px",
             backgroundColor: "darkblue",
@@ -106,7 +106,7 @@ function App() {
           </h3>
         </div>
 
-        <div data-scroll data-scroll-speed="1"
+        <div data-scroll data-scroll-speed="2"
           style={{
             backgroundImage: "linear-gradient(darkblue, aqua)",
             height: "298px",
@@ -119,7 +119,7 @@ function App() {
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
-        <div data-scroll data-scroll-speed="1" style={{ marginTop: "-68px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
+        <div data-scroll data-scroll-speed="2" style={{ marginTop: "-68px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
       </div>
     </div>
   );
