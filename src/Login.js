@@ -17,7 +17,7 @@ function Login() {
           marginTop: "-80vh",
           marginLeft: "70vh",
           width: "60vh",
-          height: "60vh",
+          height: "70vh",
           paddingTop: "70px",
           paddingLeft: "50px",
         }}
