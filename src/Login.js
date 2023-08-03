@@ -1,5 +1,4 @@
 import Form from "react-bootstrap/Form";
-import { MDBBtn } from "mdb-react-ui-kit";
 function Login() {
   return (
     <>
@@ -46,11 +45,15 @@ function Login() {
               Your password must be 8-20 characters long.
             </Form.Text>
           </Form.Group>
-          <MDBBtn
-            style={{ background: "linear-gradient(to right, darkblue, aqua" }}
-          >
-            Login
-          </MDBBtn>
+          <div className="d-grid gap-2">
+            <Button
+              style={{
+                background: "linear-gradiant(to right, darkblue, aqua)",
+              }}
+            >
+              Login
+            </Button>
+          </div>
         </Form>
       </div>
     </>
