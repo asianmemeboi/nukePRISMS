@@ -64,7 +64,7 @@ function App() {
   return (
     <div ref={scrollRef}>
       <div data-scroll-section>
-        <div data-scroll data-scroll-speed="0"
+        <div data-scroll data-scroll-speed="-1"
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
@@ -101,8 +101,7 @@ function App() {
           <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px"}}>
             <br />
             GNEC H2O is pretty cool <br />
-            Test Test Test
-            <br />
+            Test Test Test <br />
             Hi guys, welcome to another video!!!!
           </h3>
         </div>
