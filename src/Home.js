@@ -54,7 +54,7 @@ function App() {
     });
 
     scroll.on('scroll', (instance) => {
-      updateBoxes(Math.min(Math.max(200, instance.scroll.y - 150), 500));
+      updateBoxes(Math.min(Math.max(200, instance.scroll.y - 550), 500));
       console.log(instance.scroll.y);
   })
 
@@ -90,8 +90,9 @@ function App() {
           </h1>
         </div>
 
-        <div data-scroll data-scroll-speed="1" style={{ marginTop: "-68px", backgroundColor: "dark-blue", height: "400px", zIndex: "-100" }}>
+        <div data-scroll data-scroll-speed="1" style={{ marginTop: "-68px", backgroundColor: "darkblue", height: "400px", zIndex: "-100" }}>
           <h3 style={{fontSize: "70px", color: "#e3f2fd"}}>
+            <br />
             GNEC H2O is pretty cool <br />
             Test Test Test
             <br />
