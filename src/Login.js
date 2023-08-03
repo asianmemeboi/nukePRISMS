@@ -7,17 +7,17 @@ function Login() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          height: "100vh"
+          height: "90vh"
         }}
       ></div>
 
       <div
         style={{
           backgroundColor: "white",
-          marginTop: "-60vh",
-          marginLeft: "100px",
-          width: "500px",
-          height: "400px",
+          marginTop: "-80vh",
+          marginLeft: "50px",
+          width: "80vh",
+          height: "40vh",
           paddingTop: "70px",
           paddingLeft: "50px",
         }}

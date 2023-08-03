@@ -90,6 +90,15 @@ function App() {
           </h1>
         </div>
 
+        <div data-scroll data-scroll-speed="1" style={{ marginTop: "-68px", backgroundColor: "dark-blue", height: "400px", zIndex: "-100" }}>
+          <h3 style={{fontSize: "70px", color: "#e3f2fd"}}>
+            GNEC H2O is pretty cool <br />
+            Test Test Test
+            <br />
+            Hi guys, welcome to another video!!!!
+          </h3>
+        </div>
+
         <div data-scroll data-scroll-speed="1"
           style={{
             backgroundImage: "linear-gradient(darkblue, aqua)",
