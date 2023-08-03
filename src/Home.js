@@ -98,7 +98,7 @@ function App() {
             zIndex: "-100"
           }}
         >
-          <h3 style={{fontSize: "70px", color: "#e3f2fd", padding: "100px"}}>
+          <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px"}}>
             <br />
             GNEC H2O is pretty cool <br />
             Test Test Test
