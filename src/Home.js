@@ -1,12 +1,10 @@
 import background from "./assets/background.jpg";
 import free from "./assets/free.png";
-import "./App.css";
-import React, { useEffect } from 'react';
 import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
-// import ScrollContainer from "./components/ScrollContainer";
-// import ParallaxElement from "./components/ParallaxElement"; 
+import "./App.css";
+import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 
 class HomeBox extends React.Component {
@@ -59,6 +57,8 @@ function App() {
       updateBoxes(Math.min(Math.max(200, instance.scroll.y - 150), 500));
       console.log(instance.scroll.y);
   })
+
+  return () => scroll.destroy();
   });
 
   return (
