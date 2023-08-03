@@ -3,6 +3,13 @@ import Button from "react-bootstrap/Button";
 function Login() {
   return (
     <>
+      <style type="text/css">
+        {`
+          .btn-login {
+            background: linear-gradient(to right, darkblue, aqua);
+          }
+        `}
+      </style>
       <div
         style={{
           backgroundImage: `linear-gradient(darkblue, aqua)`,
@@ -47,13 +54,7 @@ function Login() {
             </Form.Text>
           </Form.Group>
           <div className="d-grid gap-2">
-            <Button
-              style={{
-                background: "linear-gradiant(to right, darkblue, aqua)",
-              }}
-            >
-              Login
-            </Button>
+            <Button variant="login">Login</Button>
           </div>
         </Form>
       </div>
