@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider, redirect } from "react-router-dom";
 import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
@@ -26,6 +26,14 @@ const router = createHashRouter([
     ],
   },
 ]);
+
+const loader = async () => {
+  const user = await getUser();
+  if (!user) {
+    return redirect("/Home");
+  }
+  return null;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
