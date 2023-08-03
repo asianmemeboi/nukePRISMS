@@ -7,8 +7,8 @@ function Login() {
         {`
           .btn-login {
             background: linear-gradient(to right, darkblue, aqua);
-            padding-top: 20px;
-            padding-bottom: 40px;
+            margin-top: 20px;
+            margin-bottom: 40px;
           }
         `}
       </style>
@@ -59,7 +59,7 @@ function Login() {
             <Button variant="login">Login</Button>
           </div>
         </Form>
-        <h3 style={{ textAlign: "center" }}> Don't have an account yet? </h3>
+        <p style={{ textAlign: "center" }}> Don't have an account yet? </p>
         <div className="d-grid gap-2">
           <Button variant="login">Sign-Up</Button>
         </div>
