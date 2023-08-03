@@ -27,7 +27,7 @@ function Login() {
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>
         <Form>
-          <Form.Group>
+          <Form.Group style={{ paddingBottom: "30px" }}>
             <Form.Label htmlFor="username">Username</Form.Label>
             <Form.Control
               type="text"
