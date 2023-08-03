@@ -70,6 +70,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             height: "60vh",
+            top: "-36px"
           }}
         ></div>
 
