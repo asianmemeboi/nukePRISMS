@@ -21,7 +21,7 @@ function Login() {
           paddingTop: "70px",
           paddingLeft: "50px",
         }}
-      ></div>
+      > <h1 style={{textAlign: "center"}}> Login </h1></div>
         </>
     )
 }
