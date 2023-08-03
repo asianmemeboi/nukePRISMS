@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import NavigationBar from "./components/NavBar";
 import ErrorPage from "./error-page";
 import Login from "./Login";
+import Map from "./Map";
 
 const router = createHashRouter([
   {
@@ -22,6 +23,10 @@ const router = createHashRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "map",
+        element: <Map />,
       },
     ],
   },
