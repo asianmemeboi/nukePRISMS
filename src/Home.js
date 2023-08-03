@@ -119,7 +119,7 @@ function App() {
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
-        <div data-scroll data-scroll-speed="3" style={{ marginTop: "-175px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
+        <div data-scroll data-scroll-speed="3" style={{ marginTop: "-152px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
       </div>
     </div>
   );
