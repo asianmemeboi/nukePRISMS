@@ -34,9 +34,11 @@ function NavigationBar() {
                 <NavDropdown.Item href="#action/3.2">
                   Request a sample
                 </NavDropdown.Item>
-                <Link to={`/map/`} className="link-style">
-                  <NavDropdown.Item>Map</NavDropdown.Item>
-                </Link>
+                <NavDropdown.Item>
+                  <Link to={`/map/`} className="link-style">
+                    Map
+                  </Link>
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

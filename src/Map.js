@@ -6,7 +6,7 @@ const Map = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBnTLQEP9URuJROG3DnJrqvYaerBeX3pDw",
   });
-  const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
+  const center = useMemo(() => ({ lat: 40.23287, lng: -74.856071 }), []);
 
   return (
     <div className="Themap">
