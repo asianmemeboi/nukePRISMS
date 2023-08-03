@@ -92,7 +92,7 @@ function App() {
 
         <div data-scroll data-scroll-speed="3"
           style={{
-            marginTop: "-68px",
+            marginTop: "-99px",
             backgroundColor: "darkblue",
             height: "400px",
             zIndex: "-100"
@@ -110,7 +110,7 @@ function App() {
           style={{
             backgroundImage: "linear-gradient(darkblue, aqua)",
             height: "298px",
-            marginTop: "-35px",
+            marginTop: "-95px",
           }}
         ></div>
       
@@ -119,7 +119,7 @@ function App() {
         <HomeBox name="User-friendly" image={user} imageMargin="940px" />
         <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
 
-        <div data-scroll data-scroll-speed="3" style={{ marginTop: "-68px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
+        <div data-scroll data-scroll-speed="3" style={{ marginTop: "-175px", backgroundColor: "aqua", height: "1000px", zIndex: "-100" }}></div>
       </div>
     </div>
   );
