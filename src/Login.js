@@ -9,11 +9,15 @@ function Login() {
             background: linear-gradient(to right, darkblue, aqua);
             margin-top: 20px;
             margin-bottom: 40px;
+            color: white;
+            font-weight: bold;
           }
 
           .btn-signup {
             background: linear-gradient(to right, darkblue, aqua);
             margin-top: 5px;
+            color: white;
+            font-weight: bold;
           }
         `}
       </style>
