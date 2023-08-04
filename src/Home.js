@@ -137,7 +137,7 @@ function App() {
             zIndex: "100"
           }}
         >
-          <img src={water} alt="water" style={{zIndex: "100"}}></img>
+          <img src={water} alt="water" style={{zIndex: "100", width: "100vw"}}></img>
         </div>
 
         <div data-scroll data-scroll-speed="3"
