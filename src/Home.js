@@ -128,15 +128,16 @@ function App() {
 
         <div data-scroll data-scroll-speed="3"
           style={{
-            backgroundImage: `url(${water})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            height: "60vh",
+            // backgroundImage: `url(${water})`,
+            // backgroundSize: "cover",
+            // backgroundRepeat: "no-repeat",
+            // height: "60vh",
             position:"absolute",
             top:"1700px",
-            zIndex: "100"
           }}
-        ></div>
+        >
+          <img src={`url(${water})`} style={{zIndex: "100"}}></img>
+        </div>
 
         <div data-scroll data-scroll-speed="3"
           style={{
@@ -146,7 +147,9 @@ function App() {
             height: "400px",
             zIndex: "100"
           }}
-        ></div>
+        >
+          <h1>hello</h1>
+        </div>
       </div>
     </div>
   );
