@@ -33,7 +33,7 @@ class HomeBox extends React.Component {
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
-        <p>{this.state.boxText}</p>
+        <p className="homescreenboxtext" style={{padding: "30px"}}>{this.state.boxText}</p>
       </div>
     );
   }
