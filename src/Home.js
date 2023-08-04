@@ -40,6 +40,32 @@ class HomeBox extends React.Component {
   }
 }
 
+class ProcessSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      header: props.header,
+      description: props.description,
+      image: props.image
+    }
+    this.render = this.render.bind(this);
+  }
+
+  render() {
+    <div>
+      <div
+      className="process-section-text">
+        <h1>{this.state.header}</h1>
+        <p>{this.state.description}</p>
+      </div>
+      <div
+      className="process-section-image-wrapper">
+        <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+      </div>
+    </div>
+  }
+}
+
 function updateBoxes(newHeight) {
   let elements = document.getElementsByClassName("homescreenbox");
   for (let i = 0; i < elements.length; i++) {
@@ -153,7 +179,8 @@ function App() {
             zIndex: "2"
           }}
         >
-          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd"}}>Our Process</h1>
+          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "30px"}}>Our Process</h1>
+          <ProcessSection header="header" description="description" image={free}/>
         </div>
       </div>
     </div>

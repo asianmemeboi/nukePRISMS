@@ -33,28 +33,29 @@
   position: sticky;
 }
 
-.helper{
-  height: 100vh;
-  background-color: blue;
-  margin-top: 25vh;
+.process-section-text {
+  float: left;
+  margin-left: 140px;
+  width: 40vw;
+  height: 50vh;
+  color: #e3f2fd;
 }
-.bruh{
+
+.process-section-image-wrapper {
+  float: left;
+  margin-left: 100px;
+  width: 40vw;
+  height: 50vh;
+}
+
+.process-section-image {
+  /* float: left;
+  margin-left: 100px;
+  width: 40vw;
+  height: 50vh; */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: grayscale(var(--stain));
-}
-.line{
-  width: 3px;
-  margin:auto;
-  background-color: black;
-  height: 100vh;
-}
-.right{
-  float: right;
-}
-html{
-  --stain: 100%;
 }
 
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
