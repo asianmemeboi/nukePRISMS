@@ -134,11 +134,10 @@ function App() {
             // height: "60vh",
             // position:"absolute",
             marginTop: "-300px",
-            zIndex: "100",
-            backgroundColor: "transparent"
+            zIndex: "2",
           }}
         >
-          <img src={water} alt="water" style={{zIndex: "100", width: "100vw"}}></img>
+          <img src={water} alt="water" style={{zIndex: "2", width: "100vw"}}></img>
         </div>
 
         <div data-scroll data-scroll-speed="3"
@@ -147,8 +146,8 @@ function App() {
             // top:"2400px",
             backgroundColor: "#289fdc",
             marginTop: "-200px",
-            height: "400px",
-            zIndex: "100"
+            height: "1500px",
+            zIndex: "2"
           }}
         >
           <h1>hello</h1>
