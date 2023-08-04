@@ -29,11 +29,12 @@ class HomeBox extends React.Component {
       style={{ marginLeft: this.state.imageMargin,
               height: "200px",
               marginTop: this.state.marginTop.toString() + "px",
-              zIndex: "1"}}
+              zIndex: "1",
+              overflow: "hidden"}}
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
-        <p className="homescreenboxtext" style={{padding: "30px"}}>{this.state.boxText}</p>
+        <h4 className="homescreenboxtext" style={{padding: "30px"}}>{this.state.boxText}</h4>
       </div>
     );
   }
