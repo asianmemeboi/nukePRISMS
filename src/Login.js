@@ -35,8 +35,8 @@ function Login() {
         style={{
           backgroundColor: "white",
           marginTop: "-80vh",
-          marginLeft: "70vh",
-          width: "60vh",
+          marginLeft: "35vw",
+          width: "30vw",
           height: "70vh",
           paddingTop: "30px",
           paddingLeft: "20px",
