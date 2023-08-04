@@ -115,7 +115,7 @@ function App() {
           }}
         ></div>
 
-        <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{zIndex: "100"}}>
+        <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "relative", zIndex: "100"}}>
           <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
           <HomeBox name="Trustworthy" image={trust} imageMargin="50px" />
           <HomeBox name="User-friendly" image={user} imageMargin="50px" />
