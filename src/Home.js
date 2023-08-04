@@ -46,15 +46,16 @@ class ProcessSection extends React.Component {
     this.state = {
       header: props.header,
       description: props.description,
-      image: props.image
+      image: props.image,
+      id: props.header.replace(/\s/g, '')
     }
     this.render = this.render.bind(this);
   }
 
   render() {
     return (
-      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.header}`} style={{position: "sticky"}}>
-        <div id={this.state.header} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+        <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
         <div
         className="process-section-text">
           <h1>{this.state.header}</h1>
@@ -191,7 +192,7 @@ function App() {
           <div style={{height: "150vh"}}></div>
           <ProcessSection header="header2" description="description2" image={water}/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Eating Children" description="Here at GNEC H2O, " image={water}/>
+          <ProcessSection header="Eating Children" description="Here at GNEC H2O, we pride ourselves on eating children. Before they grow up, children are perfectly tender and have a heavenly texture. We highly suggest braising, or slow oven roasting. Together, we can help end world hunger and extreme overpopulation. Join our cause today! It's simple, free, easy, and there's nothing to lose!" image={water}/>
         </div>
 
       </div>
