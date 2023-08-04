@@ -134,7 +134,7 @@ function App() {
             height: "60vh",
             position:"absolute",
             top:"1700px",
-            zIndex: "10"
+            zIndex: "100"
           }}
         ></div>
 
@@ -144,7 +144,7 @@ function App() {
             top:"2200px",
             backgroundColor: "#289fdc",
             height: "400px",
-            zIndex: "10"
+            zIndex: "100"
           }}
         ></div>
       </div>
