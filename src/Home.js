@@ -28,7 +28,7 @@ class HomeBox extends React.Component {
       style={{ marginLeft: this.state.imageMargin,
               height: "200px",
               marginTop: this.state.marginTop.toString() + "px",
-              zIndex: "100"}}
+              zIndex: "1"}}
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
@@ -133,7 +133,8 @@ function App() {
             backgroundRepeat: "no-repeat",
             height: "60vh",
             position:"absolute",
-            top:"1700px"
+            top:"1700px",
+            zIndex: "2"
           }}
         ></div>
 
@@ -143,7 +144,7 @@ function App() {
             top:"2200px",
             backgroundColor: "#289fdc",
             height: "400px",
-            zIndex: "-100"
+            zIndex: "2"
           }}
         ></div>
       </div>
