@@ -134,6 +134,7 @@ function App() {
             // height: "60vh",
             position:"absolute",
             top:"1700px",
+            zIndex: "100"
           }}
         >
           <img src={water} alt="water" style={{zIndex: "100"}}></img>
