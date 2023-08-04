@@ -1,5 +1,5 @@
 .homescreenbox {
-  position:sticky;
+  position:absolute;
   background: #0a63cf;
   /* height: 200px; */
   width: 350px;

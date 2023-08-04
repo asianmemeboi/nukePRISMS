@@ -21,7 +21,7 @@ class HomeBox extends React.Component {
 
   render() {
     return (
-      <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something"
+      <div
       className="homescreenbox"
       id="scrollingdiv"
       style={{ marginLeft: this.state.imageMargin,
@@ -114,7 +114,7 @@ function App() {
           }}
         ></div>
 
-        <div style={{position: "absolute"}}>
+        <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "sticky"}}>
           <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
           <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
           <HomeBox name="User-friendly" image={user} imageMargin="940px" />
