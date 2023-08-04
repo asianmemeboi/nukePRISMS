@@ -10,7 +10,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Power4 } from 'gsap';
+// import { Power4 } from 'gsap';
 gsap.registerPlugin(ScrollTrigger);
 
 
