@@ -123,7 +123,7 @@ function App() {
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-194px", backgroundColor: "aqua", height: "1300px", zIndex: "-100" }}></div>
 
-        <div id="something" style={{position: "absolute", top: "1200px", height: "1000px"}}></div>
+        <div id="something" style={{position: "absolute", top: "1000px", height: "1000px"}}></div>
       </div>
     </div>
   );
