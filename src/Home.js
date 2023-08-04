@@ -52,17 +52,19 @@ class ProcessSection extends React.Component {
   }
 
   render() {
-    <div>
-      <div
-      className="process-section-text">
-        <h1>{this.state.header}</h1>
-        <p>{this.state.description}</p>
+    return (
+      <div>
+        <div
+        className="process-section-text">
+          <h1>{this.state.header}</h1>
+          <p>{this.state.description}</p>
+        </div>
+        <div
+        className="process-section-image-wrapper">
+          <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+        </div>
       </div>
-      <div
-      className="process-section-image-wrapper">
-        <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
-      </div>
-    </div>
+    );
   }
 }
 
