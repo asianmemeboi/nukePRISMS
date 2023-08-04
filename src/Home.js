@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div ref={scrollRef}>
-      <div data-scroll-section>
+      <div data-scroll-section style={{height: "10000px"}}>
         <div data-scroll data-scroll-speed="0"
           style={{
             backgroundImage: `url(${background})`,
