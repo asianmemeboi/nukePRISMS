@@ -35,7 +35,9 @@
 
 .process-section-text {
   float: left;
+  position: sticky;
   margin-left: 140px;
+  padding-top: 50px;
   width: 40vw;
   height: 50vh;
   color: #e3f2fd;
@@ -43,6 +45,7 @@
 
 .process-section-image-wrapper {
   float: left;
+  position: sticky;
   margin-left: 100px;
   width: 40vw;
   height: 50vh;
