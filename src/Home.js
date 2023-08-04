@@ -117,9 +117,9 @@ function App() {
 
         <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "sticky", zIndex: "1"}}>
           <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
-          <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
-          <HomeBox name="User-friendly" image={user} imageMargin="940px" />
-          <HomeBox name="Accurate" image={accurate} imageMargin="1340px" />
+          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" />
+          <HomeBox name="User-friendly" image={user} imageMargin="50px" />
+          <HomeBox name="Accurate" image={accurate} imageMargin="50px" />
         </div>
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-211px", backgroundColor: "aqua", height: "1500px", zIndex: "-100" }}></div>
