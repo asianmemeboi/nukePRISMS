@@ -28,7 +28,7 @@ class HomeBox extends React.Component {
       style={{ marginLeft: this.state.imageMargin,
               height: "200px",
               marginTop: this.state.marginTop.toString() + "px",
-              zIndex: "1"}}
+              zIndex: "100"}}
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
@@ -115,7 +115,7 @@ function App() {
           }}
         ></div>
 
-        <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{zIndex: "1"}}>
+        <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{zIndex: "100"}}>
           <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
           <HomeBox name="Trustworthy" image={trust} imageMargin="50px" />
           <HomeBox name="User-friendly" image={user} imageMargin="50px" />
