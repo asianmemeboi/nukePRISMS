@@ -5,14 +5,8 @@ import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 import water from "./assets/water.png";
 import "./App.css";
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { Power4 } from 'gsap';
-gsap.registerPlugin(ScrollTrigger);
-
 
 class HomeBox extends React.Component {
   constructor(props) {
@@ -54,22 +48,6 @@ function updateBoxes(newHeight) {
 }
 
 function App() {
-  const imgRef = useRef(null);
-
-  useEffect(() => {
-    const el = imgRef.current;
-    gsap.fromTo(el, {y: 0}, {"--stain": "0%", y: 800, duration: 5, scrollTrigger: {
-      trigger: el,
-      scrub: 1,
-      start: 'top 20%',
-      end: '+=1000',
-      markers: true
-    }})
-  }, [])
-  // useEffect(() => {
-
-  // }, [])
-
   const scrollRef = React.createRef();
 
   useEffect(() => {
@@ -175,7 +153,7 @@ function App() {
             zIndex: "2"
           }}
         >
-          <img alt="drop" src={free} className="bruh" ref = {imgRef}></img>
+          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd"}}>Our Process</h1>
         </div>
       </div>
     </div>
