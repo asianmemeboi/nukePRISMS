@@ -176,7 +176,7 @@ function App() {
           style={{
             position:"absolute",
             backgroundColor: "#289fdc",
-            marginTop: "-500px",
+            marginTop: "-530px",
             height: "5000px",
             width: "100vw",
             zIndex: "2"
@@ -185,7 +185,7 @@ function App() {
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "30vh"}}></div>
           <ProcessSection header="header" description="description" image={water}/>
-          <div style={{height: "30vh"}}></div>
+          <div style={{height: "100vh"}}></div>
           <ProcessSection header="header2" description="description2" image={water}/>
         </div>
       </div>
