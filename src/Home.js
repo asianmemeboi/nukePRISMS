@@ -33,7 +33,7 @@ class HomeBox extends React.Component {
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
-        <p>{this.state.text}</p>
+        <p>{this.state.boxText}</p>
       </div>
     );
   }
@@ -118,10 +118,10 @@ function App() {
         ></div>
 
         <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "relative", zIndex: "1"}}>
-          <HomeBox name="Free-to-use" image={free} imageMargin="140px" text="hi guys, welcome to another video!!! lorem ipsum I don't know what the hell to write here hee hee hee haw test test test tes tes tes hahahahahahaha"/>
-          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" text=""/>
-          <HomeBox name="User-friendly" image={user} imageMargin="50px" text=""/>
-          <HomeBox name="Accurate" image={accurate} imageMargin="50px" text=""/>
+          <HomeBox name="Free-to-use" image={free} imageMargin="140px" boxText="hi guys, welcome to another video!!! lorem ipsum I don't know what the hell to write here hee hee hee haw test test test tes tes tes hahahahahahaha"/>
+          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" boxText=""/>
+          <HomeBox name="User-friendly" image={user} imageMargin="50px" boxText=""/>
+          <HomeBox name="Accurate" image={accurate} imageMargin="50px" boxText=""/>
         </div>
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-211px", backgroundColor: "aqua", height: "1500px", zIndex: "-100" }}></div>
