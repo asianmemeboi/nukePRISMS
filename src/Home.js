@@ -53,7 +53,7 @@ class ProcessSection extends React.Component {
 
   render() {
     return (
-      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.header}`}>
+      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.header}`} style={{position: sticky}}>
         <div id={this.state.header} style={{position: "relative", top: "5vh", height: "100vh", float: "left"}}></div>
         <div
         className="process-section-text">
