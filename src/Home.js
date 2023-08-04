@@ -183,13 +183,15 @@ function App() {
           }}
         >
         </div>
-
-        <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
-        <div style={{height: "20vh"}}></div>
-        <ProcessSection header="header" description="description" image={water}/>
-        <div style={{height: "100vh"}}></div>
-        <ProcessSection header="header2" description="description2" image={water}/>
         
+        <div style={{zIndex: "3"}}>
+          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
+          <div style={{height: "20vh"}}></div>
+          <ProcessSection header="header" description="description" image={water}/>
+          <div style={{height: "100vh"}}></div>
+          <ProcessSection header="header2" description="description2" image={water}/>
+        </div>
+
       </div>
     </div>
   );
