@@ -114,7 +114,7 @@ function App() {
           }}
         ></div>
 
-        <div style={{position: "sticky"}}>
+        <div style={{position: "absolute"}}>
           <HomeBox name="Free-to-use" image={free} imageMargin="140px" />
           <HomeBox name="Trustworthy" image={trust} imageMargin="540px" />
           <HomeBox name="User-friendly" image={user} imageMargin="940px" />
