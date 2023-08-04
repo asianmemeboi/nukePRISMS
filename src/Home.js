@@ -106,7 +106,7 @@ function App() {
           </h3>
         </div>
 
-        <div data-scroll data-scroll-speed="3" id="something"
+        <div data-scroll data-scroll-speed="3"
           style={{
             backgroundImage: "linear-gradient(darkblue, aqua)",
             height: "298px",
@@ -122,6 +122,8 @@ function App() {
         </div>
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-194px", backgroundColor: "aqua", height: "1300px", zIndex: "-100" }}></div>
+
+        <div id="something" style={{position: "absolute", top: "2000px"}}></div>
       </div>
     </div>
   );
