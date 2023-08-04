@@ -132,8 +132,8 @@ function App() {
             // backgroundSize: "cover",
             // backgroundRepeat: "no-repeat",
             // height: "60vh",
-            position:"absolute",
-            top:"1900px",
+            // position:"absolute",
+            // marginTop:"1900px",
             zIndex: "100"
           }}
         >
@@ -142,8 +142,8 @@ function App() {
 
         <div data-scroll data-scroll-speed="3"
           style={{
-            position:"absolute",
-            top:"2400px",
+            // position:"absolute",
+            // top:"2400px",
             backgroundColor: "#289fdc",
             height: "400px",
             zIndex: "100"
