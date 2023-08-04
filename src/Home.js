@@ -184,7 +184,7 @@ function App() {
         >
         </div>
         
-        <div style={{zIndex: "3"}}>
+        <div style={{zIndex: "3", position:"absolute"}}>
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "20vh"}}></div>
           <ProcessSection header="header" description="description" image={water}/>
