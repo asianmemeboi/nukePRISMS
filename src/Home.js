@@ -60,7 +60,7 @@ class ProcessSection extends React.Component {
           <h1>{this.state.header}</h1>
           <p>{this.state.description}</p>
         </div>
-        <div /* data-scroll-sticky data-scroll-target={`#${this.state.header}`} */
+        <div
         className="process-section-image-wrapper">
           <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
         </div>
@@ -183,8 +183,10 @@ function App() {
           }}
         >
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
-          <div id="test" style={{height: "30vh"}}></div>
-          <ProcessSection header="header" description="description" image={free}/>
+          <div style={{height: "30vh"}}></div>
+          <ProcessSection header="header" description="description" image={water}/>
+          <div style={{height: "30vh"}}></div>
+          <ProcessSection header="header2" description="description2" image={water}/>
         </div>
       </div>
     </div>
