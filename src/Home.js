@@ -136,7 +136,7 @@ function App() {
             // backgroundRepeat: "no-repeat",
             // height: "60vh",
             position:"absolute",
-            marginTop: "-300px",
+            marginTop: "-400px",
             zIndex: "2",
           }}
         >
