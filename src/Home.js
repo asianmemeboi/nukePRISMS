@@ -134,7 +134,8 @@ function App() {
             // height: "60vh",
             // position:"absolute",
             // marginTop:"1900px",
-            zIndex: "100"
+            zIndex: "100",
+            backgroundColor: "transparent"
           }}
         >
           <img src={water} alt="water" style={{zIndex: "100", width: "100vw"}}></img>
