@@ -181,7 +181,8 @@ function App() {
             zIndex: "2"
           }}
         >
-          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "30px"}}>Our Process</h1>
+          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
+          <div style={{height: "30vh"}}></div>
           <ProcessSection header="header" description="description" image={free}/>
         </div>
       </div>
