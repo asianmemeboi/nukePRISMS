@@ -53,16 +53,18 @@ class ProcessSection extends React.Component {
 
   render() {
     return (
-      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.header}`} style={{position: "sticky"}}>
-        <div id={this.state.header} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
-        <div
-        className="process-section-text">
-          <h1>{this.state.header}</h1>
-          <p>{this.state.description}</p>
-        </div>
-        <div
-        className="process-section-image-wrapper">
-          <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+      <div data-scroll data-scroll-speed="1">
+        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.header}`} style={{position: "sticky"}}>
+          <div id={this.state.header} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+          <div
+          className="process-section-text">
+            <h1>{this.state.header}</h1>
+            <p>{this.state.description}</p>
+          </div>
+          <div
+          className="process-section-image-wrapper">
+            <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+          </div>
         </div>
       </div>
     );
