@@ -136,7 +136,7 @@ function App() {
             top:"1700px",
           }}
         >
-          <img src={`url(${water})`} style={{zIndex: "100"}}></img>
+          <img src={`url(${water})`} alt="water" style={{zIndex: "100"}}></img>
         </div>
 
         <div data-scroll data-scroll-speed="3"
