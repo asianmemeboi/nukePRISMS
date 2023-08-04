@@ -36,8 +36,8 @@ function SubmitSample() {
         style={{
           backgroundColor: "white",
           marginTop: "-80vh",
-          marginLeft: "30vh",
-          width: "90vh",
+          marginLeft: "15vw",
+          width: "70vw",
           height: "70vh",
           paddingTop: "30px",
           paddingLeft: "20px",
