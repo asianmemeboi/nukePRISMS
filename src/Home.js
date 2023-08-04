@@ -124,7 +124,7 @@ function App() {
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-211px", backgroundColor: "aqua", height: "1500px", zIndex: "-100" }}></div>
 
-        <div id="something" style={{position: "absolute", top: "1100px", height: "1000px"}}></div>
+        <div id="something" style={{position: "absolute", top: "1150px", height: "1000px"}}></div>
 
         <div data-scroll data-scroll-speed="3"
           style={{
@@ -133,7 +133,7 @@ function App() {
             // backgroundRepeat: "no-repeat",
             // height: "60vh",
             position:"absolute",
-            top:"1700px",
+            top:"1900px",
             zIndex: "100"
           }}
         >
@@ -143,7 +143,7 @@ function App() {
         <div data-scroll data-scroll-speed="3"
           style={{
             position:"absolute",
-            top:"2200px",
+            top:"2400px",
             backgroundColor: "#289fdc",
             height: "400px",
             zIndex: "100"
