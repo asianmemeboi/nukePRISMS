@@ -143,10 +143,10 @@ function App() {
         <div data-scroll data-scroll-speed="3"
           style={{
             position:"absolute",
-            // top:"2400px",
             backgroundColor: "#289fdc",
             marginTop: "-200px",
             height: "1500px",
+            width: "100vw",
             zIndex: "2"
           }}
         >
