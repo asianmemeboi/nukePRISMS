@@ -133,7 +133,7 @@ function App() {
             // backgroundRepeat: "no-repeat",
             // height: "60vh",
             // position:"absolute",
-            // marginTop:"1900px",
+            marginTop: "-300px",
             zIndex: "100",
             backgroundColor: "transparent"
           }}
@@ -146,6 +146,7 @@ function App() {
             // position:"absolute",
             // top:"2400px",
             backgroundColor: "#289fdc",
+            marginTop: "-200px",
             height: "400px",
             zIndex: "100"
           }}
