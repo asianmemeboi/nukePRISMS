@@ -60,37 +60,33 @@ class ProcessSection extends React.Component {
   }
 
   render() {
-    if (this.state.side === "left") {
-      return (
-        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
-          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: this.state.stickLength, float: "left"}}></div>
-          <div
-          className="process-section-text">
-            <h1>{this.state.header}</h1>
-            <p>{this.state.description}</p>
-          </div>
-          <div
+    return (
+      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+        <div id={this.state.id} style={{position: "relative", top: "-15vh", height: this.state.stickLength, float: "left"}}></div>
+        {/* image first if text is on right */}
+        { this.state.side === "right" && 
+          <div 
           className="process-section-image-wrapper">
             <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
           </div>
-        </div>
-      );
-    } else {
-      return (
-        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
-          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: this.state.stickLength, float: "left"}}></div>
-          <div
+        }
+        
+        <div
+        className="process-section-text">
+          <h1>{this.state.header}</h1>
+          <p>{this.state.description}</p>
+          <button className="home-redirect" role="button">{buttontext}</button>
+        </div> 
+        
+        {/* image second if text is on left */}
+        { this.state.side === "left" && 
+          <div 
           className="process-section-image-wrapper">
             <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
           </div>
-          <div
-          className="process-section-text">
-            <h1>{this.state.header}</h1>
-            <p>{this.state.description}</p>
-          </div>
-        </div>
-      );
-    }
+        }
+      </div>
+    );
   }
 }
 
@@ -253,7 +249,7 @@ function App() {
               position: "sticky"
             }}
           >
-            
+            <h1 data-scroll data-scroll-speed="3" style={{color: "#e3f2fd", }}>hi guys</h1>
           </div>
         </div>
       </div>
