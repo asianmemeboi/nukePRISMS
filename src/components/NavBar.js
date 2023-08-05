@@ -33,8 +33,10 @@ function NavigationBar() {
                     Submit a sample
                   </Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Request a sample
+                <NavDropdown.Item>
+                  <Link to={`/request/`} className="link-style">
+                    Request a sample
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link to={`/map/`} className="link-style">
