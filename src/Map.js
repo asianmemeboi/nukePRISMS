@@ -150,7 +150,7 @@ function Marker({ map, position, children, onClick }) {
       const container = document.createElement("div");
       rootRef.current = createRoot(container);
 
-      markerRef.current = new google.maps.marker.AdvancedMarkerView({
+      markerRef.current = new window.google.maps.marker.AdvancedMarkerView({
         position,
         content: container,
       });
