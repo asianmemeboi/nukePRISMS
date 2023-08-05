@@ -60,7 +60,7 @@ class ProcessSection extends React.Component {
   render() {
     if (this.state.side === "left") {
       return (
-        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+        <div data-scroll data-scroll-delay="0.2" data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
           <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
           <div
           className="process-section-text">
@@ -75,7 +75,7 @@ class ProcessSection extends React.Component {
       );
     } else {
       return (
-        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+        <div data-scroll data-scroll-delay="0.2" data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
           <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
           <div
           className="process-section-image-wrapper">
