@@ -174,7 +174,7 @@ const hatsArr = [
     Test67
 ];
 
-const testImageHandler = new ImageHandler(hatsArr, 6800, 7300);
+const testImageHandler = new ImageHandler(hatsArr, 6800, 8300);
 
 export {
     testImageHandler
