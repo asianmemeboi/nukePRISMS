@@ -34,6 +34,7 @@ class HomeBox extends React.Component {
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
+        <hr></hr>
         <h5 className="homescreenboxtext" style={{padding: "30px"}}>{this.state.boxText}</h5>
       </div>
     );
@@ -150,8 +151,7 @@ function App() {
             zIndex: "-100"
           }}
         >
-          <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px"}}>
-            <br />
+          <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px", paddingTop: "30px"}}>
             Get comprehensive information on <br />
             water quality from sources all over the world. <br />
             All submissions are carefully vetted and checked.
