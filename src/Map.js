@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+
+
 import { Wrapper } from "@googlemaps/react-wrapper";
 import { useRef, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
@@ -37,7 +40,6 @@ function MyMap() {
   );
 }
 
-// eslint-disable no-unused-vars
 const weatherData = {
   A: {
     name: "Toronto",
@@ -169,4 +171,3 @@ function Marker({ map, position, children, onClick }) {
     return () => listener.remove();
   }, [map, position, children, onClick]);
 }
-// eslint-enable no-unused-vars
