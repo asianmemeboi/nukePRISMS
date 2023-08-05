@@ -67,8 +67,12 @@ import Test65 from "../assets/testImages/Ink Reveal_00065.webp"
 import Test66 from "../assets/testImages/Ink Reveal_00066.webp"
 import Test67 from "../assets/testImages/Ink Reveal_00067.webp"
 
+const images = [];
+
 function preloadImage(url) {
-    (new Image()).src = url;
+    const img = new Image();
+    img.src = url;
+    images.push(img);
 }
 
 class ImageHandler {
