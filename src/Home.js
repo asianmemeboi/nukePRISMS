@@ -99,6 +99,16 @@ function updateBoxes(newHeight) {
   }
 }
 
+function updateCircle(newWidth) {
+  let element = document.getElementById("testtest");
+  if (newWidth > 7200) {
+    element.src = {PerformingTest};
+  }
+  // let element = document.getElementById("circleBG");
+  // element.style.width = newWidth.toString() + "px";
+  // element.style.height = newWidth.toString() + "px";
+}
+
 function App() {
   const scrollRef = React.createRef();
 
@@ -216,8 +226,8 @@ function App() {
           <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={SubmittingTest} side="left"/>
           <div style={{height: "150vh"}}></div>
           <ProcessSection header="Viewing the Data" description="Once we have extracted the data from your submission, it will automatically update on our map. The map is linked in the navigation bar, or at the link below. Our map contains all of the water quality data that has been submitted. Each marker on the map represents a submission." image={ViewingData1} side="right"/>
+          <img id="testtest" src={water} alt="water" style={{zIndex: "4"}}></img>
         </div>
-
       </div>
     </div>
   );
