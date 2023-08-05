@@ -164,7 +164,7 @@ function Marker({ map, position, children, onClick }) {
     rootRef.current.render(children);
     markerRef.current.position = position;
     markerRef.current.map = map;
-    const listener = markerRef.current.addListener("click", onClick);
+    const listener = markerRef.current.addEventListener("gmp-click", onClick);
     return () => listener.remove();
   }, [map, position, children, onClick]);
 }

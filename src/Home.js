@@ -212,7 +212,7 @@ function App() {
           style={{
             position:"absolute",
             backgroundColor: "#289fdc",
-            marginTop: "-1630px",
+            marginTop: "-1700px",
             height: "15000px",
             width: "100vw",
             zIndex: "2"
