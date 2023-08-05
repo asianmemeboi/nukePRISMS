@@ -230,13 +230,14 @@ function App() {
           <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={SubmittingTest} side="left"stickLength="100vh"/>
           <div style={{height: "150vh"}}></div>
           <ProcessSection header="Viewing the Data" description="Once we have extracted the data from your submission, it will automatically update on our map. The map is linked in the navigation bar, or at the link below. Our map contains all of the water quality data that has been submitted. Each marker on the map represents a submission." image={ViewingData1} side="right" stickLength="300vh"/>
+
           <div id="stickyWatercolor" style={{position: "relative", top: "30vh", height: "1000vh", float: "left"}}></div>
           <img data-scroll data-scroll-sticky data-scroll-target="#stickyWatercolor"
               id="testtest" src={testImageHandler.getImage()} alt="water" style={{zIndex: "4", position: "sticky"}}></img>
           
           <div style={{height: "150vh"}}></div>
           <div id="stickyBG" style={{position: "relative", top: "30vh", height: "1000vh", float: "left"}}></div>
-          <div
+          <div data-scroll data-scroll-sticky data-scroll-target="#stickyBG"
             style={{
               backgroundColor: "black",
               opacity: "0.5",
@@ -247,7 +248,8 @@ function App() {
               paddingTop: "30px",
               paddingLeft: "20px",
               paddingRight: "20px",
-              zIndex: "5"
+              zIndex: "5",
+              position: "sticky"
             }}
           >
             
