@@ -1,22 +1,16 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import InputGroup from "react-boootstrap/InputGroup";
 
 function SubmitSample() {
   return (
     <>
       <style type="text/css">
         {`
-          .btn-login {
+          .btn-submit {
             background: linear-gradient(to right, darkblue, aqua);
             margin-top: 20px;
             margin-bottom: 40px;
-            color: white;
-            font-weight: bold;
-          }
-
-          .btn-signup {
-            background: linear-gradient(to right, darkblue, aqua);
-            margin-top: 5px;
             color: white;
             font-weight: bold;
           }
@@ -54,25 +48,20 @@ function SubmitSample() {
               placeholder="Type your username"
             ></Form.Control>
           </Form.Group>
-          <Form.Group>
-            <Form.Label htmlFor="password">Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Type your password"
-              aria-describedby="passwordHelp"
-            ></Form.Control>
-            <Form.Text id="passwordHelp" muted>
-              Your password must be 8-20 characters long.
-            </Form.Text>
+          <InputGroup className="mb-3">
+            <InputGroup.Text>Coordinates</InputGroup.Text>
+            <Form.Control aria-label="Latitude"/>
+            <Form.Control aria-label="Longitude"/>
+          </InputGroup>
+          <Form.Group controlId="formFile" className="mb-3">
+            <Form.Label>Upload sample</Form.Label>
+            <Form.Control type="file"/>
           </Form.Group>
           <div className="d-grid gap-2">
             <Button variant="login">Login</Button>
           </div>
         </Form>
-        <p style={{ textAlign: "center" }}> Don't have an account yet? </p>
-        <div className="d-grid gap-2">
-          <Button variant="signup">Sign-Up</Button>
-        </div>
+
       </div>
     </>
   );

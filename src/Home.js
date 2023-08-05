@@ -206,11 +206,13 @@ function App() {
         <div style={{zIndex: "3", position:"absolute"}}>
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", width: "100vw", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "20vh"}}></div>
-          <ProcessSection header="header" description="description" image={water} side="left"/>
+          <ProcessSection header="Request a Test" description="After signing up or logging in, request a sample from us using the link on the navigation bar, or at the link below. After providing some key information, GNEC H2O will handle everything else, free of charge. This includes obtaining the test and shipping the test. In order to prevent spam or illegitimate submissions, we will not provide tests to accounts for a short period after one has been requested." image={water} side="left"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="header2" description="description2" image={water} side="right"/>
+          <ProcessSection header="Perform the Test" description="Once you have received the test, there will be instructions included to help guide you through using the test properly. If there are any difficulties, GNEC H2O has support agents that can assist you, at any time. We are committed to making water testing as easy and simple as possible, because high-quality water data should be available to everyone." image={water} side="right"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Eating Children" description="Here at GNEC H2O, we pride ourselves on eating children. Before they grow up, children are perfectly tender and have a heavenly texture. We highly suggest braising, or slow oven roasting. Together, we can help end world hunger and extreme overpopulation. Join our cause today! It's simple, free, easy, and there's nothing to lose!" image={water} side="left"/>
+          <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={water} side="left"/>
+          <div style={{height: "150vh"}}></div>
+          <ProcessSection header="Viewing the Data" description="" image={water} side="right"/>
         </div>
 
       </div>
