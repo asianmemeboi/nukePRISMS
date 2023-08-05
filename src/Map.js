@@ -157,6 +157,7 @@ function Marker({ map, position, children, onClick }) {
     }
 
     return () => (markerRef.current.map = null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
