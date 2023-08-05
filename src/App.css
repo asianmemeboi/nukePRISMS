@@ -87,6 +87,14 @@ html.has-scroll-dragging {
 .has-scroll-smooth body {
   overflow: hidden; }
 
+/* Hacky fix to remove stuttering when scrolling upwards */
+.has-scroll-smooth 
+{position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;}
+
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh; }
 
