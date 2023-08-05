@@ -88,6 +88,7 @@ const images = [];
 function preloadImage(url) {
     const img = new Image();
     img.src = url;
+    img.decode();
     images.push(img);
 }
 
