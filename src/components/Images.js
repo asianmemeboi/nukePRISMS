@@ -78,7 +78,7 @@ class ImageHandler {
         this.start = start;
         this.stop = stop;
         this.speed = (stop - start) / this.size;
-        this.progress = 0;
+        this.progress = -1;
         this.getImage = this.getImage.bind(this);
 
         imgArr.forEach(preloadImage);
