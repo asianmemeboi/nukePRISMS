@@ -107,8 +107,8 @@ class ImageHandler {
     }
 
     getImage(scrollY) {
-        const d = new Date();
-        if (d.getTime() - this.lastUpdate <= 100) return 0;
+        // const d = new Date();
+        // if (d.getTime() - this.lastUpdate <= 100) return 0;
 
         let progress = 0;
         if (scrollY <= this.start) {
