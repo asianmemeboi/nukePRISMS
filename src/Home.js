@@ -47,26 +47,44 @@ class ProcessSection extends React.Component {
       header: props.header,
       description: props.description,
       image: props.image,
-      id: props.header.replace(/\s/g, '')
+      id: props.header.replace(/\s/g, ''),
+      side: props.side
     }
     this.render = this.render.bind(this);
   }
 
   render() {
-    return (
-      <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
-        <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
-        <div
-        className="process-section-text">
-          <h1>{this.state.header}</h1>
-          <p>{this.state.description}</p>
+    if (this.state.side === "true") {
+      return (
+        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+          <div
+          className="process-section-text">
+            <h1>{this.state.header}</h1>
+            <p>{this.state.description}</p>
+          </div>
+          <div
+          className="process-section-image-wrapper">
+            <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+          </div>
         </div>
-        <div
-        className="process-section-image-wrapper">
-          <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+      );
+    } else {
+      return (
+        <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
+          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+          <div
+          className="process-section-image-wrapper">
+            <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
+          </div>
+          <div
+          className="process-section-text">
+            <h1>{this.state.header}</h1>
+            <p>{this.state.description}</p>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
@@ -186,13 +204,13 @@ function App() {
         </div>
         
         <div style={{zIndex: "3", position:"absolute"}}>
-          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
+          <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", width: "100vw", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "20vh"}}></div>
-          <ProcessSection header="header" description="description" image={water}/>
+          <ProcessSection header="header" description="description" image={water} side="left"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="header2" description="description2" image={water}/>
+          <ProcessSection header="header2" description="description2" image={water} side="right"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Eating Children" description="Here at GNEC H2O, we pride ourselves on eating children. Before they grow up, children are perfectly tender and have a heavenly texture. We highly suggest braising, or slow oven roasting. Together, we can help end world hunger and extreme overpopulation. Join our cause today! It's simple, free, easy, and there's nothing to lose!" image={water}/>
+          <ProcessSection header="Eating Children" description="Here at GNEC H2O, we pride ourselves on eating children. Before they grow up, children are perfectly tender and have a heavenly texture. We highly suggest braising, or slow oven roasting. Together, we can help end world hunger and extreme overpopulation. Join our cause today! It's simple, free, easy, and there's nothing to lose!" image={water} side="left"/>
         </div>
 
       </div>
