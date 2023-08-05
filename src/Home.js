@@ -58,7 +58,13 @@ class ProcessSection extends React.Component {
       link: props.link,
       stickLength: props.stickLength
     }
+
     this.render = this.render.bind(this);
+    this.redirect = this.redirect.bind(this);
+  }
+
+  redirect() {
+    window.location.href = `https://gnecwater.us${this.state.link}`;
   }
 
   render() {
@@ -78,7 +84,7 @@ class ProcessSection extends React.Component {
           <h1>{this.state.header}</h1>
           <p>{this.state.description}</p>
           { this.state.buttonText &&
-            <button className="home-redirect" onClick={`window.location.href='https://gnecwater.us${this.state.link}';`}>{this.state.buttonText}</button>
+            <button className="home-redirect" onClick={redirect}>{this.state.buttonText}</button>
           }
         </div> 
         
