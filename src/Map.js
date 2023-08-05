@@ -1,4 +1,4 @@
-import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useMemo } from "react";
 import "./App.css";
 
@@ -9,11 +9,9 @@ const Map = () => {
   });
   const center = useMemo(() => ({ lat: 40.23287, lng: -74.856071 }), []);
 
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "First Water Testing Point"
-  })
+  <Marker
+      position={{myLatLng}}
+    />
   return (
     <div className="Themap">
       {!isLoaded ? (
