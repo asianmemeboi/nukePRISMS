@@ -121,6 +121,7 @@ function App() {
 
     scroll.on('scroll', (instance) => {
       updateBoxes(Math.min(Math.max(200, instance.scroll.y - 450), 500));
+      updateCircle(instance.scroll.y);
       console.log(instance.scroll.y);
   })
 
