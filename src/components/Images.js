@@ -101,15 +101,11 @@ class ImageHandler {
         this.speed = (stop - start) / this.size;
         this.progress = -1;
         this.getImage = this.getImage.bind(this);
-        // this.lastUpdate = -1;
 
         imgArr.forEach(preloadImage);
     }
 
     getImage(scrollY) {
-        // const d = new Date();
-        // if (d.getTime() - this.lastUpdate <= 100) return 0;
-
         let progress = 0;
         if (scrollY <= this.start) {
             progress = 0;
@@ -123,7 +119,6 @@ class ImageHandler {
             return 0;
         } else {
             this.progress = progress;
-            // this.lastUpdate = d.getTime();
             return this.images[progress];
         }
     }
