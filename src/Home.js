@@ -53,7 +53,8 @@ class ProcessSection extends React.Component {
       description: props.description,
       image: props.image,
       id: props.header.replace(/\s/g, ''),
-      side: props.side
+      side: props.side,
+      stickLength: props.stickLength
     }
     this.render = this.render.bind(this);
   }
@@ -62,7 +63,7 @@ class ProcessSection extends React.Component {
     if (this.state.side === "left") {
       return (
         <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
-          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: this.state.stickLength, float: "left"}}></div>
           <div
           className="process-section-text">
             <h1>{this.state.header}</h1>
@@ -77,7 +78,7 @@ class ProcessSection extends React.Component {
     } else {
       return (
         <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
-          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
+          <div id={this.state.id} style={{position: "relative", top: "-15vh", height: this.state.stickLength, float: "left"}}></div>
           <div
           className="process-section-image-wrapper">
             <img className="process-section-image" src={this.state.image} alt={this.state.header}></img>
@@ -222,13 +223,13 @@ function App() {
         <div style={{zIndex: "3", position:"absolute"}}>
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", width: "100vw", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "20vh"}}></div>
-          <ProcessSection header="Request a Test" description="After signing up or logging in, request a sample from us using the link on the navigation bar, or at the link below. After providing some key information, GNEC H2O will handle everything else, free of charge. This includes obtaining the test and shipping the test. In order to prevent spam or illegitimate submissions, we will not provide tests to accounts for a short period after one has been requested." image={RequestingTest} side="left"/>
+          <ProcessSection header="Request a Test" description="After signing up or logging in, request a sample from us using the link on the navigation bar, or at the link below. After providing some key information, GNEC H2O will handle everything else, free of charge. This includes obtaining the test and shipping the test. In order to prevent spam or illegitimate submissions, we will not provide tests to accounts for a short period after one has been requested." image={RequestingTest} side="left" stickLength="100vh"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Perform the Test" description="Once you have received the test, there will be instructions included to help guide you through using the test properly. If there are any difficulties, GNEC H2O has support agents that can assist you, at any time. We are committed to making water testing as easy and simple as possible, because high-quality water data should be available to everyone." image={PerformingTest} side="right"/>
+          <ProcessSection header="Perform the Test" description="Once you have received the test, there will be instructions included to help guide you through using the test properly. If there are any difficulties, GNEC H2O has support agents that can assist you, at any time. We are committed to making water testing as easy and simple as possible, because high-quality water data should be available to everyone." image={PerformingTest} side="right"stickLength="100vh"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={SubmittingTest} side="left"/>
+          <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={SubmittingTest} side="left"stickLength="100vh"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Viewing the Data" description="Once we have extracted the data from your submission, it will automatically update on our map. The map is linked in the navigation bar, or at the link below. Our map contains all of the water quality data that has been submitted. Each marker on the map represents a submission." image={ViewingData1} side="right"/>
+          <ProcessSection header="Viewing the Data" description="Once we have extracted the data from your submission, it will automatically update on our map. The map is linked in the navigation bar, or at the link below. Our map contains all of the water quality data that has been submitted. Each marker on the map represents a submission." image={ViewingData1} side="right" stickLength="300vh"/>
           <div id="stickyWatercolor" style={{position: "relative", top: "30vh", height: "1000vh", float: "left"}}></div>
           <img data-scroll data-scroll-sticky data-scroll-target="#stickyWatercolor"
               id="testtest" src={testImageHandler.getImage()} alt="water" style={{zIndex: "4", position: "sticky"}}></img>
