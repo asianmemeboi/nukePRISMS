@@ -70,7 +70,6 @@ class ProcessSection extends React.Component {
         </div>
       );
     } else {
-      console.log(this.state.side);
       return (
         <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
           <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
@@ -153,9 +152,9 @@ function App() {
         >
           <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px"}}>
             <br />
-            GNEC H2O is pretty cool <br />
-            Test Test Test <br />
-            Hi guys, welcome to another video!!!!
+            Get comprehensive information on <br />
+            water quality from sources all over the world. <br />
+            All submissions are carefully vetted and checked.
           </h3>
         </div>
 

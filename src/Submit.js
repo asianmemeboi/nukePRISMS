@@ -45,10 +45,10 @@ function SubmitSample() {
         }}
       >
         {" "}
-        <h1 style={{ textAlign: "center" }}> Login </h1>
+        <h1 style={{ textAlign: "center" }}> Submit sample to be pinpointed on the map </h1>
         <Form>
           <Form.Group style={{ paddingBottom: "30px" }}>
-            <Form.Label htmlFor="username">Username</Form.Label>
+            <Form.Label htmlFor="name">Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="Type your username"
