@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function NavigationBar() {
   return (
