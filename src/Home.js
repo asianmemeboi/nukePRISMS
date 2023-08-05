@@ -11,6 +11,7 @@ import ViewingData1 from "./assets/ViewingData1.png";
 import "./App.css";
 import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
+import { testImageHandler } from './components/Images'
 
 class HomeBox extends React.Component {
   constructor(props) {
@@ -100,9 +101,10 @@ function updateBoxes(newHeight) {
 }
 
 function updateCircle(newWidth) {
-  let element = document.getElementById("testtest");
-  if (newWidth > 7200) {
-    element.src = PerformingTest;
+  let thingy = testImageHandler.getImage();
+  if (thingy) {
+    let element = document.getElementById("testtest");
+    element.src = thingy;
   }
   // let element = document.getElementById("circleBG");
   // element.style.width = newWidth.toString() + "px";
