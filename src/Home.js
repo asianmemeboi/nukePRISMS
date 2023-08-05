@@ -101,7 +101,7 @@ function updateBoxes(newHeight) {
 }
 
 function updateCircle(newWidth) {
-  let thingy = testImageHandler.getImage();
+  let thingy = testImageHandler.getImage(newWidth);
   if (thingy) {
     let element = document.getElementById("testtest");
     element.src = thingy;
