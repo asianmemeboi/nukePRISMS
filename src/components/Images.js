@@ -88,6 +88,8 @@ class ImageHandler {
     }
 
     getImage(scrollY) {
+        console.log(d.getTime());
+        console.log(this.lastUpdate);
         if (d.getTime() - this.lastUpdate <= 100) return 0;
 
         let progress = 0;
