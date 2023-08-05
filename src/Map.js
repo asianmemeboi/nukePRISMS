@@ -37,7 +37,7 @@ function MyMap() {
   );
 }
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable no-unused-vars
 const weatherData = {
   A: {
     name: "Toronto",
@@ -169,4 +169,4 @@ function Marker({ map, position, children, onClick }) {
     return () => listener.remove();
   }, [map, position, children, onClick]);
 }
-/* eslint-enable @typescript-eslint/no-unused-vars */
+// eslint-enable no-unused-vars
