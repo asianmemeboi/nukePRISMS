@@ -9,6 +9,7 @@ import NavigationBar from "./components/NavBar";
 import ErrorPage from "./error-page";
 import Login from "./Login";
 import Map from "./Map";
+import Submit from "./Submit"
 
 const router = createHashRouter([
   {
@@ -28,6 +29,10 @@ const router = createHashRouter([
         path: "map",
         element: <Map />,
       },
+      {
+        path: "submit",
+        element: <Submit />
+      }
     ],
   },
 ]);
