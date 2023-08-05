@@ -67,6 +67,8 @@ import Test65 from "../assets/testImages/Ink Reveal_00065.webp"
 import Test66 from "../assets/testImages/Ink Reveal_00066.webp"
 import Test67 from "../assets/testImages/Ink Reveal_00067.webp"
 
+const d = new Date();
+
 function preloadImage(url) {
     (new Image()).src = url;
 }
@@ -80,11 +82,14 @@ class ImageHandler {
         this.speed = (stop - start) / this.size;
         this.progress = -1;
         this.getImage = this.getImage.bind(this);
+        this.lastUpdate = -1;
 
         imgArr.forEach(preloadImage);
     }
 
     getImage(scrollY) {
+        if (d.getTime() - this.lastUpdate <= 100) return 0;
+
         let progress = 0;
         if (scrollY <= this.start) {
             progress = 0;
@@ -98,6 +103,7 @@ class ImageHandler {
             return 0;
         } else {
             this.progress = progress;
+            this.lastUpdate = d.getTime();
             return this.images[progress];
         }
     }
