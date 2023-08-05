@@ -6,7 +6,7 @@ function Login() {
       <style type="text/css">
         {`
           .btn-login {
-            background: linear-gradient(to right, darkblue, aqua);
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
             margin-top: 20px;
             margin-bottom: 40px;
             color: white;
@@ -14,7 +14,7 @@ function Login() {
           }
 
           .btn-signup {
-            background: linear-gradient(to right, darkblue, aqua);
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
             margin-top: 5px;
             color: white;
             font-weight: bold;
@@ -27,7 +27,7 @@ function Login() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          height: "95vh",
+          height: "90vh",
         }}
       ></div>
 

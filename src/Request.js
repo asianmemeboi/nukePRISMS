@@ -1,13 +1,12 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
 
-function SubmitSample() {
+function RequestSample() {
   return (
     <>
       <style type="text/css">
         {`
-          .btn-submit {
+          .btn-request {
             background: linear-gradient(to right, #8e2de2, #4a00e0);
             margin-top: 20px;
             margin-bottom: 40px;
@@ -39,26 +38,29 @@ function SubmitSample() {
         }}
       >
         {" "}
-        <h1 style={{ textAlign: "center" }}> Submit sample to be pinpointed on the map </h1>
+        <h1 style={{ textAlign: "center" }}> Request sample for testing </h1>
         <Form>
           <Form.Group style={{ paddingBottom: "30px" }}>
-            <Form.Label htmlFor="name">Name</Form.Label>
+            <Form.Label htmlFor="name">Legal Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="John Doe"
             ></Form.Control>
           </Form.Group>
-          <InputGroup className="mb-3">
-            <InputGroup.Text>Coordinates</InputGroup.Text>
-            <Form.Control aria-label="Latitude"/>
-            <Form.Control aria-label="Longitude"/>
-          </InputGroup>
-          <Form.Group controlId="formFile" className="mb-3">
-            <Form.Label>Upload sample</Form.Label>
-            <Form.Control type="file"/>
-          </Form.Group>
+          <Form.Control type="text" placeholder="Address"/>
+          <br/>
+          <Form.Control type="text" placeholder="City"/>
+          <br/>
+          <Form.Control type="text" placeholder="State"/>
+          <br/>
+          <Form.Control type="text" placeholder="Zip code"/>
+          <br/>
+          <Form.Control type="text" placeholder="Country"/>
+          <br/>
+          <Form.Label>Amount of Samples</Form.Label>
+          <Form.Range/>  
           <div className="d-grid gap-2">
-            <Button variant="submit">Submit</Button>
+            <Button variant="request">Request</Button>
           </div>
         </Form>
 
@@ -67,4 +69,4 @@ function SubmitSample() {
   );
 }
 
-export default SubmitSample;
+export default RequestSample;

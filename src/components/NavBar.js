@@ -28,15 +28,19 @@ function NavigationBar() {
                 </Link>
               </Nav.Link>
               <NavDropdown title="Water" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Submit a sample
+                <NavDropdown.Item>
+                  <Link to={`/submit/`} className="link-style">
+                    Submit a sample
+                  </Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Request a sample
+                <NavDropdown.Item>
+                  <Link to={`/request/`} className="link-style">
+                    Request a sample
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link to={`/map/`} className="link-style">
-                    Map
+                    Map        
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>

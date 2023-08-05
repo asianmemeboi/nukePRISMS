@@ -4,6 +4,10 @@ import trust from "./assets/quality.png";
 import user from "./assets/friends.png";
 import accurate from "./assets/accuracy.png";
 import water from "./assets/water.png";
+import RequestingTest from "./assets/RequestingTest.png";
+import PerformingTest from "./assets/PerformingTest.png";
+import SubmittingTest from "./assets/SubmittingTest.png";
+import ViewingData1 from "./assets/ViewingData1.png";
 import "./App.css";
 import React, { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
@@ -34,7 +38,7 @@ class HomeBox extends React.Component {
     >
         <img src={this.state.image} alt={this.state.name} className="homescreenboximage"></img>
         <h2 className="homescreenboxtext">{this.state.name}</h2>
-        <h5 className="homescreenboxtext" style={{padding: "30px"}}>{this.state.boxText}</h5>
+        <h5 className="homescreenboxtext" style={{padding: "40px"}}>{this.state.boxText}</h5>
       </div>
     );
   }
@@ -70,7 +74,6 @@ class ProcessSection extends React.Component {
         </div>
       );
     } else {
-      console.log(this.state.side);
       return (
         <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
           <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
@@ -116,7 +119,7 @@ function App() {
 
   return (
     <div ref={scrollRef}>
-      <div data-scroll-section style={{height: "10000px"}}>
+      <div data-scroll-section style={{height: "20000px"}}>
         <div data-scroll data-scroll-speed="0"
           style={{
             backgroundImage: `url(${background})`,
@@ -151,11 +154,10 @@ function App() {
             zIndex: "-100"
           }}
         >
-          <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px"}}>
-            <br />
-            GNEC H2O is pretty cool <br />
-            Test Test Test <br />
-            Hi guys, welcome to another video!!!!
+          <h3 style={{fontSize: "70px", color: "#e3f2fd", paddingLeft: "100px", paddingTop: "30px"}}>
+            Get comprehensive information on <br />
+            water quality from sources all over the world. <br />
+            All submissions are carefully vetted and checked.
           </h3>
         </div>
 
@@ -168,10 +170,10 @@ function App() {
         ></div>
 
         <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "relative", zIndex: "1"}}>
-          <HomeBox name="Free-to-use" image={free} imageMargin="140px" boxText="hi guys, welcome to another video!!! lorem ipsum I don't know what the hell to write here hee hee hee haw test test test tes tes tes hahahahahahaha"/>
-          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" boxText=""/>
-          <HomeBox name="User-friendly" image={user} imageMargin="50px" boxText=""/>
-          <HomeBox name="Accurate" image={accurate} imageMargin="50px" boxText=""/>
+          <HomeBox name="Free-to-use" image={free} imageMargin="140px" boxText="GNEC H2O will send water tests to you, for free. In addition, all data that we collect is available to the public, at no cost."/>
+          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" boxText="GNEC H2O carefully vets its submissions and ensures that spam or illegitimate submissions are not entered."/>
+          <HomeBox name="User-friendly" image={user} imageMargin="50px" boxText="GNEC H2O is easy to use. Our data can be seen on our website, and we will send easy, simple-to-use water tests to you, free of charge."/>
+          <HomeBox name="Accurate" image={accurate} imageMargin="50px" boxText="GNEC H2O uses high quality water tests, and sends them to locations all over the world. We provide high quality water data that's both precise, and accurate."/>
         </div>
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-211px", backgroundColor: "aqua", height: "1500px", zIndex: "-100" }}></div>
@@ -196,8 +198,8 @@ function App() {
           style={{
             position:"absolute",
             backgroundColor: "#289fdc",
-            marginTop: "-530px",
-            height: "5000px",
+            marginTop: "-1230px",
+            height: "10000px",
             width: "100vw",
             zIndex: "2"
           }}
@@ -207,11 +209,13 @@ function App() {
         <div style={{zIndex: "3", position:"absolute"}}>
           <h1 data-scroll data-scroll-speed="4" style={{textAlign: "center", width: "100vw", color: "#e3f2fd", fontSize: "100px"}}>Our Process</h1>
           <div style={{height: "20vh"}}></div>
-          <ProcessSection header="header" description="description" image={water} side="left"/>
+          <ProcessSection header="Request a Test" description="After signing up or logging in, request a sample from us using the link on the navigation bar, or at the link below. After providing some key information, GNEC H2O will handle everything else, free of charge. This includes obtaining the test and shipping the test. In order to prevent spam or illegitimate submissions, we will not provide tests to accounts for a short period after one has been requested." image={RequestingTest} side="left"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="header2" description="description2" image={water} side="right"/>
+          <ProcessSection header="Perform the Test" description="Once you have received the test, there will be instructions included to help guide you through using the test properly. If there are any difficulties, GNEC H2O has support agents that can assist you, at any time. We are committed to making water testing as easy and simple as possible, because high-quality water data should be available to everyone." image={PerformingTest} side="right"/>
           <div style={{height: "150vh"}}></div>
-          <ProcessSection header="Eating Children" description="Here at GNEC H2O, we pride ourselves on eating children. Before they grow up, children are perfectly tender and have a heavenly texture. We highly suggest braising, or slow oven roasting. Together, we can help end world hunger and extreme overpopulation. Join our cause today! It's simple, free, easy, and there's nothing to lose!" image={water} side="left"/>
+          <ProcessSection header="Send the Test Back" description="After you perform the water test, submit a picture of the water test to GNEC H2O on our website through the link on the navigation bar, or at the link below. Along with the picture, you should also submit the coordinates of where the test was taken. GNEC H2O will then extract the water quality from the picture of the test, and our water quality map will automatically update with your data." image={SubmittingTest} side="left"/>
+          <div style={{height: "150vh"}}></div>
+          <ProcessSection header="Viewing the Data" description="Once we have extracted the data from your submission, it will automatically update on our map. The map is linked in the navigation bar, or at the link below. Our map contains all of the water quality data that has been submitted. Each marker on the map represents a submission." image={ViewingData1} side="right"/>
         </div>
 
       </div>
