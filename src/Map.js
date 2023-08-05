@@ -71,7 +71,7 @@ function Weather({ map }) {
   
   return (
     <>
-      {/* {editing && (
+      {editing && (
         <Editing
           weather={data[editing]}
           update={(newWeather) => {
@@ -106,7 +106,7 @@ function Weather({ map }) {
             ) : null}
           </div>
         </Marker>
-      ))} */}
+      ))}
     </>
   );
 }
