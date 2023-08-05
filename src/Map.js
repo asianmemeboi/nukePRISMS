@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 export default function Map() {
   return (
     <Wrapper
-      apiKey={AIzaSyBnTLQEP9URuJROG3DnJrqvYaerBeX3pDw}
+      apiKey="AIzaSyBnTLQEP9URuJROG3DnJrqvYaerBeX3pDw"
       version="beta"
       libraries={["marker"]}
     >
