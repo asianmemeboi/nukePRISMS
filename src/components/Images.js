@@ -24,7 +24,7 @@ class ImageHandler {
             progress = Math.floor((scrollY - this.start) / this.speed);
         }
 
-        if (progress == this.progress) {
+        if (progress === this.progress) {
             return 0;
         } else {
             return this.images[progress];
