@@ -78,7 +78,7 @@ class ProcessSection extends React.Component {
           <h1>{this.state.header}</h1>
           <p>{this.state.description}</p>
           { this.state.buttonText &&
-            <button className="home-redirect" role="button" href={this.state.link}>{this.state.buttonText}</button>
+            <button className="home-redirect" href={this.state.link}>{this.state.buttonText}</button>
           }
         </div> 
         
