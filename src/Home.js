@@ -196,7 +196,7 @@ function App() {
             position:"absolute",
             backgroundColor: "#289fdc",
             marginTop: "-530px",
-            height: "5000px",
+            height: "10000px",
             width: "100vw",
             zIndex: "2"
           }}
