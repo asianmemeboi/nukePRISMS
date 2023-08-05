@@ -82,7 +82,7 @@ hr {
 
 .marker {
   padding: 0.5rem;
-  background: black;
+  /* background: black; */
   transition: all 0.3s ease-out;
   position: relative;
   width: 100px;
@@ -100,14 +100,14 @@ hr {
   opacity: 0;
   animation: fadeOut 0.5s;
 }
-.marker.raining:after {
-  content: "🌧️";
+.marker.low {
+  background: red;
 }
-.marker.cloudy:after {
-  content: "⛅";
+.marker.med {
+  background: yellow;
 }
-.marker.sunny:after {
-  content: "☀️";
+.marker.high {
+  background: green;
 }
 
 .marker h2 {
