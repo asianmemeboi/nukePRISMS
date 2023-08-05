@@ -67,8 +67,6 @@ import Test65 from "../assets/testImages/Ink Reveal_00065.webp"
 import Test66 from "../assets/testImages/Ink Reveal_00066.webp"
 import Test67 from "../assets/testImages/Ink Reveal_00067.webp"
 
-const d = new Date();
-
 function preloadImage(url) {
     (new Image()).src = url;
 }
@@ -88,8 +86,7 @@ class ImageHandler {
     }
 
     getImage(scrollY) {
-        console.log(d.getTime());
-        console.log(this.lastUpdate);
+        const d = new Date();
         if (d.getTime() - this.lastUpdate <= 100) return 0;
 
         let progress = 0;
