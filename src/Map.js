@@ -62,6 +62,27 @@ const weatherData = {
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
+  D: {
+    name: "Lake Ontario",
+    position: { lat: 43.732212, lng: -79.197513 },
+    climate: "High",
+    temp: 20,
+    fiveDay: [15, 18, 12, 22, 20],
+  },
+  E: {
+    name: "Ohio River",
+    position: { lat: 38.705211, lng: -85.449775 },
+    climate: "Med",
+    temp: 20,
+    fiveDay: [15, 18, 12, 22, 20],
+  },
+  F: {
+    name: "Potomac River",
+    position: { lat: 38.704347, lng: -77.089326 },
+    climate: "Med",
+    temp: 20,
+    fiveDay: [15, 18, 12, 22, 20],
+  },
 };
 
 function Weather({ map }) {
