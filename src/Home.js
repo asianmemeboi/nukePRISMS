@@ -233,6 +233,9 @@ function App() {
           <div id="stickyWatercolor" style={{position: "relative", top: "30vh", height: "1000vh", float: "left"}}></div>
           <img data-scroll data-scroll-sticky data-scroll-target="#stickyWatercolor"
               id="testtest" src={testImageHandler.getImage()} alt="water" style={{zIndex: "4", position: "sticky"}}></img>
+          
+          <div style={{height: "150vh"}}></div>
+          <div id="stickyBG" style={{position: "relative", top: "30vh", height: "1000vh", float: "left"}}></div>
           <div
             style={{
               backgroundColor: "black",
