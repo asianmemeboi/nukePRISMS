@@ -15,7 +15,7 @@ class ImageHandler {
     }
 
     getImage(scrollY) {
-        progress = 0;
+        let progress = 0;
         if (scrollY <= this.start) {
             progress = 0;
         } else if (scrollY >= this.end) {
