@@ -240,6 +240,7 @@ function App() {
           <div data-scroll data-scroll-sticky data-scroll-target="#stickyBG"
             style={{
               backgroundColor: "black",
+              borderRadius: "25px",
               opacity: "0.5",
               marginTop: "-80vh",
               marginLeft: "35vw",
