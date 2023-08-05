@@ -167,10 +167,10 @@ function App() {
         ></div>
 
         <div data-scroll data-scroll-speed="6" data-scroll-sticky data-scroll-target="#something" style={{position: "relative", zIndex: "1"}}>
-          <HomeBox name="Free-to-use" image={free} imageMargin="140px" boxText="hi guys, welcome to another video!!! lorem ipsum I don't know what the hell to write here hee hee hee haw test test test tes tes tes hahahahahahaha"/>
-          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" boxText=""/>
-          <HomeBox name="User-friendly" image={user} imageMargin="50px" boxText=""/>
-          <HomeBox name="Accurate" image={accurate} imageMargin="50px" boxText=""/>
+          <HomeBox name="Free-to-use" image={free} imageMargin="140px" boxText="GNEC H2O will send water tests to you, for free. In addition, all data that we collect is available to the public, at no cost."/>
+          <HomeBox name="Trustworthy" image={trust} imageMargin="50px" boxText="GNEC H2O carefully vets its submissions and ensures that spam or illegitimate submissions are not entered."/>
+          <HomeBox name="User-friendly" image={user} imageMargin="50px" boxText="GNEC H2O is easy to use. Our data can be seen on our website, and we will send easy, simple-to-use water tests to you, free of charge."/>
+          <HomeBox name="Accurate" image={accurate} imageMargin="50px" boxText="GNEC H2O uses high quality water tests, and sends them to locations all over the world. We provide high quality water data that's both precise, and accurate."/>
         </div>
 
         <div data-scroll data-scroll-speed="3" style={{ marginTop: "-211px", backgroundColor: "aqua", height: "1500px", zIndex: "-100" }}></div>
