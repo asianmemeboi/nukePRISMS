@@ -97,21 +97,21 @@ const weatherData = {
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
-  H: {
+  I: {
     name: "Devil's Lake",
     position: { lat: 43.410877, lng: -89.731081 },
     climate: "High",
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
-  I: {
+  J: {
     name: "Long Pond",
     position: { lat: 44.532740, lng: 69.895902 },
     climate: "Med",
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
-  J: {
+  K: {
     name: "Lake Champlain",
     position: { lat: 44.474748, lng: -73.226439},
     climate: "Med",
