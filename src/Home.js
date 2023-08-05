@@ -70,6 +70,7 @@ class ProcessSection extends React.Component {
         </div>
       );
     } else {
+      console.log(this.state.side);
       return (
         <div data-scroll data-scroll-sticky data-scroll-target={`#${this.state.id}`} style={{position: "sticky"}}>
           <div id={this.state.id} style={{position: "relative", top: "-15vh", height: "100vh", float: "left"}}></div>
