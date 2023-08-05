@@ -1,7 +1,7 @@
-import Hat1 from '../assets/testImages/hat1.png';
-import Hat2 from '../assets/testImages/hat2.png';
-import Hat3 from '../assets/testImages/hat3.png';
-import Hat4 from '../assets/testImages/hat4.png';
+import Hat1 from '../assets/testImages/Hat1.png';
+import Hat2 from '../assets/testImages/Hat2.png';
+import Hat3 from '../assets/testImages/Hat3.png';
+import Hat4 from '../assets/testImages/Hat4.png';
 
 class ImageHandler {
     constructor(imgArr, start, stop) {
