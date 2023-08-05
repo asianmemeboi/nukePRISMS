@@ -11,37 +11,27 @@ function NavigationBar() {
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand href={`/#/home/`}>
             <img alt="logo" src={logo} width="60" height="48" /> GNECH2O
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto" style={{ paddingLeft: "-50px" }}>
-              <Nav.Link>
-                <Link to={`/home/`} className="link-style">
-                  Home
-                </Link>
+              <Nav.Link href={`/#/home/`}>
+                Home
               </Nav.Link>
-              <Nav.Link>
-                <Link to={`/login/`} className="link-style">
-                  Login
-                </Link>
+              <Nav.Link href={`/#/login/`}>
+                Login
               </Nav.Link>
               <NavDropdown title="Water" id="basic-nav-dropdown">
-                <NavDropdown.Item>
-                  <Link to={`/submit/`} className="link-style">
-                    Submit a sample
-                  </Link>
+                <NavDropdown.Item href={`/#/submit/`}>
+                  Submit a sample
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link to={`/request/`} className="link-style">
-                    Request a sample
-                  </Link>
+                <NavDropdown.Item href={`/#/request/`}>
+                  Request a sample
                 </NavDropdown.Item>
                 <NavDropdown.Item href={`/#/map/`}>
-                  <Link to={`/map/`} className="link-style">
-                    Map        
-                  </Link>
+                  Map
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
