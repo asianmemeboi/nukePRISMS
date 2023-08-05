@@ -66,6 +66,22 @@ import Test64 from "../assets/testImages/Ink Reveal_00064.webp"
 import Test65 from "../assets/testImages/Ink Reveal_00065.webp"
 import Test66 from "../assets/testImages/Ink Reveal_00066.webp"
 import Test67 from "../assets/testImages/Ink Reveal_00067.webp"
+import Test68 from "../assets/testImages/Ink Reveal_00068.webp"
+import Test69 from "../assets/testImages/Ink Reveal_00069.webp"
+import Test70 from "../assets/testImages/Ink Reveal_00070.webp"
+import Test71 from "../assets/testImages/Ink Reveal_00071.webp"
+import Test72 from "../assets/testImages/Ink Reveal_00072.webp"
+import Test73 from "../assets/testImages/Ink Reveal_00073.webp"
+import Test74 from "../assets/testImages/Ink Reveal_00074.webp"
+import Test75 from "../assets/testImages/Ink Reveal_00075.webp"
+import Test76 from "../assets/testImages/Ink Reveal_00076.webp"
+import Test77 from "../assets/testImages/Ink Reveal_00077.webp"
+import Test78 from "../assets/testImages/Ink Reveal_00078.webp"
+import Test79 from "../assets/testImages/Ink Reveal_00079.webp"
+import Test80 from "../assets/testImages/Ink Reveal_00080.webp"
+import Test81 from "../assets/testImages/Ink Reveal_00081.webp"
+import Test82 from "../assets/testImages/Ink Reveal_00082.webp"
+import Test83 from "../assets/testImages/Ink Reveal_00083.webp"
 
 const images = [];
 
@@ -180,10 +196,26 @@ const hatsArr = [
     Test64,
     Test65,
     Test66,
-    Test67
+    Test67,
+    Test68,
+    Test69,
+    Test70,
+    Test71,
+    Test72,
+    Test73,
+    Test74,
+    Test75,
+    Test76,
+    Test77,
+    Test78,
+    Test79,
+    Test80,
+    Test81,
+    Test82,
+    Test83
 ];
 
-const testImageHandler = new ImageHandler(hatsArr, 6800, 9500);
+const testImageHandler = new ImageHandler(hatsArr, 6800, 10800);
 
 export {
     testImageHandler
