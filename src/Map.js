@@ -9,10 +9,9 @@ const Map = () => {
   });
   const center = useMemo(() => ({ lat: 40.23287, lng: -74.856071 }), []);
 
-  <Marker
-      position={{myLatLng}}
-    />
+  
   return (
+    
     <div className="Themap">
       {!isLoaded ? (
         <h1>Loading...</h1>
@@ -21,7 +20,9 @@ const Map = () => {
           mapContainerClassName="map-container"
           center={center}
           zoom={10}
-        />
+        ><Marker
+        position={{myLatLng}}
+      /></GoogleMap>
       )}
     </div>
   );
