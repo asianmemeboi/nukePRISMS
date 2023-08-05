@@ -44,21 +44,21 @@ const weatherData = {
   A: {
     name: "Toronto",
     position: { lat: 43.66293, lng: -79.39314 },
-    climate: "Raining",
+    climate: "High",
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
   B: {
     name: "Guelph",
     position: { lat: 43.544811, lng: -80.248108 },
-    climate: "Cloudy",
+    climate: "Med",
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
   C: {
     name: "Orangeville",
     position: { lat: 43.919239, lng: -80.097412 },
-    climate: "Sunny",
+    climate: "Low",
     temp: 20,
     fiveDay: [15, 18, 12, 22, 20],
   },
@@ -71,17 +71,6 @@ function Weather({ map }) {
   
   return (
     <>
-      {editing && (
-        <Editing
-          weather={data[editing]}
-          update={(newWeather) => {
-            setData((existing) => {
-              return { ...existing, [editing]: { ...newWeather } };
-            });
-          }}
-          close={() => setEditing(null)}
-        />
-      )}
       {Object.entries(data).map(([key, weather]) => (
         <Marker
           key={key}
@@ -90,57 +79,13 @@ function Weather({ map }) {
           onClick={() => setEditing(key)}
         >
           <div
-            className={`marker ${weather.climate.toLowerCase()} ${
-              highlight === key || editing === key ? "highlight" : ""
-            }`}
-            onMouseEnter={() => setHighlight(key)}
-            onMouseLeave={() => setHighlight(null)}
+            className={`marker ${weather.climate.toLowerCase()}`}
           >
             <h2>{weather.climate}</h2>
-            <div>{weather.temp}c</div>
-            {highlight === key || editing === key ? (
-              <div className="five-day">
-                <p>Next 5</p>
-                <p>{weather.fiveDay.join(", ")}</p>
-              </div>
-            ) : null}
           </div>
         </Marker>
       ))}
     </>
-  );
-}
-
-function Editing({ weather, update, close }) {
-  return (
-    <div className="editing">
-      <h2>Editing {weather.name}</h2>
-
-      <label htmlFor="climate">Climate</label>
-      <select
-        id="climate"
-        value={weather.climate}
-        onChange={(e) => update({ ...weather, climate: e.target.value })}
-      >
-        {["Sunny", "Cloudy", "Raining"].map((val) => (
-          <option key={val} value={val}>
-            {val}
-          </option>
-        ))}
-      </select>
-
-      <label htmlFor="temp">Temperature</label>
-      <input
-        id="temp"
-        type="number"
-        value={weather.temp}
-        onChange={(e) => update({ ...weather, temp: e.target.value })}
-      />
-
-      <button type="button" onClick={() => close()}>
-        Close
-      </button>
-    </div>
   );
 }
 
@@ -163,11 +108,11 @@ function Marker({ map, position, children, onClick }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    rootRef.current.render(children);
-    markerRef.current.position = position;
-    markerRef.current.map = map;
-    const listener = markerRef.current.addEventListener("gmpclick", onClick);
-    return () => listener.remove();
-  }, [map, position, children, onClick]);
+  // useEffect(() => {
+  //   rootRef.current.render(children);
+  //   markerRef.current.position = position;
+  //   markerRef.current.map = map;
+  //   const listener = markerRef.current.addEventListener("gmpclick", onClick);
+  //   return () => listener.remove();
+  // }, [map, position, children, onClick]);
 }
