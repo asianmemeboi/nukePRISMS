@@ -15,7 +15,7 @@ export default function Map() {
 }
 
 const mapOptions = {
-  mapId: process.env.NEXT_PUBLIC_MAP_ID,
+  mapId: "58590392a678c033",
   center: { lat: 43.66293, lng: -79.39314 },
   zoom: 10,
   disableDefaultUI: true,
