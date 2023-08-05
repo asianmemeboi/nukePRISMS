@@ -102,7 +102,7 @@ function updateBoxes(newHeight) {
 function updateCircle(newWidth) {
   let element = document.getElementById("testtest");
   if (newWidth > 7200) {
-    element.src = {PerformingTest};
+    element.src = PerformingTest;
   }
   // let element = document.getElementById("circleBG");
   // element.style.width = newWidth.toString() + "px";
