@@ -27,6 +27,7 @@ class ImageHandler {
         if (progress === this.progress) {
             return 0;
         } else {
+            this.progress = progress;
             return this.images[progress];
         }
     }
