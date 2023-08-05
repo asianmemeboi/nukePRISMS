@@ -8,7 +8,7 @@ function SubmitSample() {
       <style type="text/css">
         {`
           .btn-submit {
-            background: linear-gradient(to right, darkblue, aqua);
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
             margin-top: 20px;
             margin-bottom: 40px;
             color: white;
@@ -22,7 +22,7 @@ function SubmitSample() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          height: "95vh",
+          height: "90vh",
         }}
       ></div>
 
