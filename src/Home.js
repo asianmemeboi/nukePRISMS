@@ -111,6 +111,8 @@ function updateCircle(newWidth) {
   let thingy = testImageHandler.getImage(newWidth);
   if (thingy) {
     let element = document.getElementById("testtest");
+    if (newWidth <= 7800) element.style.position = "static";
+    else element.style.position = "sticky";
     element.src = thingy;
   }
   // let element = document.getElementById("circleBG");
