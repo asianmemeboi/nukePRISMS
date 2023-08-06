@@ -265,7 +265,7 @@ function App() {
             <h3 style={{color: "#e3f2fd", textAlign: "center"}}>Daniel Zeng and Andrew Wang</h3>
             <br></br>
             <h3 style={{textAlign: "center"}}>
-              <a href="https://github.com/asianmemeboi/gnecH2O/tree/main" target="_blank">
+              <a href="https://github.com/asianmemeboi/gnecH2O/tree/main" target="_blank" rel="noreferrer">
                 Source code
               </a>
             </h3>
