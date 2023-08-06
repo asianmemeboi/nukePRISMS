@@ -247,7 +247,7 @@ function App() {
           <div id="stickyBG" style={{position: "relative", top: "47vh", height: "1000vh", float: "left"}}></div>
           <div data-scroll data-scroll-sticky data-scroll-target="#stickyBG"
             style={{
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
               borderRadius: "25px",
               opacity: "0.5",
               marginTop: "-80vh",
