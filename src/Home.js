@@ -249,7 +249,6 @@ function App() {
             style={{
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               borderRadius: "25px",
-              opacity: "0.5",
               marginTop: "-80vh",
               marginLeft: "35vw",
               width: "30vw",
