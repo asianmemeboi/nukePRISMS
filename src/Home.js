@@ -247,7 +247,7 @@ function App() {
           <div id="stickyBG" style={{position: "relative", top: "47vh", height: "1000vh", float: "left"}}></div>
           <div data-scroll data-scroll-sticky data-scroll-target="#stickyBG"
             style={{
-              backgroundColor: "black",
+              backgroundColor: "rgba(255, 255, 255, 0.5)",
               borderRadius: "25px",
               opacity: "0.5",
               marginTop: "-80vh",
@@ -261,16 +261,14 @@ function App() {
               position: "sticky"
             }}
           >
-            <div style={{opacity: "1"}}>
-              <h1 style={{color: "#e3f2fd", textAlign: "center"}}>Made by:</h1>
-              <h3 style={{color: "#e3f2fd", textAlign: "center"}}>Daniel Zeng and Andrew Wang</h3>
-              <br></br>
-              <h3 style={{textAlign: "center"}}>
-                <a href="https://github.com/asianmemeboi/gnecH2O/tree/main" target="_blank" rel="noreferrer">
-                  Source code
-                </a>
-              </h3>
-            </div>
+            <h1 style={{color: "#e3f2fd", textAlign: "center"}}>Made by:</h1>
+            <h3 style={{color: "#e3f2fd", textAlign: "center"}}>Daniel Zeng and Andrew Wang</h3>
+            <br></br>
+            <h3 style={{textAlign: "center"}}>
+              <a href="https://github.com/asianmemeboi/gnecH2O/tree/main" target="_blank" rel="noreferrer">
+                Source code
+              </a>
+            </h3>
           </div>
         </div>
       </div>
