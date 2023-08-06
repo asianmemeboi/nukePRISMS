@@ -210,10 +210,13 @@ left: 0;}
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter,sans-serif;
-  font-size: 1rem;
+  padding-top: 5vh;
+  width: 5vw;
+  height: 15vh;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 1.5;
+  left: 50%; 
   margin: 0;
   padding: .5rem 1rem;
   text-align: center;
