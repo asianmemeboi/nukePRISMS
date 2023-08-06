@@ -215,8 +215,8 @@ left: 0;}
   height: 6vh;
   font-size: 1.5rem;
   left: 50%;
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   position: relative;
   padding: .5rem 1rem;
   text-align: center;
