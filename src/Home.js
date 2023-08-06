@@ -107,7 +107,7 @@ function updateBoxes(newHeight) {
   }
 }
 
-function updateCircle(newWidth) {
+function updateScrollableBG(newWidth) {
   let thingy = testImageHandler.getImage(newWidth);
   if (thingy) {
     let element = document.getElementById("testtest");
@@ -132,7 +132,7 @@ function App() {
 
     scroll.on('scroll', (instance) => {
       updateBoxes(Math.min(Math.max(200, instance.scroll.y - 450), 500));
-      updateCircle(instance.scroll.y);
+      updateScrollableBG(instance.scroll.y);
       console.log(instance.scroll.y);
   })
 
@@ -261,7 +261,7 @@ function App() {
               position: "sticky"
             }}
           >
-            <h1 data-scroll data-scroll-speed="3" style={{color: "#e3f2fd", }}>hi guys</h1>
+            <h1 style={{color: "#e3f2fd", }}>hi guys</h1>
           </div>
         </div>
       </div>
