@@ -261,7 +261,7 @@ function App() {
               position: "sticky"
             }}
           >
-            <div style={{opacity: "0.2"}}>
+            <div style={{opacity: "1"}}>
               <h1 style={{color: "#e3f2fd", textAlign: "center"}}>Made by:</h1>
               <h3 style={{color: "#e3f2fd", textAlign: "center"}}>Daniel Zeng and Andrew Wang</h3>
               <br></br>
