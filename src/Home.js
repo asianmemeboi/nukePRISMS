@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 
 function App() {
   return (
-    <div ref={scrollRef}>
+    <div>
       <div data-scroll-section style={{ height: "12000px" }}>
         <div
           data-scroll
