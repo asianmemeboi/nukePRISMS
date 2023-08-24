@@ -19,7 +19,7 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "home",
+        index: true,
         element: <Home />,
       },
       {
@@ -32,12 +32,12 @@ const router = createHashRouter([
       },
       {
         path: "submit",
-        element: <Submit />
+        element: <Submit />,
       },
       {
         path: "request",
-        element: <Request />
-      }
+        element: <Request />,
+      },
     ],
   },
 ]);
