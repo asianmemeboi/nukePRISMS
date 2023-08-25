@@ -275,7 +275,8 @@ left: 0;}
   font-weight: normal;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .glow-button:hover {
