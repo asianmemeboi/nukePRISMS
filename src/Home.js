@@ -6,7 +6,7 @@ import React from "react";
 function App() {
   return (
     <div>
-      <div style={{ height: "200vh" }}>
+      <div>
         <CoolBackground />
         <div
           style={{
