@@ -16,7 +16,7 @@ function NavigationBar() {
         className="bg-body-tertiary"
       >
         <Container>
-          <Navbar.Brand href={`/#/`} className="me-auto">
+          <Navbar.Brand href={`/#/`}>
             <img alt="logo" src={logo} width="30" height="30" />{" "}
             <b>nukePRISMS</b>
           </Navbar.Brand>
