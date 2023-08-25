@@ -39,7 +39,9 @@ function App() {
             Made by Students, For Students
           </h2>
           <div className="cool-button cool-button1">
-            <a href="#0">Get Started</a>
+            <a href="#0" className="cool-button-text">
+              Get Started
+            </a>
           </div>
         </div>
       </div>
