@@ -9,10 +9,16 @@ import { Outlet } from "react-router-dom";
 function NavigationBar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+      <Navbar
+        bg="dark"
+        data-bs-theme="dark"
+        expand="lg"
+        className="bg-body-tertiary"
+      >
         <Container>
           <Navbar.Brand href={`/#/`}>
-            <img alt="logo" src={logo} width="60" height="48" /> nukePRISMS
+            <img alt="logo" src={logo} width="60" height="48" />
+            {"   "} nukePRISMS
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
