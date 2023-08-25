@@ -1,27 +1,28 @@
 import background from "./assets/background.jpg";
+import CoolBackground from "./components/CoolBackground.js";
 import "./App.css";
 import React from "react";
 
 function App() {
   return (
     <div>
-      <div data-scroll-section style={{ height: "200vh" }}>
+      <div style={{ height: "200vh" }}>
         <div
-          data-scroll
-          data-scroll-speed="0"
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             height: "100vh",
+            paddingTop: "50vh"
           }}
-        ></div>
-          <h1
-            style={{ fontSize: "400%", fontWeight: "bold", color: "#e3f2fd", paddingTop: "-50vh"}}
-          >
-            GNEC H2O
-          </h1>
+        ><h1
+        style={{ fontSize: "400%", fontWeight: "bold", color: "#e3f2fd", }}
+      >
+        nukePRISMS: Made by Students, For Students
+      </h1></div>
+          
       </div>
+      <CoolBackground />
     </div>
   );
 }
