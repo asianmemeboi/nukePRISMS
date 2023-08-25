@@ -9,7 +9,7 @@ class Application extends React.Component {
         this.state = {
             animationClass: 'animating'
         }
-        this.changeState = this.changeState.bind(this);
+        // this.changeState = this.changeState.bind(this);
     }
 
     // changeState(){
