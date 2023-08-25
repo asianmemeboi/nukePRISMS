@@ -29,16 +29,12 @@ function NavigationBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Navbar.Text>
-                <a href={`/#/`} style={{ textDecoration: "none" }}>
-                  Home
-                </a>
-              </Navbar.Text>
-              <Navbar.Text>
-                <a href={`/#/login/`} style={{ textDecoration: "none" }}>
-                  Login
-                </a>
-              </Navbar.Text>
+              <Nav.Link href={`/#/`} style={{ color: "white" }}>
+                Home
+              </Nav.Link>
+              <Nav.Link href={`/#/login/`} style={{ color: "white" }}>
+                Login
+              </Nav.Link>
               <NavDropdown
                 title="Water"
                 id="basic-nav-dropdown"
