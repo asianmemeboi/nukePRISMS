@@ -257,3 +257,7 @@ left: 0;}
   opacity: .65;
   pointer-events: none;
 }
+
+.nav-text {
+  vertical-align: center;
+}
