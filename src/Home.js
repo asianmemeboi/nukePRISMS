@@ -15,7 +15,7 @@ function App() {
             // backgroundRepeat: "no-repeat",
             height: "100%",
             paddingTop: "25vh",
-            position: "fixed",
+            overflow: "hidden",
           }}
         >
           <h1
