@@ -38,7 +38,9 @@ function App() {
             {" "}
             Made by Students, For Students
           </h2>
-          <a className="button glow-button">Get Started</a>
+          <a href="#0" className="button glow-button">
+            Get Started
+          </a>
         </div>
       </div>
     </div>
