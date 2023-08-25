@@ -13,8 +13,9 @@ function App() {
             // backgroundImage: `url(${background})`,
             // backgroundSize: "cover",
             // backgroundRepeat: "no-repeat",
-            height: "93%",
+            height: "100%",
             paddingTop: "25vh",
+            position: "fixed",
           }}
         >
           <h1
