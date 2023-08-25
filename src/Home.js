@@ -38,7 +38,11 @@ function App() {
             {" "}
             Made by Students, For Students
           </h2>
-          <a href="#0" className="button glow-button">
+          <a
+            href="#0"
+            className="button glow-button"
+            style={{ paddingTop: "2vh" }}
+          >
             Get Started
           </a>
         </div>
