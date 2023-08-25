@@ -5,8 +5,8 @@ import React from "react";
 
 function App() {
   return (
-    <div>
-      <div style={{ overflow: "hidden" }}>
+    <div style={{ overflow: "hidden" }}>
+      <div>
         <CoolBackground />
         <div
           style={{
@@ -15,7 +15,6 @@ function App() {
             // backgroundRepeat: "no-repeat",
             height: "100%",
             paddingTop: "25vh",
-            overflow: "hidden",
           }}
         >
           <h1
