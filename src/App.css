@@ -272,7 +272,8 @@ left: 0;}
   background: rgb(255, 255, 255);
   padding: 15px 40px;
   border-radius: 4px;
-  font-weight: normal;
+  font-weight: 500;
+  font-family: Verdana;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   left: 50%;

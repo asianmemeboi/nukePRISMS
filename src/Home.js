@@ -38,7 +38,7 @@ function App() {
             {" "}
             Made by Students, For Students
           </h2>
-          <div width="100%" height="10vh"></div>
+          <div style={{ height: "10vh" }}></div>
           <a href="#0" className="button glow-button">
             Get Started
           </a>
