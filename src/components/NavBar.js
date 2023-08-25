@@ -17,7 +17,7 @@ function NavigationBar() {
       >
         <Container>
           <Navbar.Brand href={`/#/`}>
-            <img alt="logo" src={logo} width="50" height="40" />{" "}
+            <img alt="logo" src={logo} width="30" height="30" />{" "}
             <b>nukePRISMS</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
