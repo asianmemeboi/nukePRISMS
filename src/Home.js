@@ -5,7 +5,7 @@ import React from "react";
 function App() {
   return (
     <div>
-      <div data-scroll-section style={{ height: "12000px" }}>
+      <div data-scroll-section style={{ height: "200vh" }}>
         <div
           data-scroll
           data-scroll-speed="0"
@@ -17,7 +17,7 @@ function App() {
           }}
         ></div>
           <h1
-            style={{ fontSize: "100px", fontWeight: "bold", color: "#e3f2fd" }}
+            style={{ fontSize: "40%", fontWeight: "bold", color: "#e3f2fd", marginBottom: "50vh"}}
           >
             GNEC H2O
           </h1>
