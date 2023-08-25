@@ -16,24 +16,16 @@ function NavigationBar() {
         className="bg-body-tertiary"
       >
         <Container>
-          <Navbar.Brand href={`/#/`}>
+          <Navbar.Brand href={`/#/`} className="me-auto">
             <img alt="logo" src={logo} width="30" height="30" />{" "}
             <b>nukePRISMS</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href={`/#/`} className="align-self-center">
-                Home
-              </Nav.Link>
-              <Nav.Link href={`/#/login/`} className="align-self-center">
-                Login
-              </Nav.Link>
-              <NavDropdown
-                title="Water"
-                id="basic-nav-dropdown"
-                className="align-self-center"
-              >
+              <Nav.Link href={`/#/`}>Home</Nav.Link>
+              <Nav.Link href={`/#/login/`}>Login</Nav.Link>
+              <NavDropdown title="Water" id="basic-nav-dropdown">
                 <NavDropdown.Item href={`/#/submit/`}>
                   Submit a sample
                 </NavDropdown.Item>
