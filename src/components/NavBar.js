@@ -22,7 +22,10 @@ function NavigationBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto" style={{ paddingLeft: "-50px" }}>
+            <Nav
+              className="me-auto"
+              style={{ paddingLeft: "-50px", verticalAlign: "center" }}
+            >
               <Nav.Link href={`/#/`}>Home</Nav.Link>
               <Nav.Link href={`/#/login/`}>Login</Nav.Link>
               <NavDropdown title="Water" id="basic-nav-dropdown">
