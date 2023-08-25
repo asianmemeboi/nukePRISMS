@@ -23,16 +23,16 @@ function NavigationBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href={`/#/`} class="nav-text">
+              <Nav.Link href={`/#/`} className="nav-text">
                 Home
               </Nav.Link>
-              <Nav.Link href={`/#/login/`} class="nav-text">
+              <Nav.Link href={`/#/login/`} className="nav-text">
                 Login
               </Nav.Link>
               <NavDropdown
                 title="Water"
                 id="basic-nav-dropdown"
-                class="nav-text"
+                className="nav-text"
               >
                 <NavDropdown.Item href={`/#/submit/`}>
                   Submit a sample
