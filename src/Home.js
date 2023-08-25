@@ -6,8 +6,8 @@ import React from "react";
 function App() {
   return (
     <div>
-      <CoolBackground />
       <div style={{ height: "200vh" }}>
+        <CoolBackground />
         <div
           style={{
             // backgroundImage: `url(${background})`,
