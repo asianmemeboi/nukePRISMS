@@ -36,9 +36,15 @@ function NavigationBar() {
                 Login
               </Nav.Link>
               <NavDropdown
-                title="Water"
+                title={
+                  <span
+                    className="text-primary my-auto"
+                    style={{ color: "white" }}
+                  >
+                    Dropdown
+                  </span>
+                }
                 id="basic-nav-dropdown"
-                style={{ color: "white" }}
               >
                 <NavDropdown.Item href={`/#/submit/`}>
                   Submit a sample
