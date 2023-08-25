@@ -35,22 +35,12 @@ function NavigationBar() {
               <Nav.Link href={`/#/login/`} style={{ color: "white" }}>
                 Login
               </Nav.Link>
-              <NavDropdown
-                title={
-                  <span
-                    className="text-primary my-auto"
-                    style={{ color: "white" }}
-                  >
-                    Dropdown
-                  </span>
-                }
-                id="basic-nav-dropdown"
-              >
+              <NavDropdown title="Reviews" id="basic-nav-dropdown">
                 <NavDropdown.Item href={`/#/submit/`}>
-                  Submit a sample
+                  Create a review
                 </NavDropdown.Item>
                 <NavDropdown.Item href={`/#/request/`}>
-                  Request a sample
+                  Search for reviews
                 </NavDropdown.Item>
                 <NavDropdown.Item href={`/#/map/`}>Map</NavDropdown.Item>
               </NavDropdown>

@@ -261,3 +261,7 @@ left: 0;}
 .nav-text {
   vertical-align: center;
 }
+
+#basic-nav-dropdown {
+  color: white !important;
+}
