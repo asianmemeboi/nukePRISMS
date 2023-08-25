@@ -1,6 +1,7 @@
 .animating {
     width: 100vw;
     height: 90vh;
+    z-index: -1;
     color: #fff;
     position:absolute;
     background: linear-gradient(-45deg, #130066, #00464b, #001799, #000000);
