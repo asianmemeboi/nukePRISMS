@@ -30,9 +30,15 @@ function NavigationBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Navbar.Text>
-                <a href={`/#/`}>Home</a>
+                <a href={`/#/`} style={{ textDecoration: "none" }}>
+                  Home
+                </a>
               </Navbar.Text>
-              <Navbar.Text href={`/#/login/`}>Login</Navbar.Text>
+              <Navbar.Text>
+                <a href={`/#/login/`} style={{ textDecoration: "none" }}>
+                  Login
+                </a>
+              </Navbar.Text>
               <NavDropdown
                 title="Water"
                 id="basic-nav-dropdown"
