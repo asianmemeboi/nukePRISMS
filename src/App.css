@@ -285,3 +285,7 @@ left: 0;}
   color: rgb(136, 0, 255);
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
+
+.body {
+  overflow: hidden;
+}
