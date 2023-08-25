@@ -1,7 +1,7 @@
 /*
  * the home page background
  */
-
+import "./CoolBackground.css";
 import React from "react";
 class Application extends React.Component {
     constructor (props) {

@@ -13,16 +13,17 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             height: "100vh",
-            paddingTop: "50vh"
+            paddingTop: "30vh"
           }}
         ><h1
-        style={{ fontSize: "400%", fontWeight: "bold", color: "#e3f2fd", }}
+        style={{ fontSize: "500%", fontWeight: "bold", color: "#e3f2fd", }}
       >
-        nukePRISMS: Made by Students, For Students
-      </h1></div>
-          
+        nukePRISMS: 
+      </h1>
+      <h2 style={{ fontSize: "400%", fontWeight: "bold", color: "#e3f2fd", paddingTop: "10vh"}}> Made by Students, For Students</h2>
       </div>
       <CoolBackground />
+      </div>
     </div>
   );
 }
