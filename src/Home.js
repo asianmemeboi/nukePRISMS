@@ -13,7 +13,7 @@ function App() {
             // backgroundImage: `url(${background})`,
             // backgroundSize: "cover",
             // backgroundRepeat: "no-repeat",
-            height: "95%",
+            height: "93%",
             paddingTop: "25vh",
           }}
         >
