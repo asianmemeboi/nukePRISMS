@@ -1,6 +1,8 @@
 /*
- * A simple React component
+ * the home page background
  */
+
+import React from "react";
 class Application extends React.Component {
     constructor (props) {
         super(props);
