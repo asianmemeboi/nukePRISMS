@@ -17,7 +17,7 @@ function App() {
           }}
         ></div>
           <h1
-            style={{ fontSize: "40%", fontWeight: "bold", color: "#e3f2fd", marginBottom: "50vh"}}
+            style={{ fontSize: "400%", fontWeight: "bold", color: "#e3f2fd", paddingTop: "-50vh"}}
           >
             GNEC H2O
           </h1>
