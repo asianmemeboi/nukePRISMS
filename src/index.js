@@ -11,6 +11,7 @@ import Login from "./Login";
 import Map from "./Map";
 import Submit from "./Submit";
 import Request from "./Request";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const router = createHashRouter([
   {
@@ -44,10 +45,12 @@ const router = createHashRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <GoogleOAuthProvider clientId="706556020516-optf625oa388dt5fi2ik9kubse5rhdob.apps.googleusercontent.com">
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </GoogleOAuthProvider>,
+  document.getElementById('root')
 );
 document.body.style.overflow = "hidden";
 
