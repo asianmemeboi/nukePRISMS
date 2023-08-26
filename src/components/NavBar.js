@@ -8,6 +8,12 @@ import { Outlet } from "react-router-dom";
 import {GoogleLogin} from '@react-oauth/google'
 
 function NavigationBar() {
+  const responseMessage = (response) => {
+    console.log(response);
+  };
+  const errorMessage = (error) => {
+      console.log(error);
+  };
   return (
     <>
       <Navbar
