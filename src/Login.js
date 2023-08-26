@@ -1,5 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { InputGroup } from "react-bootstrap";
 function Login() {
   return (
     <>
@@ -46,14 +47,14 @@ function Login() {
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>
         <Form>
-          <Form.Group className="mb-3">
+          <InputGroup className="mb-3">
             <Form.Control
               placeholder="School email"
               aria-label="School email"
               aria-describedby="basic-addon2"
             />
-            <Form.Group.Text id="basic-addon2">@prismsus.org</Form.Group.Text>
-          </Form.Group>
+            <InputGroup.Text id="basic-addon2">@prismsus.org</InputGroup.Text>
+          </InputGroup>
           <Form.Group style={{ paddingBottom: "30px" }}>
             <Form.Label htmlFor="username">Username</Form.Label>
             <Form.Control
