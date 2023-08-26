@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
 import { Outlet } from "react-router-dom";
+import {GoogleLogin} from '@react-oauth/google'
 
 function NavigationBar() {
   return (
@@ -44,6 +45,9 @@ function NavigationBar() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href={`/#/map/`}>Map</NavDropdown.Item>
               </NavDropdown>
+            </Nav>
+            <Nav>
+              <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
             </Nav>
           </Navbar.Collapse>
         </Container>
