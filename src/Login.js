@@ -29,7 +29,7 @@ function Login() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          height: "95vh"
+          height: "94vh"
         }}
       >
 
@@ -39,7 +39,7 @@ function Login() {
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>
         <Form>
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-3" style={{paddingTop: "10px"}}>
             <Form.Control
               placeholder="School email"
               aria-label="School email"
