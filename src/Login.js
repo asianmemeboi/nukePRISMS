@@ -45,14 +45,14 @@ function Login() {
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>
         <Form>
-          <InputGroup className="mb-3">
+          <Form.Group className="mb-3">
             <Form.Control
               placeholder="School email"
               aria-label="School email"
               aria-describedby="basic-addon2"
             />
-            <InputGroup.Text id="basic-addon2">@prismsus.org</InputGroup.Text>
-          </InputGroup>
+            <Form.Text id="basic-addon2">@prismsus.org</Form.Text>
+          </Form.Group>
           <Form.Group style={{ paddingBottom: "30px" }}>
             <Form.Label htmlFor="username">Username</Form.Label>
             <Form.Control
