@@ -27,7 +27,7 @@ function Login() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          height: "95vh"
+          height: "93vh"
         }}
       ></div>
 
