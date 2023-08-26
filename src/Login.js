@@ -29,14 +29,13 @@ function Login() {
           backgroundAttachment: "fixed",
           height: "93vh"
         }}
-      ></div>
+      >
 
       <div
         style={{
           backgroundColor: "white",
-          marginTop: "-90vh",
-          marginLeft: "35vw",
-          width: "40vw",
+          margin: "auto",
+          width: "50%",
           paddingTop: "30px",
           paddingLeft: "20px",
           paddingRight: "20px",
@@ -46,6 +45,14 @@ function Login() {
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>
         <Form>
+          <InputGroup className="mb-3">
+            <Form.Control
+              placeholder="School email"
+              aria-label="School email"
+              aria-describedby="basic-addon2"
+            />
+            <InputGroup.Text id="basic-addon2">@prismsus.org</InputGroup.Text>
+          </InputGroup>
           <Form.Group style={{ paddingBottom: "30px" }}>
             <Form.Label htmlFor="username">Username</Form.Label>
             <Form.Control
@@ -72,6 +79,7 @@ function Login() {
         <div className="d-grid gap-2">
           <Button variant="signup">Sign-Up</Button>
         </div>
+      </div>
       </div>
     </>
   );
