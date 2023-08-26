@@ -8,14 +8,14 @@ function Login() {
           .btn-login {
             background: linear-gradient(to right, #8e2de2, #4a00e0);
             margin-top: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 10vh;
             color: white;
             font-weight: bold;
           }
 
           .btn-signup {
             background: linear-gradient(to right, #8e2de2, #4a00e0);
-            margin-top: 5px;
+            margin-top: 2vh;
             color: white;
             font-weight: bold;
           }
