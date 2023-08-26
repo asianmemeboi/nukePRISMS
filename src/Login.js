@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { InputGroup } from "react-bootstrap";
+import "./App.css";
 function Login() {
   return (
     <>
@@ -33,16 +34,7 @@ function Login() {
       >
 
       <div
-        style={{
-          backgroundColor: "white",
-          marginTop: "10vh !important",
-          margin: "auto",
-          width: "50%",
-          paddingTop: "30px",
-          paddingLeft: "20px",
-          paddingRight: "20px",
-          paddingBottom: "20px"
-        }}
+        className="login-signup-box"
       >
         {" "}
         <h1 style={{ textAlign: "center" }}> Login </h1>

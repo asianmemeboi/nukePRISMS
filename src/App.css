@@ -289,3 +289,13 @@ left: 0;}
 .body {
   overflow: hidden;
 }
+
+.login-signup-box {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
