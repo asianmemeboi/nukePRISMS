@@ -35,7 +35,7 @@ function Login() {
       <div
         style={{
           backgroundColor: "white",
-          marginTop: "10vh",
+          marginTop: "10vh !important",
           margin: "auto",
           width: "50%",
           paddingTop: "30px",
