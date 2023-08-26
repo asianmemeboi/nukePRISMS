@@ -5,7 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
 import { Outlet } from "react-router-dom";
-import {GoogleLogin} from '@react-oauth/google'
+import {useGoogleLogin, googleLogout} from '@react-oauth/google'
+import React, {useState,useEffect} from 'react';
+import axios from 'axios';
 
 function NavigationBar() {
   const responseMessage = (response) => {
