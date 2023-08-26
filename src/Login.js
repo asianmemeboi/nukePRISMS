@@ -34,6 +34,7 @@ function Login() {
       <div
         style={{
           backgroundColor: "white",
+          marginTop: "10vh",
           margin: "auto",
           width: "50%",
           paddingTop: "30px",
@@ -51,7 +52,7 @@ function Login() {
               aria-label="School email"
               aria-describedby="basic-addon2"
             />
-            <Form.Text id="basic-addon2">@prismsus.org</Form.Text>
+            <Form.Group.Text id="basic-addon2">@prismsus.org</Form.Group.Text>
           </Form.Group>
           <Form.Group style={{ paddingBottom: "30px" }}>
             <Form.Label htmlFor="username">Username</Form.Label>
