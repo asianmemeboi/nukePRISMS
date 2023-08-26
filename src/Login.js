@@ -37,10 +37,10 @@ function Login() {
           marginTop: "-80vh",
           marginLeft: "35vw",
           width: "30vw",
-          height: "70vh",
           paddingTop: "30px",
           paddingLeft: "20px",
           paddingRight: "20px",
+          paddingBottom: "20px"
         }}
       >
         {" "}
