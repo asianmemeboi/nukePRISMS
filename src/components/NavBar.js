@@ -80,7 +80,15 @@ function NavigationBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Text>hai</Nav.Text>
+              {profile ? (
+                <div>
+                  <img alt="profilepicture" src={profile.picture} width="30" height="30"/> 
+                  <Nav.Text>User: {profile.name} </Nav.Text>
+                  <button className="button glow-button" onClick={logOut}>Log Out</button>
+                </div>
+              ) : (
+                <button className="button glow-button" onClick={() => login()}>Sign in </button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
