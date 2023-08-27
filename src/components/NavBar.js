@@ -10,11 +10,36 @@ import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 
 function NavigationBar() {
-  const responseMessage = (response) => {
-    console.log(response);
-  };
-  const errorMessage = (error) => {
-      console.log(error);
+  const [user, setUser] = useState([]);
+  const [ profile, setProfile ] = useState([]);
+  const login = useGoogleLogin({
+      onSuccess: (codeResponse) => setUser(codeResponse),
+      onError: (error) => console.log('Login Failed:', error)
+  });
+
+  useEffect(
+      () => {
+          if (user) {
+              axios
+                  .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+                      headers: {
+                          Authorization: `Bearer ${user.access_token}`,
+                          Accept: 'application/json'
+                      }
+                  })
+                  .then((res) => {
+                      setProfile(res.data);
+                  })
+                  .catch((err) => console.log(err));
+          }
+      },
+      [ user ]
+  );
+
+  // log out function to log the user out of google and set the profile array to null
+  const logOut = () => {
+      googleLogout();
+      setProfile(null);
   };
   return (
     <>
@@ -55,7 +80,15 @@ function NavigationBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
+              {profile ? (
+                <div>
+                  <img alt="profilepicture" src={profile.picture} width="30" height="30"/> 
+                  <Nav.Text>User: {profile.name} </Nav.Text>
+                  <button className="button glow-button" onClick={logOut}>Log Out</button>
+                </div>
+              ) : (
+                <button className="button glow-button" onClick={() => login()}>Sign in </button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
