@@ -82,6 +82,7 @@ function NavigationBar() {
             <Nav>
               {profile ? (
                 <div>
+                  <Nav className="justify-content-end">
                   <Navbar.Brand href={`/#/`}>
                     <img
                       alt="profilepicture"
@@ -92,9 +93,7 @@ function NavigationBar() {
                     />{" "}
                     User: {profile.name}
                   </Navbar.Brand>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                  <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
-                  <Nav>
+                  
                     <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
                   </Nav>
                   
