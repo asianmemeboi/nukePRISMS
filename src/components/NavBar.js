@@ -5,13 +5,18 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
 import { Outlet } from "react-router-dom";
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
+import jwt_decode from 'jwt-decode';
 
 
 function NavigationBar() {
+  const [user, setUser ] = useState({});
   
   function handleCallbackResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
+    var userObject = jwt_decode(response.credential);
+    console.log(userObject);
+    setUser(userObject);
   }
   useEffect(() => {
     /* global google */
@@ -65,25 +70,29 @@ function NavigationBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-{/*                 <div>
-                  <Nav className="justify-content-end">
-                  <Navbar.Brand href={`/#/`}>
-                    <img
-                      alt="profilepicture"
-                      src={profile.picture}
-                      width="30"
-                      height="30"
-                      className="d-inline-block align-top"
-                    />{" "}
-                    User: {profile.name}
-                  </Navbar.Brand>
-                  
-                    <Nav.Link style={{ color: "white" }}>Log Out</Nav.Link>
-                  </Nav>
-                  
-                </div> */}
-              
                 <Nav.Link id="signinButton" style={{ color: "white" }}>Sign in </Nav.Link>
+                { user && 
+                  <div>
+                    <Nav className="justify-content-end">
+                    <Navbar.Brand href={`/#/`}>
+                      <img
+                        alt="profilepicture"
+                        src={user.picture}
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                      />{" "}
+                      User: {user.name}
+                    </Navbar.Brand>
+                    
+                    {/*  <Nav.Link style={{ color: "white" }}>Log Out</Nav.Link> */}
+                    </Nav>
+                    
+                  </div>
+                }
+                
+              
+                
 
             </Nav>
           </Navbar.Collapse>
