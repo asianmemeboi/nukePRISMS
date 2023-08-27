@@ -84,10 +84,10 @@ function NavigationBar() {
                 <div>
                   <img alt="profilepicture" src={profile.picture} width="30" height="30"/> 
                   <Navbar.Text>User: {profile.name} </Navbar.Text>
-                  <button className="button glow-button" onClick={logOut}>Log Out</button>
+                  <Nav.Link onClick={logOut}>Log Out</Nav.Link>
                 </div>
               ) : (
-                <button className="button glow-button" onClick={() => login()}>Sign in </button>
+                <Nav.Link onClick={() => login()}>Sign in </Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>
