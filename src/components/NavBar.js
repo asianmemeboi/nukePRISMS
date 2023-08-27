@@ -82,12 +82,20 @@ function NavigationBar() {
             <Nav>
               {profile ? (
                 <div>
-                  <img alt="profilepicture" src={profile.picture} width="30" height="30"/> 
-                  <Navbar.Text>User: {profile.name} </Navbar.Text>
-                  <Nav.Link onClick={logOut}>Log Out</Nav.Link>
+                  <Navbar.Brand href={`/#/`}>
+                    <img
+                      alt="profilepicture"
+                      src={profile.picture}
+                      width="30"
+                      height="30"
+                      className="d-inline-block align-top"
+                    />{" "}
+                    User: {profile.name}
+                  </Navbar.Brand>
+                  <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
                 </div>
               ) : (
-                <Nav.Link onClick={() => login()}>Sign in </Nav.Link>
+                <Nav.Link onClick={() => login()} style={{ color: "white" }}>Sign in </Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>
