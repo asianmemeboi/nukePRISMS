@@ -92,7 +92,10 @@ function NavigationBar() {
                     />{" "}
                     User: {profile.name}
                   </Navbar.Brand>
-                  <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
+                  <Nav>
+                    <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
+                  </Nav>
+                  
                 </div>
               ) : (
                 <Nav.Link onClick={() => login()} style={{ color: "white" }}>Sign in </Nav.Link>
