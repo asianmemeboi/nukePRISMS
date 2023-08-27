@@ -17,6 +17,7 @@ function NavigationBar() {
     var userObject = jwt_decode(response.credential);
     console.log(userObject);
     setUser(userObject);
+    document.getElementById("signinButton").hidden = true;
   }
   useEffect(() => {
     /* global google */
