@@ -83,7 +83,7 @@ function NavigationBar() {
               {profile ? (
                 <div>
                   <img alt="profilepicture" src={profile.picture} width="30" height="30"/> 
-                  <Nav.Text>User: {profile.name} </Nav.Text>
+                  <Navbar.Text>User: {profile.name} </Navbar.Text>
                   <button className="button glow-button" onClick={logOut}>Log Out</button>
                 </div>
               ) : (
