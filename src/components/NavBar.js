@@ -5,27 +5,42 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
 import { Outlet } from "react-router-dom";
+import {useGoogleLogin, googleLogout} from '@react-oauth/google'
 import React, {useState,useEffect} from 'react';
-
+import axios from 'axios';
 
 function NavigationBar() {
-  
-  function handleCallbackResponse(response) {
-    console.log("Encoded JWT ID token: " + response.credential);
-  }
-  useEffect(() => {
-    /* global google */
-    google.accounts.id.initialize({
-      client_id: "706556020516-optf625oa388dt5fi2ik9kubse5rhdob.apps.googleusercontent.com",
-      callback: handleCallbackResponse
-    });
+  const [user, setUser] = useState([]);
+  const [ profile, setProfile ] = useState([]);
+  const login = useGoogleLogin({
+      onSuccess: (codeResponse) => setUser(codeResponse),
+      onError: (error) => console.log('Login Failed:', error)
+  });
 
-    google.accounts.id.renderButton(
-      document.getElementbyId("signinButton"),
-      { theme: "outline", size: "large"}
-    );
-  }, [])
+  useEffect(
+      () => {
+          if (user) {
+              axios
+                  .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+                      headers: {
+                          Authorization: `Bearer ${user.access_token}`,
+                          Accept: 'application/json'
+                      }
+                  })
+                  .then((res) => {
+                      setProfile(res.data);
+                  })
+                  .catch((err) => console.log(err));
+          }
+      },
+      [ user ]
+  );
 
+  // log out function to log the user out of google and set the profile array to null
+  const logOut = () => {
+      googleLogout();
+      setProfile(null);
+  };
   return (
     <>
       <Navbar
@@ -65,7 +80,8 @@ function NavigationBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-{/*                 <div>
+              {profile ? (
+                <div>
                   <Nav className="justify-content-end">
                   <Navbar.Brand href={`/#/`}>
                     <img
@@ -78,13 +94,13 @@ function NavigationBar() {
                     User: {profile.name}
                   </Navbar.Brand>
                   
-                    <Nav.Link style={{ color: "white" }}>Log Out</Nav.Link>
+                    <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
                   </Nav>
                   
-                </div> */}
-              
-                <Nav.Link id="signinButton" style={{ color: "white" }}>Sign in </Nav.Link>
-
+                </div>
+              ) : (
+                <Nav.Link onClick={() => login()} style={{ color: "white" }}>Sign in </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
