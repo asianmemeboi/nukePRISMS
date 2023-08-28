@@ -21,7 +21,7 @@ function NavigationBar() {
     });
 
     google.accounts.id.renderButton(
-      document.getElementById("signinButton"),
+      document.getElementbyId("signinButton"),
       { theme: "outline", size: "large"}
     );
   }, [])
