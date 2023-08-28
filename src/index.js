@@ -24,21 +24,10 @@ const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: "login",
-        element: <Login />,
+        path: "classes",
+        element: <Classes />,
       },
-      {
-        path: "map",
-        element: <Map />,
-      },
-      {
-        path: "submit",
-        element: <Submit />,
-      },
-      {
-        path: "request",
-        element: <Request />,
-      },
+      
     ],
   },
 ]);

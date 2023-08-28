@@ -77,18 +77,7 @@ function NavigationBar() {
               <Nav.Link href={`/#/`} style={{ color: "white" }}>
                 Home
               </Nav.Link>
-              <Nav.Link href={`/#/login/`} style={{ color: "white" }}>
-                Login
-              </Nav.Link>
-              <NavDropdown title="Reviews" id="basic-nav-dropdown">
-                <NavDropdown.Item href={`/#/submit/`}>
-                  Create a review
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`/#/request/`}>
-                  Search for reviews
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`/#/map/`}>Map</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href={`/#/classes`} style={{color:"white"}}> Classes </Nav.Link>
             </Nav>
             <Nav>
               {profile ? (
