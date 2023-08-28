@@ -77,26 +77,29 @@ function NavigationBar() {
             </Nav>
             <Nav>
                 <Nav.Link id="signinButton" style={{ color: "white" }}>Sign in </Nav.Link>
-                { user && 
-                  <div>
-                    <Nav className="justify-content-end">
-                    <Navbar.Brand href={`/#/`}>
-                      <img
-                        alt="profilepicture"
-                        src={user.picture}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                      />{" "}
-                      User: {user.name}
-                    </Navbar.Brand>
-                    
-                       
-                    </Nav>
-                    
-                  </div>
+                { Object.keys(user).length != 0 &&
+                  
+                  <Nav.Link onClick={(e) => handleSignOut(e)} style={{ color: "white" }}>Log Out</Nav.Link>
                 }
-                <Nav.Link onClick={(e) => handleSignOut(e)} style={{ color: "white" }}>Log Out</Nav.Link>
+                { user && 
+                    <div>
+                      <Nav className="justify-content-end">
+                      <Navbar.Brand href={`/#/`}>
+                        <img
+                          alt="profilepicture"
+                          src={user.picture}
+                          width="30"
+                          height="30"
+                          className="d-inline-block align-top"
+                        />{" "}
+                        User: {user.name}
+                      </Navbar.Brand>
+                      
+                         
+                      </Nav>
+                      
+                    </div>
+                  }
                 
               
                 
