@@ -5,38 +5,42 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../App.css";
 import { Outlet } from "react-router-dom";
-import React, {useState, useEffect} from 'react';
-import jwt_decode from 'jwt-decode';
-
+import {useGoogleLogin, googleLogout} from '@react-oauth/google'
+import React, {useState,useEffect} from 'react';
+import axios from 'axios';
 
 function NavigationBar() {
-  const [user, setUser ] = useState({});
-  
-  function handleCallbackResponse(response) {
-    console.log("Encoded JWT ID token: " + response.credential);
-    var userObject = jwt_decode(response.credential);
-    console.log(userObject);
-    setUser(userObject);
-    document.getElementById("signinButton").hidden = true;
-  }
+  const [user, setUser] = useState([]);
+  const [ profile, setProfile ] = useState([]);
+  const login = useGoogleLogin({
+      onSuccess: (codeResponse) => setUser(codeResponse),
+      onError: (error) => console.log('Login Failed:', error)
+  });
 
-  function handleSignOut(event) {
-    setUser({});
-    document.getElementById("signinButton").hidden = false;
-  }
-  useEffect(() => {
-    /* global google */
-    google.accounts.id.initialize({
-      client_id: "706556020516-optf625oa388dt5fi2ik9kubse5rhdob.apps.googleusercontent.com",
-      callback: handleCallbackResponse
-    });
+  useEffect(
+      () => {
+          if (user) {
+              axios
+                  .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+                      headers: {
+                          Authorization: `Bearer ${user.access_token}`,
+                          Accept: 'application/json'
+                      }
+                  })
+                  .then((res) => {
+                      setProfile(res.data);
+                  })
+                  .catch((err) => console.log(err));
+          }
+      },
+      [ user ]
+  );
 
-    google.accounts.id.renderButton(
-      document.getElementById("signinButton"),
-      { theme: "outline", size: "large"}
-    );
-  }, [])
-
+  // log out function to log the user out of google and set the profile array to null
+  const logOut = () => {
+      googleLogout();
+      setProfile(null);
+  };
   return (
     <>
       <Navbar
@@ -76,34 +80,27 @@ function NavigationBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-                <Nav.Link id="signinButton" style={{ color: "white" }}>Sign in </Nav.Link>
-                { Object.keys(user).length !== 0 &&
+              {profile ? (
+                <div>
+                  <Nav className="justify-content-end">
+                  <Navbar.Brand href={`/#/`}>
+                    <img
+                      alt="profilepicture"
+                      src={profile.picture}
+                      width="30"
+                      height="30"
+                      className="d-inline-block align-top"
+                    />{" "}
+                    User: {profile.name}
+                  </Navbar.Brand>
                   
-                  <Nav.Link onClick={(e) => handleSignOut(e)} style={{ color: "white" }}>Log Out</Nav.Link>
-                }
-                { user && 
-                    <div>
-                      <Nav className="justify-content-end">
-                      <Navbar.Brand href={`/#/`}>
-                        <img
-                          alt="profilepicture"
-                          src={user.picture}
-                          width="30"
-                          height="30"
-                          className="d-inline-block align-top"
-                        />{" "}
-                        User: {user.name}
-                      </Navbar.Brand>
-                      
-                         
-                      </Nav>
-                      
-                    </div>
-                  }
-                
-              
-                
-
+                    <Nav.Link onClick={logOut} style={{ color: "white" }}>Log Out</Nav.Link>
+                  </Nav>
+                  
+                </div>
+              ) : (
+                <Nav.Link onClick={() => login()} style={{ color: "white" }}>Sign in </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
