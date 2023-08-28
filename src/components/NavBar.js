@@ -77,7 +77,7 @@ function NavigationBar() {
             </Nav>
             <Nav>
                 <Nav.Link id="signinButton" style={{ color: "white" }}>Sign in </Nav.Link>
-                { Object.keys(user).length != 0 &&
+                { Object.keys(user).length !== 0 &&
                   
                   <Nav.Link onClick={(e) => handleSignOut(e)} style={{ color: "white" }}>Log Out</Nav.Link>
                 }
