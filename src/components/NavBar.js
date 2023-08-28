@@ -13,7 +13,7 @@ function NavigationBar() {
   const [user, setUser] = useState([]);
   const [ profile, setProfile ] = useState([]);
   const login = useGoogleLogin({
-      onSuccess: (codeResponse) => setUser(codeResponse),
+      onSuccess: (codeResponse) => { setUser(codeResponse); console.log(codeResponse); },
       onError: (error) => console.log('Login Failed:', error)
   });
 
@@ -35,7 +35,7 @@ function NavigationBar() {
       },
       [ user ]
   );
-
+  
   // log out function to log the user out of google and set the profile array to null
   const logOut = () => {
       googleLogout();
