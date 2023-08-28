@@ -7,10 +7,6 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import NavigationBar from "./components/NavBar";
 import ErrorPage from "./error-page";
-import Login from "./Login";
-import Map from "./Map";
-import Submit from "./Submit";
-import Request from "./Request";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const router = createHashRouter([
