@@ -19,6 +19,11 @@ function NavigationBar() {
     setUser(userObject);
     document.getElementById("signinButton").hidden = true;
   }
+
+  function handleSignOut(event) {
+    setUser({});
+    document.getElementById("signinButton").hidden = false;
+  }
   useEffect(() => {
     /* global google */
     google.accounts.id.initialize({
@@ -86,11 +91,12 @@ function NavigationBar() {
                       User: {user.name}
                     </Navbar.Brand>
                     
-                    {/*  <Nav.Link style={{ color: "white" }}>Log Out</Nav.Link> */}
+                       
                     </Nav>
                     
                   </div>
                 }
+                <Nav.Link onClick={(e) => handleSignOut(e)} style={{ color: "white" }}>Log Out</Nav.Link>
                 
               
                 
