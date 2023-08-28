@@ -17,10 +17,11 @@ function NavigationBar() {
       onError: (error) => console.log('Login Failed:', error)
   });
   
-  setProfile(null);
+  
 
   useEffect(
       () => {
+        setProfile(null);
           if (user) {
               axios
                   .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
