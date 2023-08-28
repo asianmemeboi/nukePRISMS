@@ -16,6 +16,8 @@ function NavigationBar() {
       onSuccess: (codeResponse) => { setUser(codeResponse); console.log(codeResponse); },
       onError: (error) => console.log('Login Failed:', error)
   });
+  
+  setProfile(null);
 
   useEffect(
       () => {
