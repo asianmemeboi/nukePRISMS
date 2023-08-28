@@ -31,4 +31,4 @@ function Classes() {
   );
 }
 
-export default App;
+export default Classes;

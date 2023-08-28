@@ -34,7 +34,6 @@ function App() {
             textAlign: "center",
           }}
         >
-          {" "}
           Made by Students, For Students
         </h2>
         <div style={{ height: "10vh" }}></div>
