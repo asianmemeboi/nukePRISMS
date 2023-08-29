@@ -29,10 +29,8 @@ function Classes() {
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
       <script>
-        {
-          function searchClasses() {
-            console.log("hi\n");
-          }
+        function searchClasses() {
+          console.log("hi\n");
         }
       </script>
     </div>
