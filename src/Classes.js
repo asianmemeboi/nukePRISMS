@@ -41,7 +41,7 @@ function Classes() {
   return (
     <div>
       <h3>Classes here</h3>
-      <input type="text" onkeyup="searchClasses()" />
+      <input type="text" onKeyUp="searchClasses()" />
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
       <Class subject="AP Calc"/>
