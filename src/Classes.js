@@ -25,7 +25,7 @@ function Classes() {
 
       const scriptText = document.createTextNode(`
       function searchClasses() { 
-        console.log('hi\n'); 
+        console.log('hi'); 
       }
       `);
 
@@ -41,7 +41,7 @@ function Classes() {
   return (
     <div>
       <h3>Classes here</h3>
-      <input onkeyup="searchClasses()"></input>
+      <input type="text" onkeyup="searchClasses()" />
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
       <Class subject="AP Calc"/>
