@@ -22,11 +22,19 @@ function Classes() {
   return (
     <div>
       <h3>Classes here</h3>
+      <input onkeyUp="searchClasses()"></input>
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
       <Class subject="AP Calc"/>
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
+      <script>
+        {
+          function searchClasses() {
+            console.log("hi\n");
+          }
+        }
+      </script>
     </div>
   );
 }
