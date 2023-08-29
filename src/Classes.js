@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 class Class extends React.Component {
   constructor(props) {
@@ -19,6 +19,25 @@ class Class extends React.Component {
 }
 
 function Classes() {
+  useEffect(
+    () => {
+      const script = document.createElement("script");
+
+      const scriptText = document.createTextNode(`
+      function searchClasses() { 
+        console.log('hi\n'); 
+      }
+      `);
+
+      script.appendChild(scriptText);
+      document.head.appendChild(script);
+
+      return () => {
+        document.head.removeChild(script);
+      }
+    }, []
+  );
+  
   return (
     <div>
       <h3>Classes here</h3>
@@ -28,11 +47,6 @@ function Classes() {
       <Class subject="AP Calc"/>
       <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
-      <script>
-        function searchClasses() {
-          console.log("hi\n");
-        }
-      </script>
     </div>
   );
 }
