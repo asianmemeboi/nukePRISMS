@@ -20,12 +20,12 @@ function App() {
           // backgroundImage: `url(${background})`,
           // backgroundSize: "cover",
           // backgroundRepeat: "no-repeat",
-          height: "94vh",
+          height: "100vh",
           paddingTop: "25 vh",
         }}
       >
-        <div style={{height: "40vh"}}>
-          
+        <div style={{height: "30vh"}}>
+
         </div>
         <h1
           style={{
