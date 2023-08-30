@@ -98,7 +98,7 @@ function Classes() {
         </div>
         
       </div>
-      <div style={{height: "10vh", background: "rgb(3,40,150)", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", paddingTop: "10vh"}}></div>
+      <div style={{height: "10vh", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", paddingTop: "10vh"}}></div>
       
       
       {/* {(results.query === '' ? "" : state.list.values().map(post => {
