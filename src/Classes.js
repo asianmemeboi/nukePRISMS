@@ -54,7 +54,7 @@ function Classes() {
       let titleElement = elements[i].firstElementChild;
       let text = titleElement.innerText || titleElement.textContent;
 
-      if (text.toLowerCase.indexOf(input) > -1) {
+      if (text.toLowerCase().indexOf(input) > -1) {
         elements[i].style.display = ""
       } else {
         elements[i].style.display = "none";
