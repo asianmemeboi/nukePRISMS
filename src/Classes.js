@@ -89,9 +89,9 @@ function Classes() {
   
   return (
     <div>
-      <div style={{height: "30vh", backgroundColor: "aqua", padding: "auto"}}>
-        <h3>Classes here</h3>
-        <input type="search" onChange={handleChange} />
+      <div style={{height: "30vh", backgroundColor: "darkaqua", paddingTop: "10vh"}}>
+        <h3 style={{left: "50%", color: "white"}}>Classes</h3>
+        <input type="search" onChange={handleChange} style={{left: "50%"}}/>
       </div>
       
       
