@@ -92,9 +92,9 @@ function Classes() {
     <div>
       <div style={{height: "30vh", backgroundColor: "#032896", paddingTop: "10vh"}}>
         <h2 style={{left: "50%", textAlign: "center", color: "white"}}>Classes</h2>
-        <div class="search-box">
+        <div class="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
           <button class="btn-search"><i className="fas fa-search"></i></button>
-          <input type="search" onChange={handleChange} style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}} className="input-search" placeholder="AP Bio"/>
+          <input type="search" onChange={handleChange}  className="input-search" placeholder="AP Bio"/>
         </div>
         
       </div>
