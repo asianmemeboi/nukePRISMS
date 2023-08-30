@@ -4,6 +4,14 @@ import "./App.css";
 import React from "react";
 
 function App() {
+  useEffect(
+    () => {
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = "";
+      }
+    }, []
+  );
   return (
     <div>
       <CoolBackground />
@@ -13,7 +21,7 @@ function App() {
           // backgroundSize: "cover",
           // backgroundRepeat: "no-repeat",
           height: "94vh",
-          paddingTop: "25vh",
+          paddingTop: "25 vh",
         }}
       >
         <h1
