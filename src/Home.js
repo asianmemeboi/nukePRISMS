@@ -1,7 +1,7 @@
 // import background from "./assets/background.jpg";
 import CoolBackground from "./components/CoolBackground.js";
 import "./App.css";
-import React from "react";
+import React, {useEffect} from "react";
 
 function App() {
   useEffect(
