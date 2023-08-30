@@ -142,8 +142,8 @@
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  left: 50%;
-  color: "white";
+  right: 0%;
+  color: #ffffff;
   background-color:transparent;
   pointer-events: painted;  
 }
