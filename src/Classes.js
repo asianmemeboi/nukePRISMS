@@ -41,19 +41,31 @@ const dummyDatabase = {
 };
 
 function Classes() {
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState({
-    query: '',
-    list: []
-  });
+  // const [query, setQuery] = useState('');
+  // const [results, setResults] = useState({
+  //   query: '',
+  //   list: []
+  // });
 
   const handleChange = (e) => {
-    setQuery(e.target.value);
-    const r = Object.fromEntries(Object.entries(dummyDatabase).filter(([k,v]) => (k.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1)));
-    setResults({
-      query: e.target.value,
-      list: r
-    });
+    const input = e.target.value.toLowerCase();
+    let elements = document.getElementsByClassName("class-card");
+    for (let i = 0; i < elements.length; i++) {
+      let titleElement = elements[i].firstElementChild;
+      let text = titleElement.innerText || titleElement.textContent;
+
+      if (text.toLowerCase.indexOf(input) > -1) {
+        elements[i].style.display = ""
+      } else {
+        elements[i].style.display = "none";
+      }
+    }
+    // setQuery(e.target.value);
+    // const r = Object.fromEntries(Object.entries(dummyDatabase).filter(([k,v]) => (k.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1)));
+    // setResults({
+    //   query: e.target.value,
+    //   list: r
+    // });
   };
 
   // useEffect(
@@ -79,14 +91,14 @@ function Classes() {
     <div>
       <h3>Classes here</h3>
       <input type="search" value={query} onChange={handleChange} />
-      {(results.query === '' ? "" : state.list.values().map(post => {
+      {/* {(results.query === '' ? "" : state.list.values().map(post => {
             return <li key={post.name}>{post.name}</li>
-          }))}
-      {/* <Class subject="AP Bio"/>
+          }))} */}
+      <Class subject="AP Bio"/>
       <Class subject="Honors bio"/>
       <Class subject="AP Calc"/>
       <Class subject="AP Bio"/>
-      <Class subject="Honors bio"/> */}
+      <Class subject="Honors bio"/>
     </div>
   );
 }
