@@ -12,8 +12,8 @@ class Class extends React.Component {
 
   render() {
     return (
-      <div class="class-card">
-        <h3>{this.state.subject}</h3>
+      <div className="class-card" style={{}}>
+        <h3 style={{color: "#ffffff"}}>{this.state.subject}</h3>
       </div>
     )
   }
@@ -92,12 +92,13 @@ function Classes() {
     <div>
       <div style={{height: "30vh", backgroundColor: "#032896", paddingTop: "10vh"}}>
         <h2 style={{left: "50%", textAlign: "center", color: "white"}}>Classes</h2>
-        <div class="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
-          <button class="btn-search"><i className="fas fa-search"></i></button>
+        <div className="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
+          <button className="btn-search"><i className="fas fa-search"></i></button>
           <input type="search" onChange={handleChange}  className="input-search" placeholder="AP Bio"/>
         </div>
         
       </div>
+      <div style={{height: "10vh", backgroundColor: "#00543e", paddingTop: "10vh"}}></div>
       
       
       {/* {(results.query === '' ? "" : state.list.values().map(post => {
