@@ -142,8 +142,7 @@
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  right: 0px;
-  color:#ffffff ;
+  left: 50%;
   background-color:transparent;
   pointer-events: painted;  
 }
