@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 class Class extends React.Component {
   constructor(props) {
@@ -18,27 +18,27 @@ class Class extends React.Component {
   }
 }
 
-const dummyDatabase = {
-  "AP Biology" : {
-    name: "AP Biology",
-    periods : {
-      6 : "Joeseph Bay",
-      6 : "Joeseph Woska",
-      7 : "Random Guy"
-    },
-    subject: "Biology",
-    field: "STEM"
-  },
-  "AP Calculus BC" : {
-    name: "AP Calculus BC",
-    periods : {
-      6 : "Kenneth Jones",
-      8 : "Andrew Bleckner"
-    },
-    subject: "Mathematics",
-    field: "STEM"
-  }
-};
+// const dummyDatabase = {
+//   "AP Biology" : {
+//     name: "AP Biology",
+//     periods : {
+//       6 : "Joeseph Bay",
+//       6 : "Joeseph Woska",
+//       7 : "Random Guy"
+//     },
+//     subject: "Biology",
+//     field: "STEM"
+//   },
+//   "AP Calculus BC" : {
+//     name: "AP Calculus BC",
+//     periods : {
+//       6 : "Kenneth Jones",
+//       8 : "Andrew Bleckner"
+//     },
+//     subject: "Mathematics",
+//     field: "STEM"
+//   }
+// };
 
 function Classes() {
   // const [query, setQuery] = useState('');
