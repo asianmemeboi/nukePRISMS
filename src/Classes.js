@@ -90,7 +90,7 @@ function Classes() {
   return (
     <div>
       <h3>Classes here</h3>
-      <input type="search" value={query} onChange={handleChange} />
+      <input type="search" onChange={handleChange} />
       {/* {(results.query === '' ? "" : state.list.values().map(post => {
             return <li key={post.name}>{post.name}</li>
           }))} */}
