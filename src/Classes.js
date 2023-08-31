@@ -14,7 +14,7 @@ class Subject extends React.Component {
   render() {
     const list = [];
     list.push(
-      <h3>{this.state.subject}</h3>
+      <h3 style={{color: "#FFF"}}>{this.state.subject}</h3>
     );
 
     for (const [id, data] of Object.entries(ClassInfo)) {
@@ -136,8 +136,16 @@ function Classes() {
         <Class subject="AP Calc"/>
         <Class subject="AP Bio"/>
         <Class subject="Honors bio"/> */}
-        <Subject subject="Mathematics" />
+        <Subject subject="Math" />
         <Subject subject="Biology" />
+        <Subject subject="Chemistry" />
+        <Subject subject="Physics" />
+        <Subject subject="Engineering" />
+        <Subject subject="Computer Science" />
+        <Subject subject="Languages" />
+        <Subject subject="English" />
+        <Subject subject="Art" />
+        <Subject subject="Social Studies" />
       </div>
       
       
