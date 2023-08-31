@@ -14,7 +14,7 @@ class Subject extends React.Component {
   render() {
     const list = [];
     list.push(
-      <h3 style={{color: "#FFF"}}>{this.state.subject}</h3>
+      <h3 style={{color: "#FFF", textAlign: "center"}}>{this.state.subject}</h3>
     );
 
     for (const [id, data] of Object.entries(ClassInfo)) {
@@ -43,7 +43,7 @@ class Class extends React.Component {
   render() {
     return (
       <div className={"class-card " + this.state.subject} id={this.state.id}>
-        <h3>{this.state.data.name}</h3>
+        <h3 style={{textAlign: "center"}}>{this.state.data.name}</h3>
       </div>
     )
   }
@@ -127,7 +127,7 @@ function Classes() {
         </div>
         
       </div>
-      <div style={{height: "200vh", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", paddingTop: "10vh"}}>
+      <div style={{height: "100%", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", paddingTop: "10vh"}}>
         {/* {(results.query === '' ? "" : state.list.values().map(post => {
             return <li key={post.name}>{post.name}</li>
           }))} */}
