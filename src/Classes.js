@@ -17,9 +17,11 @@ class Subject extends React.Component {
     );
 
     for (const [id, data] of Object.entries(dummyDatabase)) {
-      list.push(
-        <Class id={id} data={data} subject={this.state.subject} />
-      );
+      if (data.subject === this.state.subject) {
+        list.push(
+          <Class id={id} data={data} subject={this.state.subject} />
+        );
+      }
     }
 
     return list;

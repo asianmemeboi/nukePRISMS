@@ -1,0 +1,516 @@
+{
+  "advanced-algebra" : {
+    name: "Advanced Algebra",
+    periods : {
+      "2" : "Kenneth Jones",
+      "3" : "Kenneth Jones",
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "ap-chemistry" : {
+    name: "AP Chemistry",
+    periods : {
+      "3" : "Yiwei Zhang",
+      "6" : "Yiwei Zhang",
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+  "ap-chemistry-plus" : {
+    name: "AP Chemistry Plus",
+    periods : {
+      "7" : "Steven Chen",
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+  "advanced-mandarin" : {
+    name: "Advanced Mandarin",
+    periods : {
+      "6" : "Qing Meng",
+    }.
+    subject: "Language",
+    field: "Humanities"
+  },
+  "ap-biology" : {
+    name: "AP Biology",
+    periods : {
+      "7" : "Joseph Bay",
+      "8" : "Joseph Bay"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "advanced-robotics" : {
+    name: "Advanced Robotics",
+    periods : {
+      "4" : "Adam Kemp"
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "ap-calculus-bc" : {
+    name: "AP Calculus BC",
+    periods : {
+      "1" : "Kenneth Jones",
+      "5" : "Kenneth Jones",
+      "6" : "Kenneth Jones"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "advanced-spanish" : {
+    name: "Advanced Spanish",
+    periods : {
+      "1" : "Unknown"
+    },
+    subject: "Languages",
+    field: "Humanities"
+  },
+  "ap-gov" : {
+    name: "AP Government",
+    periods : {
+      "5" : "Laurie Hochstetler"
+    }
+    subject: "Social Studies",
+    field: "Humanities"
+  },
+  "ap-comp-sci-plus" : {
+    name: "AP Computer Science Plus",
+    periods : {
+      "1" : "Anita Gupta",
+      "3" : "Anita Gupta"
+    },
+    subject: "Computer Science",
+    field: "STEM"
+  },
+  "ap-environmental-science" : {
+    name: "AP Environmental Science",
+    periods : {
+      "8" : "Randy Weintraub"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "ap-physics" : {
+    name: "AP Physics",
+    periods : {
+      "4" : "Taryl Kirk",
+      "7" : "Taryl Kirk"
+    },
+    subject: "Physics",
+    field: "STEM"
+  },
+  "ap-statistics" : {
+    name: "AP Statistics",
+    periods : {
+      "1" : "Andrew Bleckner",
+      "6" : "Andrew Bleckner"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "applied-engineering-1" : {
+    name: "Applied Engineering 1",
+    periods : {
+      "4" : "Philip Tang",
+      "5" : "Philip Tang",
+      "8" : "Philip Tang"
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "applied-engineering-2" : {
+    name: "Applied Engineering 2",
+    periods : {
+      "3" : "George Heim"
+      "5" : "George Heim"
+      "8" : "George Heim"
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "ap-us-history" : {
+    name: "AP US History",
+    periods : {
+      "4" : "Laurie Hochstetler",
+      "6" : "Laurie Hochstetler",
+      "8" : "Laurie Hochstetler"
+    },
+    subject: "History",
+    field: "Humanities"
+  },
+  "art-1" : {
+    name: "Art 1",
+    periods : {
+      "5" : "Alkan Nallbani",
+      "6" : "Alkan Nallbani",
+    },
+    subject: "Art",
+    field: "Humanities"
+  },
+  "art-2" : {
+    name: "Art 2",
+    periods : {
+      "5" : "Alkan Nallbani",
+      "6" : "Alkan Nallbani",
+    },
+    subject: "Art",
+    field: "Humanities"
+  },
+  "ap-visual-arts-studio" : {
+    name: "AP Visual Arts Studio",
+    periods : {
+      "8" : "Alkan Nallbani",
+    },
+    subject: "Art",
+    field: "Humanities"
+  },
+  "ap-world-history" : {
+    name: "AP Biology",
+    periods : {
+      "2" : "Conor Barnes",
+    },
+    subject: "History",
+    field: "Humanities"
+  },
+  "artifical-intelligence" : {
+    name: "Artificial Intelligence",
+    periods : {
+      "4" : "John Deionno",
+    },
+    subject: "Computer Science",
+    field: "STEM"
+  },
+  "ap-calculus-ab" : {
+    name: "AP Calculus AB",
+    periods : {
+      "5" : "Andrew Bleckner",
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "english-10" : {
+    name: "English 10",
+    periods : {
+      "4" : "Bradford Carpenter",
+      "8" : "Bradford Carpenter"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "english-11" : {
+    name: "English 11",
+    periods : {
+      "1" : "Zachary White",
+      "3" : "Jay James May",
+      "5" : "Zachary White",
+      "8" : "Jay James May"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "creative-writing-1" : {
+    name: "Creative Writing 1",
+    periods : {
+      "1" : "Conor Barnes",
+      "5" : "Conor Barnes"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "creative-writing-2" : {
+    name: "Creative Writing 2",
+    periods : {
+      "1" : "Conor Barnes",
+      "5" : "Conor Barnes"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "english-12" : {
+    name: "English 12",
+    periods : {
+      "6" : "Jay James May",
+      "7" : "Jay James May"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "data-science-1" : {
+    name: "Data Science 1",
+    periods : {
+      "7" : "Peter Tian"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "data-science-2" : {
+    name: "Data Science 2",
+    periods : {
+      "7" : "Peter Tian"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "english-9" : {
+    name: "English 9",
+    periods : {
+      "2" : "Zachary White"
+      "7" : "Zachary White"
+    },
+    subject: "English",
+    field: "Humanities"
+  },
+  "differential-equations" : {
+    name: "Differential Equations",
+    periods : {
+      "1" : "Smita Sood"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "neuroscience" : {
+    name: "Fundamentals of Neuroscience",
+    periods : {
+      "3" : "Steve Brownstein"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "honors-biology" : {
+    name: "Honors Biology",
+    periods : {
+      "4" : "Steven Brownstein",
+      "7" : "Steven Brownstein",
+      "8" : "Steven Brownstein"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "inorganic-chemistry" : {
+    name: "Inorganic Chemistry",
+    periods : {
+      "4" : "Yiwei Zhang"
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+  "media-and-game-dev" : {
+    name: "Interactive Media and Game Development",
+    periods : {
+      "7" : "Philip Tang"
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "linear-algebra" : {
+    name: "Linear Algebra",
+    periods : {
+      "3" : "Smita Sood",
+      "7" : "Smita Sood"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "honors-chemistry" : {
+    name: "Honors Chemistry",
+    periods : {
+      "5" : "Randy Weintraub",
+      "6" : "Randy Weintraub"
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+  "honors-physics" : {
+    name: "Honors Physics",
+    periods : {
+      "3" : "Peter Tian",
+      "5" : "Peter Tian",
+      "6" : "Peter Tian"
+    },
+    subject: "Physics",
+    field: "STEM"
+  },
+  "mandarin-1" : {
+    name: "Mandarin 1",
+    periods : {
+      "6" : "Qing Meng",
+    },
+    subject: "Languages",
+    field: "Humanities"
+  },
+  "mandarin-2" : {
+    name: "Mandarin 2",
+    periods : {
+      "5" : "Qing Meng"
+    },
+    subject: "Languages",
+    field: "Humanities"
+  },
+  "honors-chemistry" : {
+    name: "Honors Chemistry",
+    periods : {
+      "5" : "Randy Weintraub",
+      "6" : "Randy Weintraub"
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+  "modern-physics" : {
+    name: "Modern Physics",
+    periods : {
+      "3" : "Taryl Kirk",
+    },
+    subject: "Physics",
+    field: "STEM"
+  },
+  "molecular-bio" : {
+    name: "Molecular Biology and Biotech",
+    periods : {
+      "6" : "Joseph Bay",
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "multivariate-calculus" : {
+    name: "Multivariate Calculus",
+    periods : {
+      "1" : "Smita Sood",
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "industrial-design" : {
+    name: "Industrial Design",
+    periods : {
+      "7" : "George Heim",
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "music-composition" : {
+    name: "Music Composition",
+    periods : {
+      "3" : "Andrew Bleckner"
+    },
+    subject: "Art",
+    field: "Humanities"
+  },
+  "music-theory" : {
+    name: "Music Theory",
+    periods : {
+      "3" : "Andrew Bleckner"
+    },
+    subject: "Art",
+    field: "Humanities"
+  },
+  "cs-research" : {
+    name: "CS Research",
+    periods : {
+      "2" : "Philip Tang"
+    },
+    subject: "Computer Science",
+    field: "STEM"
+  },
+  "engineering-research" : {
+    name: "Engineering Research",
+    periods : {
+      "2" : "Adam Kemp",
+    },
+    subject: "Engineering",
+    field: "STEM"
+  },
+  "pre-calculus" : {
+    name: "Precalculus",
+    periods : {
+      "2" : "Shradha Shukla",
+      "4" : "Shradha Shukla"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "environment-research" : {
+    name: "Environment Research",
+    periods : {
+      "2" : "Randy Weintraub"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "math-research" : {
+    name: "Math and Modeling Research",
+    periods : {
+      "2" : "Smita Sood"
+    },
+    subject: "Math",
+    field: "STEM"
+  },
+  "neuroscience-research" : {
+    name: "Neuroscience Research",
+    periods : {
+      "2" : "Steven Brownstein"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "principles-of-cs" : {
+    name: "Principles of CS",
+    periods : {
+      "1" : "John Deionno",
+      "3" : "John Deionno",
+      "5" : "John Deionno"
+    },
+    subject: "Computer Science",
+    field: "STEM"
+  },
+  "physics-research" : {
+    name: "Physics Research",
+    periods : {
+      "2" : "Taryl Kirk"
+    },
+    subject: "Physics",
+    field: "STEM"
+  },
+  "applied-physics-research" : {
+    name: "Applied Physics Research",
+    periods : {
+      "2" : "George Heim"
+    },
+    subject: "Physics",
+    field: "STEM"
+  },
+  "spanish-1" : {
+    name: "Spanish 1",
+    periods : {
+      "4" : "Unknown"
+    },
+    subject: "Languages",
+    field: "Humanities"
+  },
+  "spanish-2" : {
+    name: "Spanish 2",
+    periods : {
+      "3" : "Unknown"
+    },
+    subject: "Languages",
+    field: "Humanities"
+  },
+  "biology-research" : {
+    name: "Biology Research",
+    periods : {
+      "2" : "Joseph Bay"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "chemistry-research" : {
+    name: "Chemistry Research",
+    periods : {
+      "2" : "Steven Chen"
+    },
+    subject: "Chemistry",
+    field: "STEM"
+  },
+}
