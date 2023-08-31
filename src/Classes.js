@@ -42,7 +42,7 @@ class Class extends React.Component {
 
   render() {
     return (
-      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "5vh"}}>
+      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh"}}>
         <h3 style={{textAlign: "center", down: "50%"}}>{this.state.data.name}</h3>
       </div>
     )
