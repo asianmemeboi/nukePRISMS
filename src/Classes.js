@@ -50,9 +50,8 @@ const dummyDatabase = {
   "AP Biology" : {
     name: "AP Biology",
     periods : {
-      6 : "Joeseph Bay",
-      6 : "Joeseph Woska",
-      7 : "Random Guy"
+      '6' : "Joeseph Woska",
+      '7' : "Random Guy"
     },
     subject: "Biology",
     field: "STEM"
@@ -60,8 +59,8 @@ const dummyDatabase = {
   "AP Calculus BC" : {
     name: "AP Calculus BC",
     periods : {
-      6 : "Kenneth Jones",
-      8 : "Andrew Bleckner"
+      '6' : "Kenneth Jones",
+      '8' : "Andrew Bleckner"
     },
     subject: "Mathematics",
     field: "STEM"
