@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-class Class extends React.Component {
+class Subject extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,35 +11,62 @@ class Class extends React.Component {
   }
 
   render() {
+    const list = [];
+    list.push(
+      <h3>{this.state.subject}</h3>
+    );
+
+    for (const [id, data] of Object.entries(dummyDatabase)) {
+      list.push(
+        <Class id={id} data={data} subject={this.state.subject} />
+      );
+    }
+
+    return list;
+  }
+}
+
+class Class extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: props.id,
+      data: props.data,
+      subject: props.subject
+    }
+    this.render = this.render.bind(this);
+  }
+
+  render() {
     return (
-      <div className="class-card" style={{}}>
-        <h3 style={{color: "#ffffff"}}>{this.state.subject}</h3>
+      <div className={"class-card " + this.state.subject} id={this.state.id}>
+        <h3>{this.state.data.name}</h3>
       </div>
     )
   }
 }
 
-// const dummyDatabase = {
-//   "AP Biology" : {
-//     name: "AP Biology",
-//     periods : {
-//       6 : "Joeseph Bay",
-//       6 : "Joeseph Woska",
-//       7 : "Random Guy"
-//     },
-//     subject: "Biology",
-//     field: "STEM"
-//   },
-//   "AP Calculus BC" : {
-//     name: "AP Calculus BC",
-//     periods : {
-//       6 : "Kenneth Jones",
-//       8 : "Andrew Bleckner"
-//     },
-//     subject: "Mathematics",
-//     field: "STEM"
-//   }
-// };
+const dummyDatabase = {
+  "AP Biology" : {
+    name: "AP Biology",
+    periods : {
+      6 : "Joeseph Bay",
+      6 : "Joeseph Woska",
+      7 : "Random Guy"
+    },
+    subject: "Biology",
+    field: "STEM"
+  },
+  "AP Calculus BC" : {
+    name: "AP Calculus BC",
+    periods : {
+      6 : "Kenneth Jones",
+      8 : "Andrew Bleckner"
+    },
+    subject: "Mathematics",
+    field: "STEM"
+  }
+};
 
 function Classes() {
   // const [query, setQuery] = useState('');
@@ -102,11 +129,13 @@ function Classes() {
         {/* {(results.query === '' ? "" : state.list.values().map(post => {
             return <li key={post.name}>{post.name}</li>
           }))} */}
-        <Class subject="AP Bio"/>
+        {/* <Class subject="AP Bio"/>
         <Class subject="Honors bio"/>
         <Class subject="AP Calc"/>
         <Class subject="AP Bio"/>
-        <Class subject="Honors bio"/>
+        <Class subject="Honors bio"/> */}
+        <Subject subject="Mathematics" />
+        <Subject subject="Biology" />
       </div>
       
       
