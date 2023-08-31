@@ -1,12 +1,22 @@
 import React from "react";
 import "./App.css";
 import ClassInfo from "./assets/Class_Info.json";
+import biobg from "./assets/biobg.jpg";
+import mathbg from "./assets/mathbg.jpg";
+import chembg from "./assets/chembg.jpg";
+import englishbg from "./assets/englishbg.jpg";
+import computersciencebg from "./assets/computersciencebg.jpg";
+import engineeringbg from "./assets/engineeringbg.jpg";
+import physicsbg from "./assets/physicsbg.jpg";
+import socialstudiesbg from "./assets/socialstudiesbg.jpeg";
+import languagesbg from "./assets/languagesbg.jpg";
 
 class Subject extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      subject: props.subject
+      subject: props.subject,
+      bgLink: props.bgLink
     }
     this.render = this.render.bind(this);
   }
@@ -20,7 +30,7 @@ class Subject extends React.Component {
     for (const [id, data] of Object.entries(ClassInfo)) {
       if (data.subject === this.state.subject) {
         list.push(
-          <Class id={id} data={data} subject={this.state.subject} />
+          <Class id={id} data={data} subject={this.state.subject} bgLink={this.state.bgLink}/>
         );
       }
     }
@@ -36,15 +46,16 @@ class Class extends React.Component {
       id: props.id,
       data: props.data,
       subject: props.subject,
-      periods: props.periods
+      bgLink: props.bgLink
     }
     this.render = this.render.bind(this);
   }
 
   render() {
     return (
+      
       <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh"}}>
-        <h3 style={{textAlign: "center", lineHeight: "12vh"}}>{this.state.data.name}</h3>
+        <h3 style={{textAlign: "center", lineHeight: "12vh", backgroundImage: this.state.bgLink, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>{this.state.data.name}</h3>
       </div>
     )
   }
@@ -137,16 +148,16 @@ function Classes() {
         <Class subject="AP Calc"/>
         <Class subject="AP Bio"/>
         <Class subject="Honors bio"/> */}
-        <Subject subject="Math" />
-        <Subject subject="Biology" />
-        <Subject subject="Chemistry" />
-        <Subject subject="Physics" />
-        <Subject subject="Engineering" />
-        <Subject subject="Computer Science" />
-        <Subject subject="Languages" />
-        <Subject subject="English" />
-        <Subject subject="Art" />
-        <Subject subject="Social Studies" />
+        <Subject subject="Math" bgLink={mathbg}/>
+        <Subject subject="Biology" bgLink={biobg}/>
+        <Subject subject="Chemistry" bgLink={chembg} />
+        <Subject subject="Physics" bgLink={physicsbg}/>
+        <Subject subject="Engineering" bgLink={engineeringbg}/>
+        <Subject subject="Computer Science" bgLink={computersciencebg}/>
+        <Subject subject="Languages" bgLink={languagesbg}/>
+        <Subject subject="English" bgLink={englishbg}/>
+        <Subject subject="Art" bgLink={artbg}/>
+        <Subject subject="Social Studies" bgLink={socialstudiesbg}/>
       </div>
       
       
