@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import ClassInfo from "./assets/Class_Info.json";
 
 class Subject extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class Subject extends React.Component {
       <h3>{this.state.subject}</h3>
     );
 
-    for (const [id, data] of Object.entries(dummyDatabase)) {
+    for (const [id, data] of Object.entries(ClassInfo)) {
       if (data.subject === this.state.subject) {
         list.push(
           <Class id={id} data={data} subject={this.state.subject} />
@@ -48,26 +49,26 @@ class Class extends React.Component {
   }
 }
 
-const dummyDatabase = {
-  "AP Biology" : {
-    name: "AP Biology",
-    periods : {
-      '6' : "Joeseph Woska",
-      '7' : "Random Guy"
-    },
-    subject: "Biology",
-    field: "STEM"
-  },
-  "AP Calculus BC" : {
-    name: "AP Calculus BC",
-    periods : {
-      '6' : "Kenneth Jones",
-      '8' : "Andrew Bleckner"
-    },
-    subject: "Mathematics",
-    field: "STEM"
-  }
-};
+// const dummyDatabase = {
+//   "AP Biology" : {
+//     name: "AP Biology",
+//     periods : {
+//       '6' : "Joeseph Woska",
+//       '7' : "Random Guy"
+//     },
+//     subject: "Biology",
+//     field: "STEM"
+//   },
+//   "AP Calculus BC" : {
+//     name: "AP Calculus BC",
+//     periods : {
+//       '6' : "Kenneth Jones",
+//       '8' : "Andrew Bleckner"
+//     },
+//     subject: "Mathematics",
+//     field: "STEM"
+//   }
+// };
 
 function Classes() {
   // const [query, setQuery] = useState('');
