@@ -10,6 +10,7 @@ import engineeringbg from "./assets/engineeringbg.jpg";
 import physicsbg from "./assets/physicsbg.jpg";
 import socialstudiesbg from "./assets/socialstudiesbg.jpeg";
 import languagesbg from "./assets/languagesbg.jpg";
+import artbg from "./assets/artbg.jpg";
 
 class Subject extends React.Component {
   constructor(props) {
