@@ -35,7 +35,8 @@ class Class extends React.Component {
     this.state = {
       id: props.id,
       data: props.data,
-      subject: props.subject
+      subject: props.subject,
+      periods: props.periods
     }
     this.render = this.render.bind(this);
   }
@@ -43,8 +44,7 @@ class Class extends React.Component {
   render() {
     return (
       <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh"}}>
-        <h3 style={{textAlign: "center"}}>{this.state.data.name}</h3>
-        <h4 style={{textAlign: "center"}}>Teachers:</h4>
+        <h3 style={{textAlign: "center", verticalAlign: "true"}}>{this.state.data.name}</h3>
       </div>
     )
   }
