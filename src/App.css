@@ -182,6 +182,7 @@
 
 *::-webkit-scrollbar-track {
   display: none;
+  color: #898989;
 }
 
 *::-webkit-scrollbar-thumb {
