@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import NavigationBar from "./components/NavBar";
 import ErrorPage from "./error-page";
 import Classes from "./Classes.js";
+import Reviews from "./Reviews.js";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const router = createHashRouter([
@@ -24,7 +25,10 @@ const router = createHashRouter([
         path: "classes",
         element: <Classes />,
       },
-      
+      {
+        path: "reviews",
+        element: <Reviews />
+      },
     ],
   },
 ]);

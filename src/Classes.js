@@ -104,7 +104,7 @@ function Classes() {
   
   return (
     <div>
-      <div style={{height: "100vh", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", backgroundAttachment: "fixed", paddingTop: "10vh"}}>
+      <div className="fixed-bg">
         <div style={{height: "30vh", paddingTop: "10vh"}}>
           <h2 style={{left: "50%", textAlign: "center", color: "white"}}>Classes</h2>
           <div className="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
