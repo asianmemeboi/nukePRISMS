@@ -53,43 +53,15 @@ class Class extends React.Component {
   }
 
   render() {
-    return (
-      
-      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh", backgroundColor: "blue", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+    return (     
+      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh", backgroundImage: `url(${this.state.bgLink})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
         <h3 style={{textAlign: "center", lineHeight: "12vh"}}>{this.state.data.name}</h3>
       </div>
     )
   }
 }
 
-// const dummyDatabase = {
-//   "AP Biology" : {
-//     name: "AP Biology",
-//     periods : {
-//       '6' : "Joeseph Woska",
-//       '7' : "Random Guy"
-//     },
-//     subject: "Biology",
-//     field: "STEM"
-//   },
-//   "AP Calculus BC" : {
-//     name: "AP Calculus BC",
-//     periods : {
-//       '6' : "Kenneth Jones",
-//       '8' : "Andrew Bleckner"
-//     },
-//     subject: "Mathematics",
-//     field: "STEM"
-//   }
-// };
-
 function Classes() {
-  // const [query, setQuery] = useState('');
-  // const [results, setResults] = useState({
-  //   query: '',
-  //   list: []
-  // });
-
   const handleChange = (e) => {
     const input = e.target.value.toLowerCase();
     let elements = document.getElementsByClassName("class-card");
@@ -141,14 +113,6 @@ function Classes() {
         
       </div>
       <div style={{height: "100%", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", paddingTop: "10vh"}}>
-        {/* {(results.query === '' ? "" : state.list.values().map(post => {
-            return <li key={post.name}>{post.name}</li>
-          }))} */}
-        {/* <Class subject="AP Bio"/>
-        <Class subject="Honors bio"/>
-        <Class subject="AP Calc"/>
-        <Class subject="AP Bio"/>
-        <Class subject="Honors bio"/> */}
         <Subject subject="Math" bgLink={mathbg}/>
         <Subject subject="Biology" bgLink={biobg}/>
         <Subject subject="Chemistry" bgLink={chembg} />
