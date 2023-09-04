@@ -182,7 +182,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  display: none;
 }
 
 *::-webkit-scrollbar-thumb {
