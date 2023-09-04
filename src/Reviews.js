@@ -5,7 +5,7 @@ class Reviews extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: ClassInfo[window.location.href.split('#')[1]]
+      data: ClassInfo[window.location.href.split('#')[2]]
     }
     this.render = this.render.bind(this);
   }

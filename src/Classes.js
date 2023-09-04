@@ -55,7 +55,7 @@ class Class extends React.Component {
   render() {
     return (     
       <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh", backgroundImage: `url(${this.state.bgLink})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
-        <h3 style={{textAlign: "center", lineHeight: "12vh"}}><a href={"/reviews#" + this.state.id}>{this.state.data.name}</a></h3>
+        <h3 style={{textAlign: "center", lineHeight: "12vh"}}><a href={"/#/reviews#" + this.state.id}>{this.state.data.name}</a></h3>
       </div>
     )
   }
