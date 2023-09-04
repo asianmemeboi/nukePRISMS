@@ -55,7 +55,7 @@ class Class extends React.Component {
 
   render() {
     return (     
-      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh", backgroundImage: this.state.bgLink, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+      <div className={"class-card " + this.state.subject} id={this.state.id} style={{height: "12vh", backgroundImage: `url(${this.state.bgLink})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
         <h3 style={{textAlign: "center", lineHeight: "12vh"}}>{this.state.data.name}</h3>
       </div>
     )
@@ -105,11 +105,13 @@ function Classes() {
   
   return (
     <div>
-      <div style={{height: "100vh", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", backgroundAttachment: "fixed", paddingTop: "10vh"}}>
-        <h2 style={{left: "50%", textAlign: "center", color: "white"}}>Classes</h2>
-        <div className="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
-          <button className="btn-search"><i className="fas fa-search"></i></button>
-          <input type="search" onChange={handleChange}  className="input-search" placeholder="AP Bio"/>
+      <div style={{backgroundSize: "cover", background: "linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%)", backgroundAttachment: "fixed", paddingTop: "10vh"}}>
+        <div style={{height: "30vh", paddingTop: "10vh"}}>
+          <h2 style={{left: "50%", textAlign: "center", color: "white"}}>Classes</h2>
+          <div className="search-box" style={{left: "50%", transform: "translateX(-50%)", position:"absolute"}}>
+            <button className="btn-search"><i className="fas fa-search"></i></button>
+            <input type="search" onChange={handleChange}  className="input-search" placeholder="AP Bio"/>
+          </div>
         </div>
         
       
