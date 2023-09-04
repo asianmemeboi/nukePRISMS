@@ -175,7 +175,6 @@
   background: linear-gradient(180deg, rgba(3,40,150,1) 29%, rgba(0,55,48,1) 79%, rgba(45,45,45,1) 100%);
   background-attachment: fixed;
   padding-top: 10vh;
-  position: fixed;
 }
 
 *::-webkit-scrollbar {
