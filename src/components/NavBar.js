@@ -41,6 +41,10 @@ function NavigationBar() {
                       setProfile(res.data);
                   })
                   .catch((err) => console.log(err));
+            window.userdata = {
+              user: user,
+              profile: profile
+            };
           }
       },
       [ user ]
