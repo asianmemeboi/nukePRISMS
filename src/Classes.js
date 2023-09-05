@@ -102,6 +102,12 @@ function Classes() {
   //   }, []
   // );
   
+  if (!window.userdata.profile) {
+    return (
+      <h3>skill issue</h3>
+    );
+  }
+
   return (
     <div>
       <div className="fixed-bg">
