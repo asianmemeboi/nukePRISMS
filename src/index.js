@@ -11,6 +11,11 @@ import Classes from "./Classes.js";
 import Reviews from "./Reviews.js";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
+window.userdata = {
+  user: null,
+  profile: null
+}
+
 const router = createHashRouter([
   {
     path: "/",
