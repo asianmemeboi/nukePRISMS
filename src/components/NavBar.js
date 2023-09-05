@@ -19,6 +19,10 @@ function NavigationBar() {
   useEffect(
     () => {
       setProfile(null);
+      window.userdata = {
+        user: null,
+        profile: null
+      }
       if (sessionStorage.getItem("login")) {
         setUser(JSON.parse(sessionStorage.getItem("login")));
       }
