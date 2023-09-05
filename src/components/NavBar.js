@@ -20,7 +20,7 @@ function NavigationBar() {
     () => {
       setProfile(null);
       if (sessionStorage.getItem("login")) {
-        setUser(JSON.parse(localStorage.getItem("login")));
+        setUser(JSON.parse(sessionStorage.getItem("login")));
       }
     }, []
   );
