@@ -19,7 +19,7 @@ function NavigationBar() {
   useEffect(
     () => {
       setProfile(null);
-      if (localStorage.getItem("login")) {
+      if (sessionStorage.getItem("login")) {
         setUser(JSON.parse(localStorage.getItem("login")));
       }
     }, []
@@ -29,7 +29,7 @@ function NavigationBar() {
   useEffect(
       () => {
           if (user) {
-            localStorage.setItem("login", JSON.stringify(user));
+            sessionStorage.setItem("login", JSON.stringify(user));
               axios
                   .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
                       headers: {
@@ -52,6 +52,7 @@ function NavigationBar() {
   
   // log out function to log the user out of google and set the profile array to null
   const logOut = () => {
+      sessionStorage.setItem("login", null);
       googleLogout();
       setProfile(null);
   };
