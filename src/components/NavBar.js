@@ -76,7 +76,12 @@ function NavigationBar() {
               <Nav.Link href={`/#/`} style={{ color: "white" }}>
                 Home
               </Nav.Link>
-              <Nav.Link href={`/#/classes`} style={{color:"white"}}> Classes </Nav.Link>
+              {profile ? (
+                <Nav.Link href={`/#/classes`} style={{color:"white"}}> Classes </Nav.Link>
+              ) : (
+                <></>
+              )}
+              
             </Nav>
             <Nav>
               {profile ? (
