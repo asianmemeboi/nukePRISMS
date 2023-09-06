@@ -31,7 +31,7 @@ function NavigationBar() {
         const sessionUser = JSON.parse(sessionStorage.getItem("login"));
         if (sessionUser) {
             axios
-                .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+                .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${sessionUser.access_token}`, {
                     headers: {
                         Authorization: `Bearer ${user.access_token}`,
                         Accept: 'application/json'
@@ -42,7 +42,7 @@ function NavigationBar() {
                 })
                 .catch((err) => console.log(err));
           window.userdata = {
-            user: user,
+            user: sessionUser,
             profile: profile
           };
         }
