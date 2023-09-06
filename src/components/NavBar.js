@@ -28,7 +28,24 @@ function NavigationBar() {
         profile: null
       }
       if (sessionStorage.getItem("login")) {
-        setUser(JSON.parse(sessionStorage.getItem("login")));
+        const sessionUser = JSON.parse(sessionStorage.getItem("login"));
+        if (sessionUser) {
+            axios
+                .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+                    headers: {
+                        Authorization: `Bearer ${user.access_token}`,
+                        Accept: 'application/json'
+                    }
+                })
+                .then((res) => {
+                    setProfile(res.data);
+                })
+                .catch((err) => console.log(err));
+          window.userdata = {
+            user: user,
+            profile: profile
+          };
+        }
       }
     }, []
   );
