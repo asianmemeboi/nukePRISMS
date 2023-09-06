@@ -15,6 +15,10 @@ function NavigationBar() {
       onSuccess: (codeResponse) => { setUser(codeResponse); console.log(codeResponse); },
       onError: (error) => console.log('Login Failed:', error)
   });
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
   
   useEffect(
     () => {
@@ -49,6 +53,7 @@ function NavigationBar() {
               user: user,
               profile: profile
             };
+            refreshPage();
           }
       },
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -57,7 +62,7 @@ function NavigationBar() {
   
   // log out function to log the user out of google and set the profile array to null
   const logOut = () => {
-      sessionStorage.setItem("login", null);
+      sessionStorage.removeItem("login");
       googleLogout();
       setProfile(null);
   };
