@@ -19,10 +19,6 @@ function NavigationBar() {
     onError: (error) => console.log("Login Failed:", error),
   });
 
-  function refreshPage() {
-    window.location.reload(false);
-  }
-
   useEffect(() => {
     setProfile(null);
     window.userdata = {
